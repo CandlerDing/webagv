@@ -1,0 +1,54 @@
+﻿BODY {
+	FONT-SIZE: 70.5%; CURSOR: default; FONT-FAMILY: Verdana
+}
+
+.easyTree{
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 4px; BEHAVIOR:  url(/include/easyTree.htc); PADDING-TOP: 4px
+}
+SPAN {
+	BORDER-RIGHT: #f1f1f1 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #f1f1f1 0px solid; DISPLAY: inline; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #f1f1f1 0px solid; PADDING-TOP:0px; BORDER-BOTTOM: #f1f1f1 0px solid; POSITION: relative; TOP: -2px; HEIGHT: 15px
+}
+SPAN.clsLabelContainer {	
+}
+SPAN.clsSpace {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 3px; MARGIN: 0px; OVERFLOW: hidden; WIDTH: 17px; CURSOR: hand; PADDING-TOP: 3px; FONT-FAMILY: verdana; POSITION: relative; TOP: 5px
+}
+SPAN.clsSpace SPAN {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; WIDTH: 11px; BORDER-BOTTOM: black 1px solid; POSITION: relative; HEIGHT: 11px; BACKGROUND-COLOR: #ffffff
+}
+SPAN.clsCollapse {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FONT-SIZE: 9px; PADDING-BOTTOM: 1px; OVERFLOW: hidden; LINE-HEIGHT: 6px; PADDING-TOP: 1px
+}
+SPAN.clsExpand {
+	PADDING-LEFT: 1px; FONT-SIZE: 13px; OVERFLOW: hidden; LINE-HEIGHT: 3px; PADDING-TOP: 3px
+}
+SPAN.clsLeaf {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 3px; FONT-SIZE: 9px; PADDING-BOTTOM: 0px; OVERFLOW: visible; LINE-HEIGHT: 3px; PADDING-TOP: 1px
+}
+A.clsLabel {
+	BORDER-RIGHT: #f1f1f1 0px solid; BORDER-TOP: #f1f1f1 0px solid; BORDER-LEFT: #f1f1f1 0px solid; CURSOR: default; COLOR: black; BORDER-BOTTOM: #f1f1f1 0px solid; TEXT-DECORATION: none
+}
+A.clsLabel:hover {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; BORDER-LEFT: #999999 1px solid; CURSOR: default; COLOR: blue; BORDER-BOTTOM: #999999 1px solid; BACKGROUND-COLOR: #d6d3ce; TEXT-DECORATION: none
+}
+A.clsSelected {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; BORDER-LEFT: #999999 1px solid; CURSOR: default; COLOR: black; BORDER-BOTTOM: #999999 1px solid; BACKGROUND-COLOR: #cccccc; TEXT-DECORATION: none
+}
+A.clsSelected:hover {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; BORDER-LEFT: #999999 1px solid; CURSOR: default; COLOR: blue; BORDER-BOTTOM: #999999 1px solid; BACKGROUND-COLOR: #e4e1dc; TEXT-DECORATION: none
+}
+A.clsUnavailable {
+	CURSOR: default; COLOR: #888888; TEXT-DECORATION: none
+}
+.hide {
+	DISPLAY: none
+}
+.shown {
+	DISPLAY: block; MARGIN-LEFT: 15px
+}
+.deeptree IMG {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; CURSOR: hand; PADDING-TOP: 0px; POSITION: relative; TOP: -2px
+}
+.treelabel {
+	FONT-SIZE: 70.5%; COLOR: white; FONT-FAMILY: verdana
+}

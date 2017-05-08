@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<validation-config lang="auto">
+	<form id="form1" show-error="alert" show-type="all">
+		<field name="username" display-name="用户名" onfail="">
+			<depend name="required" />
+			<depend name="commonChar" />
+		</field>
+		<field name="password" display-name="密码">
+			<depend name="required" />
+			<depend name="commonChar" />
+		</field>
+	</form>
+	<form id="form2" show-error="errorDiv" onfail="" show-type="first">
+		<field name="username" display-name="用户名" onfail="">
+			<depend name="required" />
+			<depend name="commonChar" />
+		</field>
+		<field name="password" display-name="密码">
+			<depend name="required" />
+			<depend name="commonChar" />
+		</field>
+		<field name="confirm" display-name="确认密码">
+			<depend name="equalsField" param0="password"/>
+		</field>
+		<field name="gender" display-name="性别">
+			<depend name="required" />
+		</field>
+		<field name="interest" display-name="兴趣">
+			<depend name="required" />
+		</field>
+		<field name="email" display-name="Email">
+			<depend name="email"/>
+		</field>
+		<field name="age" display-name="年龄">
+			<depend name="integerRange" param0="15" param1="60"/>
+		</field>
+		<field name="cname" display-name="中文姓名">
+			<depend name="chineseChar"/>
+		</field>
+	</form>
+</validation-config>

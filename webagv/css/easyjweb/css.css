@@ -1,0 +1,482 @@
+/****leftmenu****/
+.font_menu{
+font-size:12px;
+color:#000;
+padding-left:5px;
+text-align:center;
+font-weight: bold;
+}
+/***************admin***********/
+.admintable {
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	background-color: #fcfdfc;
+	border: 1px solid #c5def4;
+    border-right:0;
+    border-bottom:0;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 22px;
+	font-family: "����";
+}
+.input_employee {    
+	height:22px;
+	width:60;
+	vertical-align:middle;
+	line-height:22px; 
+	border:1px solid #A9BAC9;
+ 	font-size:12px; 
+	padding: 0em;
+	text-indent:0.5em; 
+	text-align:left; }
+
+.td_title1{
+  background-color:#EBF6F8;
+  line-height:22px;
+  }
+/*
+����ͨ�����֡�ҳ�汳�������ӵ���ʽ
+*/
+BODY
+{
+	SCROLLBAR-FACE-COLOR: #EBF2F5; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #F8FAFB; 
+	SCROLLBAR-SHADOW-COLOR: #E5EAED; 
+	SCROLLBAR-3DLIGHT-COLOR: #DFE7EB; 
+	SCROLLBAR-ARROW-COLOR: #476C7E; 
+	SCROLLBAR-TRACK-COLOR: #D6E0E8; 
+	SCROLLBAR-DARKSHADOW-COLOR: #608293;
+	
+	font-size : 12px;
+	font-weight : normal;
+	line-height: 14px;
+	font-style : normal;
+	text-decoration : none;
+	background-color:#ffffff;
+	background-attachment: fixed;
+	background-position:100% 100%;
+	background-repeat:no-repeat;
+  font:����,Arial, Helvetica, sans-serif;
+    margin:0px;
+	font-size:12px;
+	color: #666666;
+	text-decoration: none;
+	margin:0;
+}
+
+
+/*********************������ʽ��ʼ*********************/
+#errors{
+	clear : both;
+}
+#errors .title{
+	font-weight : bold;
+	width : 95%;
+	border : 1px solid #E6E6E6;
+	background-color : #FFFFAF;
+	text-align : left;
+	line-height : 28px;
+	font-size : 12px;
+	padding-left : 30px;
+}
+#errors #causedBy{
+	padding : 30px 30px 0 30px;
+	font-size : 12px;
+	word-break: break-all;
+	word-wrap:break-word;
+}
+#errors #details{
+	border : 1px solid #E6E6E6;
+	background-color : #FAFAFA;
+	padding : 0 30px 0 30px;
+	font-size : 12px;
+	word-wrap:break-word;
+	overflow : hidden;
+	/*word-break: break-all;*/
+	/*width : 88%;*/
+}
+/*********************������ʽ����*********************/
+
+/*********************��ҳ��ʽ��ʼ*********************/
+/**
+�������з�ҳ������ʾΪ������
+*/
+#pagination{
+	clear : both;
+	font-weight : bold;
+	padding-bottom : 10px;
+}
+/**
+�����ҳ���� ul �� li����ʽ
+*/
+#pagination ul li{
+	float : left;
+	align : left;
+	padding : 2px 4px 2px 4px;
+	border : 1px solid #E6E6E6;
+	cursor : pointer;
+	margin-left: 4px;
+}
+#pagination ul li span.info{
+	cursor : default;
+}
+#pagination ul li span{
+	cursor : pointer;
+}
+#pagination ul li span input{
+	cursor : text;
+	width : 15px;
+	height : 10px;
+	border-top-style : none;
+	border-right-style : none;
+	border-left-style : none;
+	border-bottom-style : 1px;
+}
+/**
+����disabled��ʽ
+*/
+#pagination li.disabled{
+	background-color: #fff;
+    color: #e6e6e6;
+    border: 1px solid #e6e6e6;
+    cursor: default;
+}
+/**
+���嵱ǰҳ��ʽ
+*/
+#pagination li.currentPage{
+	background-color : #D2EAF6;
+	cursor : default;
+}
+/**
+������꿿����ʽ
+*/
+#pagination li.over{
+	background-color : #D2EAF6;
+}
+/**
+��������뿪��ʽ
+*/
+#pagination li.out{
+	background-color : #fff;
+}
+/*********************��ҳ��ʽ����*********************/
+
+/*********************�ڲ�������ʽ��ʼ*********************/
+#internalError{
+	clear : both;
+	font-weight : bold;
+	width : 95%;
+	border : 1px solid #E6E6E6;
+	background-color : #FFFFAF;
+	text-align : left;
+	line-height : 28px;
+	font-size : 12px;
+	padding-left : 30px;
+}
+#internalErrorHowTo{
+	padding : 30px 30px 0 30px;
+	font-size : 12px;
+	word-break: break-all;
+	word-wrap:break-word;
+}
+#internalErrorDetail{
+	padding : 0 30px 0 30px;
+	font-size : 12px;
+	word-wrap:break-word;
+	overflow : hidden;
+	/*word-break: break-all;*/
+	/*width : 88%;*/
+}
+/*********************�ڲ�������ʽ����*********************/
+
+
+/*********************�ײ�ϸ����ʽ��ʼ*********************/
+.line{
+	border : 1px solid #E6E6E6;
+	height : 1px;
+	width : 95%;
+	clear : both;
+}
+/*********************�ײ�ϸ����ʽ����*********************/
+.admintable {
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	background-color: #fcfdfc;
+	border: 1px solid #c5def4;
+    border-right:0;
+    border-bottom:0;
+	padding: 1px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 22px;
+	font-family: "����";
+}
+.admintable td{
+      border:1px solid #c5def4;
+      border-left:0;
+      border-top:0;
+}
+.box1{ height:20px; line-height:22px; border:1px solid #A9BAC9;padding:0 3px; font-size:12px; }
+
+
+P  {
+	font-weight : normal;
+	font-style : normal;
+}
+
+a  {
+	font-size : 12px;
+	font-weight : normal;
+	font-style : normal;
+	text-decoration : none;
+    color: #000000
+}
+
+a:Visited  {
+	font-size : 12px;
+	font-weight : normal;
+	font-style : normal;
+	text-decoration : none;
+	color:#2E3340
+}
+
+a:Active  {
+	font-size : 12px;
+	font-weight : normal;
+	font-style : normal;;
+	text-decoration : none;
+	
+}
+
+a:Hover  {
+	font-weight : normal;
+	font-style : normal;
+    color:#525663;
+    text-decoration: underline;
+}
+
+td{
+	font-family: "����";
+	color:#000000;
+	font-size:12px;
+
+	word-break:break-all;
+}
+
+
+.bottomTableBorder{
+	width:100%;
+	height:100%;
+	margin:0px;
+	border:1px solid #C5DEF4;
+}
+.dataBoxDiv
+{
+	height:100%;
+	overflow:auto;
+	background-image:url(/images/easyjweb/bg_body.jpg);
+	background-attachment: fixed;
+	background-position:100% 100%;
+	background-repeat:no-repeat;
+}
+.mainFunctionTable{
+	border-collapse: collapse;
+	width:98%;
+	padding: 1px;
+	border-top: 1px solid #000099;
+	border-right: 1px solid #00CCCC;
+	border-bottom: 1px solid #00CCCC;
+	border-left: 1px solid #000066;
+
+
+}
+.tr_title_bg{	
+
+	background-color: #3399CC;
+	height:24px;
+}
+.toolTable{
+	background-color: #EBF6F8;
+	height:35px;
+	border-top: 1px inset #0066CC;
+	border-right: 1px inset #0099CC;
+	border-bottom: 1px inset #0099CC;
+	border-left: 1px inset #006699;
+
+}
+
+.TableTitleTxtCenter{	
+
+	FILTER:DropShadow(Color=#F2F2F2, OffX=1, OffY=1, Positive=1);
+	font-size:12px;
+	color:#545454;
+	font-weight: bold;
+}
+.TableTitleTxtLeft{	
+	FILTER:DropShadow(Color=#ffffff, OffX=1, OffY=1, Positive=1);
+	font-size:13px;
+	color:#333333;
+	font-weight: bold;
+	text-indent:1em;
+}
+
+.tr_one_bg {
+
+	background-color: #FFFFFF;
+	height:24px;
+}
+
+.td_one_bg {	
+	height:24px;
+	padding:4;
+}
+
+.tdLeft{	
+/*	background-image:url(/manage/images/table_title_bg_2.gif);*/
+	background-repeat:repeat-y;
+	background-position: 50% 0;
+	background-color: #EBF6F8;	
+}
+.tdRight{	
+	background-color: #FFFFFF;
+}
+
+
+.MouseOver {
+	height:24px;
+	background-color:#E5FFE5;
+}
+.MouseOut {	
+	height:24px;
+	background-color: #FFFFFF;
+}
+.MouseDown {
+	background-color: #CCCCCC;
+	border: 1px solid #0000FF;
+}
+.formLable{
+line-height:22px;
+    background-color: #ebf6f8;
+	FONT-SIZE: 12px; 
+	COLOR: #000000; 
+	FONT-FAMILY: ����;
+	border:1px solid #ebf6f8;
+    border-left:0;
+    border-top:0;
+	text-align:left;
+	text-indent:0.1em;
+     border:1px solid #c5def4;
+     border-left:0;
+     border-top:0;
+}
+.formText
+{
+    background-color: #ffffff;
+     border:1px solid #c5def4;
+	line-height:22px;
+    text-align:left;
+    text-indent:0.1em;
+	FONT-SIZE:12px; 
+	COLOR: #000000; 
+	FONT-FAMILY: ����;
+    border-left:0;
+    border-top:0;
+}
+FORM { MARGIN: 0px } 
+
+.picButton{	
+	background-image:url(/images/easyjweb/ico/table_form_bg_2.gif);
+	border: 1px solid #444444;
+	cursor:hand;
+}
+.textfield{
+	width:100%;
+	background-image:url(/images/easyjweb/ico/table_form_bg_3.gif);
+	border: 1px solid #999999;
+}
+.file{
+	width:100%;
+	background-image:url(/images/easyjweb/ico/table_form_bg_1.gif);
+	background-position: 0 0;
+	height:;
+	border: 1px solid #666666;
+}
+
+.colorButton{
+	background: #FFFFCC;
+	color: #0000CC;
+	vertical-align: middle;
+	border-top-width: 1px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 1px;
+	border-top-style: inset;
+	border-right-style: inset;
+	border-bottom-style: inset;
+	border-left-style: inset;
+	border-top-color: #006666;
+	border-right-color: #000066;
+	border-bottom-color: #000066;
+	border-left-color: #006666;
+	height: 25px;
+	text-align: center;
+	padding: 0px;
+
+}
+.smallInput
+{
+	border-bottom-color:#0000CC;
+	border-bottom-width:1px;
+	border-top-color:#000000;
+	border-top-width:1px;
+	border-left-color:#000000;
+	border-left-width:1px;
+	border-rigth-color:#ff6633;
+	border-right-width:1px;
+	FONT-SIZE: 10pt;
+	LINE-HEIGHT: normal;
+	border-top-style: inset;
+	border-right-style: inset;
+	border-bottom-style: inset;
+	border-left-style: inset;
+	border-right-color: #0000FF;
+	text-align: left;
+	vertical-align: middle;
+	color: #3366CC;
+	background-color: #ffffbb;
+ }
+input.buttonface
+{
+BACKGROUND: #ffcc00; 
+border:1 solid #ff6633;
+ COLOR: #ff0000; 
+ FONT-SIZE:12px;
+ FONT-STYLE: normal;
+ FONT-VARIANT: normal;
+ FONT-WEIGHT: normal;
+ HEIGHT: 18px;
+ LINE-HEIGHT: normal
+ }
+
+.view1 {
+	overflow: hidden;
+	cursor: default;
+}
+/************��ť��ʽ����***************/
+.btn3_mouseout {
+BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #2C59AA 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); BORDER-LEFT: #2C59AA 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2C59AA 1px solid
+}
+.btn3_mouseover {
+BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #2C59AA 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#D7E7FA); BORDER-LEFT: #2C59AA 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2C59AA 1px solid
+}
+.btn3_mousedown
+{
+BORDER-RIGHT: #FFE400 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #FFE400 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); BORDER-LEFT: #FFE400 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #FFE400 1px solid
+}
+.btn3_mouseup {
+BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #2C59AA 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); BORDER-LEFT: #2C59AA 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2C59AA 1px solid
+}
+/***********��ť��ʽ�������******************/

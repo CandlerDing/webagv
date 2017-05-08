@@ -1,0 +1,271 @@
+<CanvasDataModel>
+  <backgroundlayer>
+    <property name="Color" value="Color [A=255, R=30, G=30, B=30]" />
+  </backgroundlayer>
+  <gridlayer>
+    <property name="Spacing" value="{Width=1, Height=1}" />
+    <property name="MinSize" value="15" />
+    <property name="GridStyle" value="Lines" />
+    <property name="Color" value="Color [A=50, R=128, G=128, B=128]" />
+    <property name="Enabled" value="True" />
+  </gridlayer>
+  <layer RfidType="layer0">
+    <property name="Color" value="Color [White]" />
+    <property name="Width" value="0" />
+    <property name="Name" value="Hairline Layer" />
+    <property name="Enabled" value="True" />
+    <property name="Visible" value="True" />
+    <items>
+      <line>
+        <property name="P1" value="{X=-3, Y=3}" />
+        <property name="P2" value="{X=3, Y=3}" />
+        <property name="AGVGuid" value="7300195d-dfa7-4479-a2a4-2d362a730c97" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </line>
+      <line>
+        <property name="P1" value="{X=4, Y=2}" />
+        <property name="P2" value="{X=4, Y=-2}" />
+        <property name="AGVGuid" value="ad1d008e-9f70-462a-b84a-65978284c780" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </line>
+      <line>
+        <property name="P1" value="{X=3, Y=-3}" />
+        <property name="P2" value="{X=-3, Y=-3}" />
+        <property name="AGVGuid" value="5bb9d49f-1497-4ece-9362-e33ab598b25b" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </line>
+      <line>
+        <property name="P1" value="{X=-4, Y=-2}" />
+        <property name="P2" value="{X=-4, Y=2}" />
+        <property name="AGVGuid" value="c07c9fff-f623-4a12-a3d7-5d55fd6e8bc6" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </line>
+      <arc3p>
+        <property name="RadType" value="Quarter" />
+        <property name="P1" value="{X=3, Y=3}" />
+        <property name="P2" value="{X=3.70710677, Y=2.70710677}" />
+        <property name="P3" value="{X=4, Y=2}" />
+        <property name="Direction" value="kCW" />
+        <property name="AGVGuid" value="c0124e1d-50fa-4874-9cfa-77c42ee6c678" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </arc3p>
+      <arc3p>
+        <property name="RadType" value="Quarter" />
+        <property name="P1" value="{X=4, Y=-2}" />
+        <property name="P2" value="{X=3.70710677, Y=-2.70710677}" />
+        <property name="P3" value="{X=3, Y=-3}" />
+        <property name="Direction" value="kCW" />
+        <property name="AGVGuid" value="05ca459d-588b-4402-a79b-553f32ab18da" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </arc3p>
+      <arc3p>
+        <property name="RadType" value="Quarter" />
+        <property name="P1" value="{X=-3, Y=-3}" />
+        <property name="P2" value="{X=-3.70710677, Y=-2.70710677}" />
+        <property name="P3" value="{X=-4, Y=-2}" />
+        <property name="Direction" value="kCW" />
+        <property name="AGVGuid" value="dbf9edd6-7c35-40c8-bbb8-dd7c73a347d7" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </arc3p>
+      <arc3p>
+        <property name="RadType" value="Quarter" />
+        <property name="P1" value="{X=-4, Y=2}" />
+        <property name="P2" value="{X=-3.70710677, Y=2.70710677}" />
+        <property name="P3" value="{X=-3, Y=3}" />
+        <property name="Direction" value="kCW" />
+        <property name="AGVGuid" value="04afb319-f52c-44fb-b48b-dadf4b09559b" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </arc3p>
+      <point>
+        <property name="DrawType" value="Circle" />
+        <property name="AGVType" value="CheckPath" />
+        <property name="Size" value="0.03" />
+        <property name="Center" value="{X=-3, Y=3}" />
+        <property name="AGVGuid" value="cc95ed99-1d8d-48fe-aa3b-4ad0d92356d9" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="DrawType" value="Circle" />
+        <property name="AGVType" value="CheckPath" />
+        <property name="Size" value="0.03" />
+        <property name="Center" value="{X=-4, Y=2}" />
+        <property name="AGVGuid" value="a93aa0b0-6c0d-4986-b5ae-06a32837917c" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="DrawType" value="Circle" />
+        <property name="AGVType" value="CheckPath" />
+        <property name="Size" value="0.03" />
+        <property name="Center" value="{X=-4, Y=-2}" />
+        <property name="AGVGuid" value="779804cb-6473-42f1-9d68-492ebfa2c5c3" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="DrawType" value="Circle" />
+        <property name="AGVType" value="CheckPath" />
+        <property name="Size" value="0.03" />
+        <property name="Center" value="{X=-3, Y=-3}" />
+        <property name="AGVGuid" value="dc69a59a-3283-41ec-86eb-b5e4be29fa2f" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="DrawType" value="Circle" />
+        <property name="AGVType" value="CheckPath" />
+        <property name="Size" value="0.03" />
+        <property name="Center" value="{X=3, Y=-3}" />
+        <property name="AGVGuid" value="963fd358-1045-4e08-98a2-b821b1c4176c" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="DrawType" value="Circle" />
+        <property name="AGVType" value="CheckPath" />
+        <property name="Size" value="0.03" />
+        <property name="Center" value="{X=4, Y=-2}" />
+        <property name="AGVGuid" value="ac81a132-4005-4be7-927b-0adfed130520" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="DrawType" value="Circle" />
+        <property name="AGVType" value="CheckPath" />
+        <property name="Size" value="0.03" />
+        <property name="Center" value="{X=4, Y=2}" />
+        <property name="AGVGuid" value="cf3ce7d8-2e92-4e20-a5d5-b23917315c0d" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="DrawType" value="Circle" />
+        <property name="AGVType" value="CheckPath" />
+        <property name="Size" value="0.03" />
+        <property name="Center" value="{X=3, Y=3}" />
+        <property name="AGVGuid" value="c7fa05bc-7b01-43be-b5e2-4c4ffa817d02" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="DrawType" value="Circle" />
+        <property name="AGVType" value="text" />
+        <property name="Size" value="0.03" />
+        <property name="Center" value="{X=-3.00318646, Y=3.46978188}" />
+        <property name="AGVGuid" value="9340070e-4497-414e-9442-1e4dc2dd94a5" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="DrawType" value="Circle" />
+        <property name="AGVType" value="text" />
+        <property name="Size" value="0.03" />
+        <property name="Center" value="{X=-4.33922815, Y=1.98249054}" />
+        <property name="AGVGuid" value="2bb01143-60f6-40cf-b61d-23d07540676e" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+    </items>
+    <agvitems>
+      <Path Name="Path" ID="7300195d-dfa7-4479-a2a4-2d362a730c97" StartPathNodeId="cc95ed99-1d8d-48fe-aa3b-4ad0d92356d9" EndPathNodeId="c7fa05bc-7b01-43be-b5e2-4c4ffa817d02" Weigh="1.000" Length="4.000" TrackType="0" Direction="1" PathType="0" ForwardStartID="02 30 30 30 30 30 30 30 30 30 39 0D 0A 03" ForwardEndID="02 30 30 30 30 30 30 30 30 30 32 0D 0A 03" BackwardEndID="" BackwardStartID="" AreaCode="S0_0">
+        <Points>-3.000 3.000 3.000 3.000 </Points>
+      </Path>
+      <Path Name="Path" ID="ad1d008e-9f70-462a-b84a-65978284c780" StartPathNodeId="cf3ce7d8-2e92-4e20-a5d5-b23917315c0d" EndPathNodeId="ac81a132-4005-4be7-927b-0adfed130520" Weigh="1.000" Length="4.000" TrackType="0" Direction="1" PathType="0" ForwardStartID="02 30 30 30 30 30 30 30 30 30 33 0D 0A 03" ForwardEndID="02 30 30 30 30 30 30 30 30 30 34 0D 0A 03" BackwardEndID="" BackwardStartID="" AreaCode="S0_2">
+        <Points>4.000 2.000 4.000 -2.000 </Points>
+      </Path>
+      <Path Name="Path" ID="5bb9d49f-1497-4ece-9362-e33ab598b25b" StartPathNodeId="963fd358-1045-4e08-98a2-b821b1c4176c" EndPathNodeId="dc69a59a-3283-41ec-86eb-b5e4be29fa2f" Weigh="1.000" Length="4.000" TrackType="0" Direction="1" PathType="0" ForwardStartID="02 30 30 30 30 30 30 30 30 30 35 0D 0A 03" ForwardEndID="02 30 30 30 30 30 30 30 30 30 41 0D 0A 03" BackwardEndID="" BackwardStartID="" AreaCode="S0_4">
+        <Points>3.000 -3.000 -3.000 -3.000 </Points>
+      </Path>
+      <Path Name="Path" ID="c07c9fff-f623-4a12-a3d7-5d55fd6e8bc6" StartPathNodeId="779804cb-6473-42f1-9d68-492ebfa2c5c3" EndPathNodeId="a93aa0b0-6c0d-4986-b5ae-06a32837917c" Weigh="1.000" Length="4.000" TrackType="0" Direction="1" PathType="0" ForwardStartID="02 30 30 30 30 30 30 30 30 30 42 0D 0A 03" ForwardEndID="02 30 30 30 30 30 30 30 30 30 38 0D 0A 03" BackwardEndID="" BackwardStartID="" AreaCode="S0_6">
+        <Points>-4.000 -2.000 -4.000 2.000 </Points>
+      </Path>
+      <Path Name="Path" ID="c0124e1d-50fa-4874-9cfa-77c42ee6c678" StartPathNodeId="c7fa05bc-7b01-43be-b5e2-4c4ffa817d02" EndPathNodeId="cf3ce7d8-2e92-4e20-a5d5-b23917315c0d" Weigh="1.000" Length="1.000" TrackType="1" Direction="1" PathType="0" ForwardStartID="02 30 30 30 30 30 30 30 30 30 32 0D 0A 03" ForwardEndID="02 30 30 30 30 30 30 30 30 30 33 0D 0A 03" BackwardEndID="" BackwardStartID="" AreaCode="S0_1">
+        <Points>3.000 3.000 3.707 2.707 4.000 2.000 </Points>
+      </Path>
+      <Path Name="Path" ID="05ca459d-588b-4402-a79b-553f32ab18da" StartPathNodeId="ac81a132-4005-4be7-927b-0adfed130520" EndPathNodeId="963fd358-1045-4e08-98a2-b821b1c4176c" Weigh="1.000" Length="1.000" TrackType="1" Direction="1" PathType="0" ForwardStartID="02 30 30 30 30 30 30 30 30 30 34 0D 0A 03" ForwardEndID="02 30 30 30 30 30 30 30 30 30 35 0D 0A 03" BackwardEndID="" BackwardStartID="" AreaCode="S0_3">
+        <Points>4.000 -2.000 3.707 -2.707 3.000 -3.000 </Points>
+      </Path>
+      <Path Name="Path" ID="dbf9edd6-7c35-40c8-bbb8-dd7c73a347d7" StartPathNodeId="dc69a59a-3283-41ec-86eb-b5e4be29fa2f" EndPathNodeId="779804cb-6473-42f1-9d68-492ebfa2c5c3" Weigh="1.000" Length="1.000" TrackType="1" Direction="1" PathType="0" ForwardStartID="02 30 30 30 30 30 30 30 30 30 41 0D 0A 03" ForwardEndID="02 30 30 30 30 30 30 30 30 30 42 0D 0A 03" BackwardEndID="" BackwardStartID="" AreaCode="S0_5">
+        <Points>-3.000 -3.000 -3.707 -2.707 -4.000 -2.000 </Points>
+      </Path>
+      <Path Name="Path" ID="04afb319-f52c-44fb-b48b-dadf4b09559b" StartPathNodeId="a93aa0b0-6c0d-4986-b5ae-06a32837917c" EndPathNodeId="cc95ed99-1d8d-48fe-aa3b-4ad0d92356d9" Weigh="1.000" Length="1.000" TrackType="1" Direction="1" PathType="0" ForwardStartID="02 30 30 30 30 30 30 30 30 30 38 0D 0A 03" ForwardEndID="02 30 30 30 30 30 30 30 30 30 39 0D 0A 03" BackwardEndID="" BackwardStartID="" AreaCode="S0_7">
+        <Points>-4.000 2.000 -3.707 2.707 -3.000 3.000 </Points>
+      </Path>
+      <PathNode Name="" ID="cc95ed99-1d8d-48fe-aa3b-4ad0d92356d9" PathNodeType="0" ProtoID="0" Position="-3.000 3.000" />
+      <PathNode Name="" ID="a93aa0b0-6c0d-4986-b5ae-06a32837917c" PathNodeType="0" ProtoID="0" Position="-4.000 2.000" />
+      <PathNode Name="" ID="779804cb-6473-42f1-9d68-492ebfa2c5c3" PathNodeType="0" ProtoID="0" Position="-4.000 -2.000" />
+      <PathNode Name="" ID="dc69a59a-3283-41ec-86eb-b5e4be29fa2f" PathNodeType="0" ProtoID="0" Position="-3.000 -3.000" />
+      <PathNode Name="" ID="963fd358-1045-4e08-98a2-b821b1c4176c" PathNodeType="0" ProtoID="0" Position="3.000 -3.000" />
+      <PathNode Name="" ID="ac81a132-4005-4be7-927b-0adfed130520" PathNodeType="0" ProtoID="0" Position="4.000 -2.000" />
+      <PathNode Name="" ID="cf3ce7d8-2e92-4e20-a5d5-b23917315c0d" PathNodeType="0" ProtoID="0" Position="4.000 2.000" />
+      <PathNode Name="" ID="c7fa05bc-7b01-43be-b5e2-4c4ffa817d02" PathNodeType="0" ProtoID="0" Position="3.000 3.000" />
+      <AGVText Name="start" ID="9340070e-4497-414e-9442-1e4dc2dd94a5" Position="-3.003 3.470" Angle="0.000" FontSize="12.000" />
+      <AGVText Name="end" ID="2bb01143-60f6-40cf-b61d-23d07540676e" Position="-4.339 1.982" Angle="0.000" FontSize="12.000" />
+    </agvitems>
+  </layer>
+  <layer RfidType="layer1">
+    <property name="Color" value="Color [Red]" />
+    <property name="Width" value="0.005" />
+    <property name="Name" value="0.005 Layer" />
+    <property name="Enabled" value="True" />
+    <property name="Visible" value="True" />
+    <items />
+    <agvitems />
+  </layer>
+  <layer RfidType="layer2">
+    <property name="Color" value="Color [Green]" />
+    <property name="Width" value="0.025" />
+    <property name="Name" value="0.025 Layer" />
+    <property name="Enabled" value="True" />
+    <property name="Visible" value="True" />
+    <items />
+    <agvitems />
+  </layer>
+  <property name="CenterPoint" value="{X=1.46026504, Y=-1.3900423}" />
+  <property name="Zoom" value="0.62092131" />
+</CanvasDataModel>

@@ -1,0 +1,501 @@
+<CanvasDataModel>
+  <backgroundlayer>
+    <property name="Color" value="Color [A=255, R=91, G=91, B=91]" />
+  </backgroundlayer>
+  <gridlayer>
+    <property name="Spacing" value="{Width=1, Height=1}" />
+    <property name="MinSize" value="15" />
+    <property name="GridStyle" value="Lines" />
+    <property name="Color" value="Color [A=50, R=244, G=244, B=244]" />
+    <property name="Enabled" value="True" />
+  </gridlayer>
+  <layer Type="layer0">
+    <property name="Color" value="Color [White]" />
+    <property name="Width" value="0" />
+    <property name="Name" value="Hairline Layer" />
+    <property name="Enabled" value="True" />
+    <property name="Visible" value="True" />
+    <items>
+      <arc3p>
+        <property name="P1" value="{X=0, Y=2}" />
+        <property name="P2" value="{X=-1.69895136, Y=1.16703415}" />
+        <property name="P3" value="{X=-2, Y=0}" />
+        <property name="Direction" value="kCCW" />
+        <property name="AGVGuid" value="5ba7c60f-6bf8-4b6c-82b6-c59541b37c14" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </arc3p>
+      <arc3p>
+        <property name="P1" value="{X=-2, Y=-3}" />
+        <property name="P2" value="{X=-0.8666867, Y=-4.82121086}" />
+        <property name="P3" value="{X=0, Y=-5}" />
+        <property name="Direction" value="kCCW" />
+        <property name="AGVGuid" value="5305cf2b-ac52-4749-9bb2-a22542732c16" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </arc3p>
+      <line>
+        <property name="P1" value="{X=-2, Y=0}" />
+        <property name="P2" value="{X=-2, Y=-3}" />
+        <property name="AGVGuid" value="de259fe1-2aef-4fb7-89fb-a34ef2f83d69" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </line>
+      <line>
+        <property name="P1" value="{X=0, Y=2}" />
+        <property name="P2" value="{X=11, Y=2}" />
+        <property name="AGVGuid" value="96105d59-9f04-4b85-a143-b8d2e02d2c22" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </line>
+      <line>
+        <property name="P1" value="{X=0, Y=-5}" />
+        <property name="P2" value="{X=11, Y=-5}" />
+        <property name="AGVGuid" value="3e92674d-aedd-4b21-a557-65dbc228f783" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </line>
+      <line>
+        <property name="P1" value="{X=13, Y=0}" />
+        <property name="P2" value="{X=13, Y=-3}" />
+        <property name="AGVGuid" value="ad777b0e-817c-4cc1-8f4b-b61755defba1" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </line>
+      <arc3p>
+        <property name="P1" value="{X=11, Y=-5}" />
+        <property name="P2" value="{X=12.51367092, Y=-4.43805885}" />
+        <property name="P3" value="{X=13, Y=-3}" />
+        <property name="Direction" value="kCCW" />
+        <property name="AGVGuid" value="b8257cf2-3799-4776-8c80-df0c9831869b" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </arc3p>
+      <arc3p>
+        <property name="P1" value="{X=11, Y=2}" />
+        <property name="P2" value="{X=12.71463299, Y=1.21119118}" />
+        <property name="P3" value="{X=13, Y=0}" />
+        <property name="Direction" value="kCW" />
+        <property name="AGVGuid" value="00f3fd3e-fb90-42d5-9eae-07ca131d793f" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </arc3p>
+      <line>
+        <property name="P1" value="{X=16, Y=0}" />
+        <property name="P2" value="{X=16, Y=-3}" />
+        <property name="AGVGuid" value="5e7f9bab-3345-4cf8-9b60-597cd1eecd27" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </line>
+      <line>
+        <property name="P1" value="{X=19, Y=0}" />
+        <property name="P2" value="{X=19, Y=-3}" />
+        <property name="AGVGuid" value="645d5b83-12e9-4e58-a1ad-93e0364433f6" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </line>
+      <arc3p>
+        <property name="P1" value="{X=14, Y=2}" />
+        <property name="P2" value="{X=15.47212029, Y=1.37824059}" />
+        <property name="P3" value="{X=16, Y=0}" />
+        <property name="Direction" value="kCW" />
+        <property name="AGVGuid" value="d8b52a69-4f86-46d2-89f4-711fc09cdd32" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </arc3p>
+      <arc3p>
+        <property name="P1" value="{X=17, Y=2}" />
+        <property name="P2" value="{X=18.55352974, Y=1.33358383}" />
+        <property name="P3" value="{X=19, Y=0}" />
+        <property name="Direction" value="kCW" />
+        <property name="AGVGuid" value="2de39124-d984-4a80-a462-b88662cd3bb0" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </arc3p>
+      <arc3p>
+        <property name="P1" value="{X=14, Y=-5}" />
+        <property name="P2" value="{X=15.40513325, Y=-4.42731285}" />
+        <property name="P3" value="{X=16, Y=-3}" />
+        <property name="Direction" value="kCCW" />
+        <property name="AGVGuid" value="6f953f55-0c9d-4973-b274-81c57d271f6e" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </arc3p>
+      <arc3p>
+        <property name="P1" value="{X=17, Y=-5}" />
+        <property name="P2" value="{X=18.39722633, Y=-4.44964027}" />
+        <property name="P3" value="{X=19, Y=-3}" />
+        <property name="Direction" value="kCCW" />
+        <property name="AGVGuid" value="2ce966b4-2d75-4880-9593-ab1668662feb" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </arc3p>
+      <line>
+        <property name="P1" value="{X=11, Y=2}" />
+        <property name="P2" value="{X=14, Y=2}" />
+        <property name="AGVGuid" value="71c8b62b-2096-461e-a0ab-e52876f171d9" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </line>
+      <line>
+        <property name="P1" value="{X=14, Y=2}" />
+        <property name="P2" value="{X=17, Y=2}" />
+        <property name="AGVGuid" value="8ffb2114-e187-428c-8f2c-f003f378cddb" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </line>
+      <line>
+        <property name="P1" value="{X=11, Y=-5}" />
+        <property name="P2" value="{X=14, Y=-5}" />
+        <property name="AGVGuid" value="42ab986a-26d7-4e8f-8bd5-5936e07b628f" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </line>
+      <line>
+        <property name="P1" value="{X=14, Y=-5}" />
+        <property name="P2" value="{X=17, Y=-5}" />
+        <property name="AGVGuid" value="4b24f371-e1f1-472c-aed8-fa719c4aff97" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </line>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=0, Y=2}" />
+        <property name="AGVGuid" value="975ef9ee-488c-4ac7-969e-a7e0c2384347" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=-2, Y=0}" />
+        <property name="AGVGuid" value="697ef5cc-6732-46ae-89da-d126575f83e0" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=-2, Y=-3}" />
+        <property name="AGVGuid" value="7406ceee-53cf-402c-96f4-f4783ca3daa0" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=0, Y=-5}" />
+        <property name="AGVGuid" value="09cacadc-1e4b-4af0-aeef-f307ecec641c" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=11, Y=2}" />
+        <property name="AGVGuid" value="48c2fb61-fdff-4769-a6b9-e86ca2de0f07" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=11, Y=-5}" />
+        <property name="AGVGuid" value="8a8c4cd3-cda2-443e-86d3-8000f1754ee0" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=14, Y=2}" />
+        <property name="AGVGuid" value="4e619f4f-8c30-4754-a5a4-b576a403c3d8" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=14, Y=-5}" />
+        <property name="AGVGuid" value="867276c0-6bdc-4b87-98b6-770fe27ca2c9" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=17, Y=2}" />
+        <property name="AGVGuid" value="af4b951f-117a-44a6-8b28-2a75c44aecda" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=19, Y=0}" />
+        <property name="AGVGuid" value="ba55c9d4-1081-4f06-a1b4-6b171e3b23d0" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=19, Y=-3}" />
+        <property name="AGVGuid" value="e8a9f898-f0eb-4d11-875a-3cbe04bc4415" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=17, Y=-5}" />
+        <property name="AGVGuid" value="d941ded5-fabb-490b-8586-68d696f9ab3f" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=16, Y=0}" />
+        <property name="AGVGuid" value="11d22aa1-ab26-45fd-b173-cbd94357a18f" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=16, Y=-3}" />
+        <property name="AGVGuid" value="4748182b-a117-4f80-a610-e9f78766f2d9" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=13, Y=-3}" />
+        <property name="AGVGuid" value="82052c3e-b6ac-43d0-806a-a1a3e0c0b991" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=13, Y=0}" />
+        <property name="AGVGuid" value="913ea189-5e80-401d-ae60-289fcb5662b0" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <line>
+        <property name="P1" value="{X=11, Y=2}" />
+        <property name="P2" value="{X=11, Y=4}" />
+        <property name="AGVGuid" value="ecbf92fe-e911-456b-8adc-9de545eb7a30" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </line>
+      <line>
+        <property name="P1" value="{X=14, Y=2}" />
+        <property name="P2" value="{X=14, Y=4}" />
+        <property name="AGVGuid" value="fa607ae1-3cfb-4906-93ec-1746ddb37ae7" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </line>
+      <line>
+        <property name="P1" value="{X=17, Y=2}" />
+        <property name="P2" value="{X=17, Y=4}" />
+        <property name="AGVGuid" value="8dcdf642-5c4c-4416-8454-6f6c8fe8ce3b" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </line>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=11, Y=4}" />
+        <property name="AGVGuid" value="6f9d56d8-ea5b-4865-a2be-2c5d499c573a" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=14, Y=4}" />
+        <property name="AGVGuid" value="1562d757-f45e-47dd-a370-c16ddc09afe7" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+      <point>
+        <property name="Size" value="0.05" />
+        <property name="Center" value="{X=17, Y=4}" />
+        <property name="AGVGuid" value="20577d47-a37d-4dd7-8698-ba416d7da3dd" />
+        <property name="UseLayerWidth" value="True" />
+        <property name="UseLayerColor" value="True" />
+        <property name="Width" value="0" />
+        <property name="Color" value="Color [White]" />
+      </point>
+    </items>
+    <agvitems>
+      <Path Name="" ID="5ba7c60f-6bf8-4b6c-82b6-c59541b37c14" RFID1ID="975ef9ee-488c-4ac7-969e-a7e0c2384347" RFID2ID="697ef5cc-6732-46ae-89da-d126575f83e0" Weigh="0.000" Length="0.000">
+        <Points>-1.098 1.742 -1.655 -0.943 1.068 -1.271 1.163 1.470 -1.577 1.332 -1.206 -1.385 1.470 -0.786 0.646 1.830 -1.891 0.786 -0.636 -1.652 1.688 -0.195 0.038 1.997 -2.005 0.167 -0.009 -1.714 1.696 0.435 -0.590 1.951 -1.907 -0.455 0.603 -1.563 1.493 1.032 -1.699 1.167 </Points>
+      </Path>
+      <Path Name="" ID="5305cf2b-ac52-4749-9bb2-a22542732c16" RFID1ID="7406ceee-53cf-402c-96f4-f4783ca3daa0" RFID2ID="09cacadc-1e4b-4af0-aeef-f307ecec641c" Weigh="0.000" Length="0.000">
+        <Points>1.823 -2.500 -0.732 -1.221 -1.823 -3.862 0.889 -4.760 1.590 -1.991 -1.224 -1.491 -1.519 -4.333 1.336 -4.423 1.221 -1.568 -1.618 -1.889 -1.094 -4.698 1.670 -3.973 0.748 -1.268 -1.883 -2.383 -0.582 -4.926 1.861 -3.446 0.208 -1.115 -1.997 -2.931 -0.867 -4.821 </Points>
+      </Path>
+      <Path Name="" ID="de259fe1-2aef-4fb7-89fb-a34ef2f83d69" RFID1ID="697ef5cc-6732-46ae-89da-d126575f83e0" RFID2ID="7406ceee-53cf-402c-96f4-f4783ca3daa0" Weigh="0.000" Length="0.000">
+        <Points>-2.000 0.000 -2.000 -3.000 </Points>
+      </Path>
+      <Path Name="" ID="96105d59-9f04-4b85-a143-b8d2e02d2c22" RFID1ID="975ef9ee-488c-4ac7-969e-a7e0c2384347" RFID2ID="48c2fb61-fdff-4769-a6b9-e86ca2de0f07" Weigh="0.000" Length="0.000">
+        <Points>0.000 2.000 11.000 2.000 </Points>
+      </Path>
+      <Path Name="" ID="3e92674d-aedd-4b21-a557-65dbc228f783" RFID1ID="09cacadc-1e4b-4af0-aeef-f307ecec641c" RFID2ID="8a8c4cd3-cda2-443e-86d3-8000f1754ee0" Weigh="0.000" Length="0.000">
+        <Points>0.000 -5.000 11.000 -5.000 </Points>
+      </Path>
+      <Path Name="" ID="ad777b0e-817c-4cc1-8f4b-b61755defba1" RFID1ID="913ea189-5e80-401d-ae60-289fcb5662b0" RFID2ID="82052c3e-b6ac-43d0-806a-a1a3e0c0b991" Weigh="0.000" Length="0.000">
+        <Points>13.000 0.000 13.000 -3.000 </Points>
+      </Path>
+      <Path Name="" ID="b8257cf2-3799-4776-8c80-df0c9831869b" RFID1ID="8a8c4cd3-cda2-443e-86d3-8000f1754ee0" RFID2ID="82052c3e-b6ac-43d0-806a-a1a3e0c0b991" Weigh="0.000" Length="0.000">
+        <Points>9.885 -1.917 9.986 -4.556 12.615 -4.321 12.247 -1.706 9.655 -2.208 10.287 -4.771 12.815 -4.009 11.925 -1.523 9.488 -2.538 10.626 -4.921 12.947 -3.663 11.573 -1.409 9.391 -2.896 10.988 -4.999 13.007 -3.297 11.205 -1.368 9.369 -3.266 11.358 -5.002 12.991 -2.927 10.836 -1.402 12.514 -4.438 </Points>
+      </Path>
+      <Path Name="" ID="00f3fd3e-fb90-42d5-9eae-07ca131d793f" RFID1ID="48c2fb61-fdff-4769-a6b9-e86ca2de0f07" RFID2ID="913ea189-5e80-401d-ae60-289fcb5662b0" Weigh="0.000" Length="0.000">
+        <Points>12.769 -0.684 10.187 -1.247 9.847 1.374 12.487 1.489 12.376 -1.152 9.755 -0.815 10.314 1.768 12.840 0.990 11.848 -1.460 9.492 -0.263 10.887 1.982 13.004 0.401 11.248 -1.574 9.430 0.345 11.498 1.992 12.962 -0.209 10.644 -1.479 9.577 0.939 12.077 1.795 12.716 -0.769 12.715 1.211 </Points>
+      </Path>
+      <Path Name="" ID="5e7f9bab-3345-4cf8-9b60-597cd1eecd27" RFID1ID="11d22aa1-ab26-45fd-b173-cbd94357a18f" RFID2ID="4748182b-a117-4f80-a610-e9f78766f2d9" Weigh="0.000" Length="0.000">
+        <Points>16.000 0.000 16.000 -3.000 </Points>
+      </Path>
+      <Path Name="" ID="645d5b83-12e9-4e58-a1ad-93e0364433f6" RFID1ID="ba55c9d4-1081-4f06-a1b4-6b171e3b23d0" RFID2ID="e8a9f898-f0eb-4d11-875a-3cbe04bc4415" Weigh="0.000" Length="0.000">
+        <Points>19.000 0.000 19.000 -3.000 </Points>
+      </Path>
+      <Path Name="" ID="d8b52a69-4f86-46d2-89f4-711fc09cdd32" RFID1ID="4e619f4f-8c30-4754-a5a4-b576a403c3d8" RFID2ID="11d22aa1-ab26-45fd-b173-cbd94357a18f" Weigh="0.000" Length="0.000">
+        <Points>12.589 -1.281 12.811 1.568 15.640 1.172 15.072 -1.628 12.312 -0.889 13.218 1.820 15.867 0.749 14.636 -1.829 12.138 -0.442 13.675 1.966 15.985 0.285 14.165 -1.918 12.078 0.033 14.153 1.997 15.986 -0.195 13.686 -1.890 12.135 0.509 14.625 1.911 15.472 1.378 </Points>
+      </Path>
+      <Path Name="" ID="2de39124-d984-4a80-a462-b88662cd3bb0" RFID1ID="af4b951f-117a-44a6-8b28-2a75c44aecda" RFID2ID="ba55c9d4-1081-4f06-a1b4-6b171e3b23d0" Weigh="0.000" Length="0.000">
+        <Points>16.814 -1.764 15.252 0.489 17.575 1.945 18.921 -0.444 16.472 -1.677 15.355 0.827 17.907 1.826 18.787 -0.770 16.152 -1.528 15.518 1.139 18.212 1.648 18.595 -1.066 15.866 -1.322 15.737 1.416 18.479 1.417 18.352 -1.322 15.622 -1.067 16.003 1.648 18.697 1.140 18.554 1.334 </Points>
+      </Path>
+      <Path Name="" ID="6f953f55-0c9d-4973-b274-81c57d271f6e" RFID1ID="867276c0-6bdc-4b87-98b6-770fe27ca2c9" RFID2ID="4748182b-a117-4f80-a610-e9f78766f2d9" Weigh="0.000" Length="0.000">
+        <Points>13.027 -4.742 15.769 -3.938 14.889 -1.220 12.196 -2.175 13.226 -4.841 15.862 -3.737 14.685 -1.133 12.115 -2.382 13.435 -4.916 15.931 -3.526 14.472 -1.069 12.057 -2.596 13.651 -4.968 15.977 -3.309 14.254 -1.029 12.023 -2.815 13.871 -4.995 15.998 -3.088 15.405 -4.427 </Points>
+      </Path>
+      <Path Name="" ID="2ce966b4-2d75-4880-9593-ab1668662feb" RFID1ID="d941ded5-fabb-490b-8586-68d696f9ab3f" RFID2ID="e8a9f898-f0eb-4d11-875a-3cbe04bc4415" Weigh="0.000" Length="0.000">
+        <Points>15.699 -4.480 18.549 -4.285 18.203 -1.449 15.389 -1.947 16.036 -4.730 18.781 -3.935 17.841 -1.237 15.196 -2.320 16.419 -4.902 18.932 -3.544 17.442 -1.106 15.087 -2.725 16.829 -4.990 18.998 -3.130 17.025 -1.063 15.066 -3.144 17.249 -4.988 18.974 -2.711 18.397 -4.450 </Points>
+      </Path>
+      <Path Name="" ID="71c8b62b-2096-461e-a0ab-e52876f171d9" RFID1ID="48c2fb61-fdff-4769-a6b9-e86ca2de0f07" RFID2ID="4e619f4f-8c30-4754-a5a4-b576a403c3d8" Weigh="0.000" Length="0.000">
+        <Points>11.000 2.000 14.000 2.000 </Points>
+      </Path>
+      <Path Name="" ID="8ffb2114-e187-428c-8f2c-f003f378cddb" RFID1ID="4e619f4f-8c30-4754-a5a4-b576a403c3d8" RFID2ID="af4b951f-117a-44a6-8b28-2a75c44aecda" Weigh="0.000" Length="0.000">
+        <Points>14.000 2.000 17.000 2.000 </Points>
+      </Path>
+      <Path Name="" ID="42ab986a-26d7-4e8f-8bd5-5936e07b628f" RFID1ID="8a8c4cd3-cda2-443e-86d3-8000f1754ee0" RFID2ID="867276c0-6bdc-4b87-98b6-770fe27ca2c9" Weigh="0.000" Length="0.000">
+        <Points>11.000 -5.000 14.000 -5.000 </Points>
+      </Path>
+      <Path Name="" ID="4b24f371-e1f1-472c-aed8-fa719c4aff97" RFID1ID="867276c0-6bdc-4b87-98b6-770fe27ca2c9" RFID2ID="d941ded5-fabb-490b-8586-68d696f9ab3f" Weigh="0.000" Length="0.000">
+        <Points>14.000 -5.000 17.000 -5.000 </Points>
+      </Path>
+      <RFID Name="" ID="975ef9ee-488c-4ac7-969e-a7e0c2384347" Position="0.000 2.000" />
+      <RFID Name="" ID="697ef5cc-6732-46ae-89da-d126575f83e0" Position="-2.000 0.000" />
+      <RFID Name="" ID="7406ceee-53cf-402c-96f4-f4783ca3daa0" Position="-2.000 -3.000" />
+      <RFID Name="" ID="09cacadc-1e4b-4af0-aeef-f307ecec641c" Position="0.000 -5.000" />
+      <RFID Name="" ID="48c2fb61-fdff-4769-a6b9-e86ca2de0f07" Position="11.000 2.000" />
+      <RFID Name="" ID="8a8c4cd3-cda2-443e-86d3-8000f1754ee0" Position="11.000 -5.000" />
+      <RFID Name="" ID="4e619f4f-8c30-4754-a5a4-b576a403c3d8" Position="14.000 2.000" />
+      <RFID Name="" ID="867276c0-6bdc-4b87-98b6-770fe27ca2c9" Position="14.000 -5.000" />
+      <RFID Name="" ID="af4b951f-117a-44a6-8b28-2a75c44aecda" Position="17.000 2.000" />
+      <RFID Name="" ID="ba55c9d4-1081-4f06-a1b4-6b171e3b23d0" Position="19.000 0.000" />
+      <RFID Name="" ID="e8a9f898-f0eb-4d11-875a-3cbe04bc4415" Position="19.000 -3.000" />
+      <RFID Name="" ID="d941ded5-fabb-490b-8586-68d696f9ab3f" Position="17.000 -5.000" />
+      <RFID Name="" ID="11d22aa1-ab26-45fd-b173-cbd94357a18f" Position="16.000 0.000" />
+      <RFID Name="" ID="4748182b-a117-4f80-a610-e9f78766f2d9" Position="16.000 -3.000" />
+      <RFID Name="" ID="82052c3e-b6ac-43d0-806a-a1a3e0c0b991" Position="13.000 -3.000" />
+      <RFID Name="" ID="913ea189-5e80-401d-ae60-289fcb5662b0" Position="13.000 0.000" />
+      <Path Name="" ID="ecbf92fe-e911-456b-8adc-9de545eb7a30" RFID1ID="48c2fb61-fdff-4769-a6b9-e86ca2de0f07" RFID2ID="6f9d56d8-ea5b-4865-a2be-2c5d499c573a" Weigh="0.000" Length="0.000">
+        <Points>11.000 2.000 11.000 4.000 </Points>
+      </Path>
+      <Path Name="" ID="fa607ae1-3cfb-4906-93ec-1746ddb37ae7" RFID1ID="4e619f4f-8c30-4754-a5a4-b576a403c3d8" RFID2ID="1562d757-f45e-47dd-a370-c16ddc09afe7" Weigh="0.000" Length="0.000">
+        <Points>14.000 2.000 14.000 4.000 </Points>
+      </Path>
+      <Path Name="" ID="8dcdf642-5c4c-4416-8454-6f6c8fe8ce3b" RFID1ID="af4b951f-117a-44a6-8b28-2a75c44aecda" RFID2ID="20577d47-a37d-4dd7-8698-ba416d7da3dd" Weigh="0.000" Length="0.000">
+        <Points>17.000 2.000 17.000 4.000 </Points>
+      </Path>
+      <RFID Name="" ID="6f9d56d8-ea5b-4865-a2be-2c5d499c573a" Position="11.000 4.000" />
+      <RFID Name="" ID="1562d757-f45e-47dd-a370-c16ddc09afe7" Position="14.000 4.000" />
+      <RFID Name="" ID="20577d47-a37d-4dd7-8698-ba416d7da3dd" Position="17.000 4.000" />
+    </agvitems>
+  </layer>
+  <layer Type="layer1">
+    <property name="Color" value="Color [Red]" />
+    <property name="Width" value="0.005" />
+    <property name="Name" value="0.005 Layer" />
+    <property name="Enabled" value="True" />
+    <property name="Visible" value="True" />
+    <items />
+    <agvitems />
+  </layer>
+  <layer Type="layer2">
+    <property name="Color" value="Color [Green]" />
+    <property name="Width" value="0.025" />
+    <property name="Name" value="0.025 Layer" />
+    <property name="Enabled" value="True" />
+    <property name="Visible" value="True" />
+    <items />
+    <agvitems />
+  </layer>
+  <property name="CenterPoint" value="{X=8.89589024, Y=-1.33727264}" />
+  <property name="Zoom" value="0.42409757" />
+</CanvasDataModel>

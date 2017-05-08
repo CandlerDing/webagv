@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT depend EMPTY>
+<!ATTLIST depend
+	name NMTOKEN #REQUIRED
+	param0 CDATA #IMPLIED
+	param1 CDATA #IMPLIED
+	param2 CDATA #IMPLIED
+	param3 CDATA #IMPLIED
+	param4 CDATA #IMPLIED
+>
+<!ELEMENT field (depend+)>
+<!ATTLIST field
+	display-name NMTOKEN #REQUIRED
+	name NMTOKEN #REQUIRED
+	onfail CDATA #IMPLIED
+>
+<!ELEMENT form (field+)>
+<!ATTLIST form
+	id NMTOKEN #REQUIRED
+	show-error NMTOKEN #REQUIRED
+	show-type NMTOKEN #IMPLIED
+	onfail CDATA #IMPLIED
+>
+<!ELEMENT validation-config (form+)>
+<!ATTLIST validation-config
+	lang CDATA #IMPLIED
+>

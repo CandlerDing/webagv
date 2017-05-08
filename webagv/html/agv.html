@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>agv</title>
+	<link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/core/paper-full.js"></script>
+	<script type="text/javascript" src="js/agv/agv.js"></script>
+	<script type="text/javascript" src="js/core/sax.js"></script>
+    <script type="text/javascript" src="js/core/xmldoc.js"></script>
+    <script type="text/javascript" src="js/agv/agvtest.js" canvas="myCanvas">
+	 
+    </script>
+</head>
+<body>
+    <canvas id="myCanvas" resize></canvas>
+	<button id = "btn_add" type="button" onclick="javascript:zoom(1.25);" >+</button>
+	<button id = "btn_reduce" type="button" onclick="javascript:zoom(0.8);"> - </button>
+    <button id = "btn_submitRFIDS" type="button" onclick="javascript:submitRFIDS();">提交起点和终点</button>
+    <button id = "btn_clearSelectedRFIDS" type="button" onclick="javascript:clearSelectedRFIDS();">清空选择</button>
+</body>
+</html>

@@ -1,0 +1,80 @@
+/*
+Template Name:项目名称
+Author:刘红
+*/
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+body{ background:url(../images/bj.jpg) no-repeat top center #10538a;}
+li{list-style:none;}
+fieldset,img{border:0;}
+table{border-collapse:collapse;border-spacing:0;}
+button,input,select,textarea{font-size:100%;}
+body,button,input,select,textarea{font:12px/1 Arial,Tahoma,Helvetica,SimSun,san-serif;}
+address,cite,dfn,em,var{font-style:normal;}
+legend{color:#000;}
+code,kbd,samp{font-family:"Courier New",monospace;}
+hr{border:none;height:1px;}
+a{color:#333;text-decoration:none;}
+a:hover{ text-decoration:underline;}
+.rel{ position:relative}
+.clear{ clear:both; font-size:0; height:0; overflow:hidden; margin:0; padding:0}
+.fl{ float:left}
+.fr{ float:right}
+.clearfix:after{content:"."; display:block; clear:both; height:0; font-size:0; visibility:hidden;}
+.clearfix{zoom:1;}
+.bj{ background:url(../images/bj.jpg) no-repeat top center #10538a;}
+.main{ width:1310px; margin:0 auto;}
+.header{ margin:0 auto; padding:20px 10px 0px;}
+.link ul li a{ width:71px; height:58px; text-align:center; float:left; color:#e0fbff; padding:7px 0; line-height:30px;margin: 0 10px}
+.link ul li a:hover{ background:url(../images/hover.png) no-repeat; text-decoration:none;}
+.link ul li{ float:right;}
+.link{ width:500px; float:right;}
+.logo{ width:800px; float:left;}
+.lo{ float:left;}
+.admin{ float:right; padding:20px 0 0 15px;}
+.admin span{ float:left; color:#FFF; padding-left:15px; line-height:20px;}
+.admin a{ float:left;color:#FFF; padding-left:10px; line-height:20px;}
+.admin a img{ float:left;}
+.admin a span{ float:left; padding-left:5px;}
+.content{ width:1085px; float:right; background:#f8f8f8;height:600px;}
+.xia{ padding:20px; }
+.liuc{ width:215px; float:left; height:600px; background:#ffffff;}
+.liuc_t{border:1px solid #236cb0;}
+.liuc_t_m{border-bottom:1px solid #5aa4e5;border-left:1px solid #99dbf7;border-right:1px solid #99dbf7;border-top:1px solid #99dbf7;}
+.liuc_t_m_m{ background:#5aa4e5; border-bottom:1px solid #357ec1; height:28px; line-height:28px; padding-left:10px; }
+.liuc_t_m_m span{ font-size:13px; font-weight:bold; color:#fff; float:left; background:url(../images/wenjian.jpg) no-repeat left center; padding-left:25px; float:left;}
+.liuc_t_m_m a{ float:right;}
+.liuc_m{ background:#FFF; padding:5px;}
+.liuc_m ul li a{ display:block; line-height:29px; color:#1f6f89; font-size:13px; font-family:"微软雅黑";}
+.liuc_m ul li ul{ background:#edf6ff; padding:3px;}
+.liuc_m ul li ul li{ background:url(../images/xiahua.jpg) repeat-x bottom; padding-left:25px; width:170px; float:left;}
+.liuc_m ul li ul li a{ background:url(../images/jianho.png) no-repeat left center; padding-left:15px; color:#96a5b4; font-size:13px;}
+.liuc_m ul li a:hover{ text-decoration:none; background:#b2e795;}
+.liuc_m ul li a span{background:url(../images/aj.png) no-repeat top center; display:block; padding-left:25px;}
+.liuc_m ul li ul li a:hover{ background:url(../images/jianho.png) no-repeat left center; color:#036;}
+.liuc_m ul li{ padding:2px 0; display:inline; width:195px;}
+.content_t_l{ float:left; width:790px;}
+.content_t_r{ width:225px; float:right;}
+.content_x_l{ float:left; width:670px;}
+.content_x_r{ width:340px; float:right;}
+.content_x{ padding-top:20px;}
+
+.liuc_t_m_m1{ background:#5aa4e5; border-bottom:1px solid #357ec1; height:28px; line-height:28px; padding-left:5px; }
+.liuc_t_m_m1 span{ background:url(../images/shouye.jpg) no-repeat; height:24px;line-height:24px; text-align:center; font-weight:bold; color:#175082; float:left; width:49px; margin-top:3px;}
+.lo{ padding:5px 0 0 3px;}
+
+.footer{ width:1310px; margin:0 auto; height:50px;}
+/*2014年11月30日新加按钮*/
+.gn{ width:81px; padding:5px 0 0 5px;}
+.gn ul li a{ width:81px; height:58px; text-align:center; float:left; color:#e0fbff; padding:7px 0; line-height:30px;}
+.gn ul li a:hover{ background:url(../images/hover.png) no-repeat; text-decoration:none;}
+.gn ul li{ float:left;}
+
+/*2014年12月12日新加样式*/
+.ks_a_l{ background: url(../images/zuo.png) no-repeat left top; padding-left:8px; height:45px; float:left;}
+.ks_a_r{ background:url(../images/you.png) no-repeat right top; padding-right:8px; height:45px; float:left;}
+.ks_a_z{ background:url(../images/zhong.png) repeat-x; padding:0 8px; height:45px; float:left;line-height:35px;}
+.ks_a_z span{ float:left; padding-top:5px; font-weight:bold; padding-right:5px;}
+.ks_a{ float:left; padding:20px 0 0 10px; width:180px;}
+.loo{background:url(../images/hover.png) no-repeat; text-decoration:none;}

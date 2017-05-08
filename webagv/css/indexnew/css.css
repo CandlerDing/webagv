@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+.title_yelow {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFF00;
+	text-decoration: none;
+}
+
+.title_yelow2 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFF00;
+	text-decoration: none;
+}
+
+.title_black {
+	font-size: 14px;
+	font-weight: bold;
+	color: #191919;
+	text-decoration: none;
+}
+
+.timefont {
+	font-size: 13px;
+	color: #1E1E1E;
+	text-decoration: none;
+}
+
+.foot {
+	font-size: 12px;
+	line-height: 20px;
+	color: #333333;
+	text-decoration: none;
+}
+
+.title_white {
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.nr {
+	font-size: 12px;
+	line-height: 23px;
+	color: #333333;
+}
+
+.nr_14 {
+	font-size: 14px;
+	line-height: 24px;
+	color: #333333;
+}
+
+a:link {
+	color: #006699;
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #006699;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FF3300;
+}
+
+.font_white {
+	color:#FFFFFF;
+	text-decoration: none;
+}
+
+.font_white:link{color:#FFFFFF;text-decoration: none}
+.font_white:visited{color:#FFFFFF;text-decoration: none}
+.font_white:active{color:#FFFFFF;text-decoration: none}
+.font_white:hover{color:#FFFFFF; text-decoration:underline}
+
+.tit_white2 {
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.number {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #202020;
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+.lm_left:link {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.lm_left:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.lm_left:active {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.lm_left:hover {
+	color: #FFFF66;
+	text-decoration: underline;
+	font-size: 13px;
+}
+
+.nr_bold {
+	font-size: 12px;
+	font-weight: bold;
+	color: #262626;
+}
+
+.qq {
+	font-size: 12px;
+	font-weight: bold;
+	color: #ff0000;
+}
+
+.tab_xi {
+	background: #000000;
+}
+
+.tab_xi {
+	font-size: 12px;
+}
+
+.tab_xi td {
+	background: #FFFFFF;
+}
+
+.search{float:left;height:33px;width:278px;padding:8px 0 0 118px;overflow:hidden;}
+.search .cont{float:left;width:208px;height:21px;line-height:21px;border:1px solid #1275C4;border-right:none;overflow:hidden;}
+.search .btn{float:left;width:59px;height:23px;line-height:26px;color:white;padding-left:18px;font-weight:bold;border:none;background:url(/images/indexnew/search_btn.gif) left top no-repeat;overflow:hidden;}

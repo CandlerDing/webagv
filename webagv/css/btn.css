@@ -1,0 +1,74 @@
+
+a.ovalbutton{
+background: transparent url('../buttonimages/oval-green-left.gif') no-repeat top left;
+display: block;
+float: left;
+font: normal 13px Tahoma; /* Change 13px as desired */
+line-height: 16px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 24px) */
+height: 24px; /* Height of button background height */
+padding-left: 11px; /* Width of left menu image */
+text-decoration: none;
+}
+
+a:link.ovalbutton, a:visited.ovalbutton, a:active.ovalbutton{
+color: #494949; /*button text color*/
+}
+
+a.ovalbutton span{
+background: transparent url('../buttonimages/oval-green-right.gif') no-repeat top right;
+display: block;
+padding: 4px 11px 4px 0; /*Set 11px below to match value of 'padding-left' value above*/
+}
+
+a.ovalbutton:hover{ /* Hover state CSS */
+background-position: bottom left;
+}
+
+a.ovalbutton:hover span{ /* Hover state CSS */
+background-position: bottom right;
+color: black;
+}
+
+.buttonwrapper{ /* Container you can use to surround a CSS button to clear float */
+overflow: hidden; /*See: http://www.quirksmode.org/css/clearing.html */
+width: 100%;
+}
+a.green{
+background: transparent url('../buttonimages/oval-green-left.gif') no-repeat top left
+}
+
+a.green span{
+background: transparent url('../buttonimages/oval-green-right.gif') no-repeat top right;
+}
+
+a.orange{
+background: transparent url('../buttonimages/oval-orange-left.gif') no-repeat top left
+}
+
+a.orange span{
+background: transparent url('../buttonimages/oval-orange-right.gif') no-repeat top right;
+}
+
+a.blue{
+background: transparent url('../buttonimages/oval-blue-left.gif') no-repeat top left
+}
+
+a.blue span{
+background: transparent url('../buttonimages/oval-blue-right.gif') no-repeat top right;
+}
+
+a.red{
+background: transparent url('../buttonimages/oval-red-left.gif') no-repeat top left
+}
+
+a.red span{
+background: transparent url('../buttonimages/oval-red-right.gif') no-repeat top right;
+}
+
+a.gray{
+background: transparent url('../buttonimages/oval-gray-left.gif') no-repeat top left
+}
+
+a.gray span{
+background: transparent url('../buttonimages/oval-gray-right.gif') no-repeat top right;
+}

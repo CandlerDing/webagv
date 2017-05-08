@@ -1,0 +1,933 @@
+.admintable {
+	width: 100%;
+	overflow: hidden;
+	height: 22px;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	background-color: #fcfdfc;
+	border: 1px solid #c5def4;
+	border-right: 0;
+	border-bottom: 0;
+	padding: 1px;
+	text-align: left;
+	vertical-align: middle;
+	line-height: 22px;
+	font-family: "宋体";
+}
+
+.admintable01 {
+	width: 100%;
+	overflow: hidden;
+	height: 40px;
+	font-size: 16px;
+	font-weight: bold;
+	font-color: #ffffff;
+	word-spacing: 20px;
+	line-height: 40px;
+	padding-left: 20px;
+	text-decoration: none;
+	background-color: #6faff9;
+	border: 1px solid #333333;
+	border-right: 0;
+	border-bottom: 0;
+	padding: 1px;
+	text-align: left;
+	vertical-align: middle;
+	font-family: "宋体";
+}
+
+.admintable td {
+	text-indent: 0.1em;
+	color: #000000;
+	font-size: 12px;
+	align: center; 
+	word-break: break-all;
+	border-bottom: 1px solid #b4c6da;
+	border-right: 1px solid #b4c6da;
+}
+
+.textarea_reward {
+	width: 60em;
+	border: 1px solid #A9BAC9;
+	font-size: 12px;
+	padding: 0em;
+	text-indent: 0.5em;
+	text-align: left;
+}
+
+.input_edit {
+	height: 20px;
+	vertical-align: middle;
+	line-height: 20px;
+	border: 1px solid #A9BAC9;
+	font-size: 12px;
+	padding: 0em;
+	text-indent: 0.5em;
+	text-align: left;
+}
+
+.textarea_edit {
+	vertical-align: middle;
+	line-height: 20px;
+	border: 1px solid #A9BAC9;
+	font-size: 12px;
+	padding: 0em;
+	/*text-indent:0.5em;  zcx*/
+	text-align: left;
+}
+.textarea_editV {
+	vertical-align: middle;
+	line-height: 20px;
+	border: 1px solid #CCCCCC;
+	font-size: 12px;
+	padding: 0em;
+	/*text-indent:0.5em;  zcx*/
+	text-align: left;
+}
+/* 表单填写*/
+.box1 {
+	height: 20px;
+	line-height: 22px;
+	border: 1px solid #A9BAC9;
+	padding: 0 3px;
+	font-size: 12px;
+}
+
+/* 评分文本框 填写*/
+.box2 {
+	height: 20px;
+	line-height: 22px;
+	border: 1px solid #A9BAC9;
+	padding: 0 2px;
+	font-size: 12px;
+	width: 80px;
+	text-align: left;
+}
+
+/*评分规则中引用  zcx  */
+.rulebox {
+	height: 20px;
+	line-height: 22px;
+	border: 1px solid #A9BAC9;
+	padding: 0 3px;
+	font-size: 12px;
+	event: expression(onfocus =     function() {  
+		  this.style.backgroundColor =   '#E5FFE5'
+}
+
+,
+onblur
+  
+=
+function
+ 
+(){
+this
+ 
+.style
+.backgroundColor
+='
+#ffffff
+'
+	
+}
+);
+}
+BODY {
+	SCROLLBAR-FACE-COLOR: #EBF2F5;
+	SCROLLBAR-HIGHLIGHT-COLOR: #F8FAFB;
+	SCROLLBAR-SHADOW-COLOR: #E5EAED;
+	SCROLLBAR-3DLIGHT-COLOR: #DFE7EB;
+	SCROLLBAR-ARROW-COLOR: #476C7E;
+	SCROLLBAR-TRACK-COLOR: #D6E0E8;
+	SCROLLBAR-DARKSHADOW-COLOR: #608293;
+	font: 宋体, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.2;
+	font-style: normal;
+	text-decoration: none;
+	background-color: #ffffff;
+	background-attachment: fixed;
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	margin: 0px;
+	font-size: 12px;
+	color: #666666;
+	text-decoration: none;
+	margin: 0;
+}
+
+/* zcx  2009.3.11 调整xhtml dtd
+*/
+HTML {
+	scrollbar-face-color: #ebf2f5;
+	scrollbar-highlight-color: #f8fafb;
+	scrollbar-shadow-color: #e5eaed;
+	scrollbar-3dlight-color: #dfe7eb;
+	scrollbar-arrow-color: #476c7e;
+	scrollbar-track-color: #d6e0e8;
+	scrollbar-darkshadow-color: #608293;
+}
+
+.title {
+	text-align: left;
+	font-weight: 18px;
+	padding-top: 5px;
+}
+/*tab页面标题-zcx
+*/
+.tab_title_gotfocus {
+	font: "宋体";
+	padding-top:1px;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+	white-space: nowrap;
+}
+.tab_title_lostfocus {
+	font: "宋体";
+	padding-top:1px;
+	font-size: 12px;
+	color: #000000; 
+	white-space: nowrap; 
+}
+/*右侧页面标题格式
+*/
+.title_font {
+	font: "宋体";
+	font-size: 14px;
+	color: #FF0000;
+	word-spacing: 20px;
+	line-height: 22px;
+	letter-spacing: 3px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+
+.title_font01 {
+	font: "宋体";
+	font-size: 14px;
+	color: #FFFFFF;
+	word-spacing: 20px;
+	letter-spacing: 3px;
+	padding-left: 20px;
+	font-weight: bold;
+}
+
+/*右侧页面标题格式结束
+*/ /*
+设置通用文字、页面背景、链接等样式
+*/
+P {
+	font-weight: normal;
+	font-style: normal;
+}
+
+a {
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: #000000
+}
+
+a:Visited {
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: #2E3340
+}
+
+a:Active {
+
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;;
+	text-decoration: none;
+}
+
+a:Hover {
+	font-weight: normal;
+	font-style: normal;
+	color: #525663;
+	text-decoration: underline;
+}
+
+td {
+	font-family: "宋体";
+	color: #000000;
+	font-size: 12px;
+	line-height: 1.2;
+	word-break: break-all;
+}
+
+.bottomTableBorder {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	border: 1px solid #C5DEF4;
+}
+
+.dataBoxDiv {
+	height: 80%;
+	overflow: auto;
+	background-image: url(../../images/easyjweb/bg_body.jpg);
+	background-attachment: fixed;
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.mainFunctionTable {
+	border-collapse: collapse;
+	width: 98%;
+	padding: 1px;
+	border-top: 1px solid #000099;
+	border-right: 1px solid #00CCCC;
+	border-bottom: 1px solid #00CCCC;
+	border-left: 1px solid #000066;
+}
+
+.tr_title_bg {
+	background-color: #3399CC;
+	height: 24px;
+}
+
+.toolTable {
+	background-color: #EBF6F8;
+	height: 35px;
+	border-top: 1px inset #0066CC;
+	border-right: 1px inset #0099CC;
+	border-bottom: 1px inset #0099CC;
+	border-left: 1px inset #006699;
+}
+
+.TableTitleTxtCenter {
+	FILTER: DropShadow(Color =   #F2F2F2, OffX =   1, OffY =   1, Positive =   1)
+		;
+	font-size: 12px;
+	color: #545454;
+	font-weight: bold;
+}
+
+.TableTitleTxtLeft {
+	FILTER: DropShadow(Color =   #ffffff, OffX =   1, OffY =   1, Positive =   1)
+		;
+	font-size: 13px;
+	color: #333333;
+	font-weight: bold;
+	text-indent: 1em;
+}
+
+.tr_one_bg {
+	background-color: #FFFFFF;
+	height: 24px;
+}
+
+.td_one_bg {
+	height: 24px;
+	padding: 4;
+}
+
+.tdLeft {
+	/*	background-image:url(/manage../../images/table_title_bg_2.gif);*/
+	background-repeat: repeat-y;
+	background-position: 50% 0;
+	background-color: #EBF6F8;
+}
+
+.tdRight {
+	background-color: #FFFFFF;
+}
+
+.MouseOver {
+	height: 24px;
+	background-color: #E5FFE5;
+}
+
+.MouseOut {
+	height: 24px;
+	background-color: #FFFFFF;
+}
+
+.MouseDown {
+	background-color: #CCCCCC;
+	border: 1px solid #0000FF;
+}
+
+.formLable {
+	line-height: 22px;
+	/*background-color: #c5def4;*/
+	background: url(img/lable.jpg) repeat 0 0;
+	FONT-SIZE: 12px;
+	COLOR: #000000;
+	FONT-FAMILY: 宋体;
+	/*border: 1px solid #ebf6f8;*/
+	border-left: 0;
+	border-top: 0;
+	text-align: left;
+	text-indent: 0.1em;
+	border: 1px solid #c5def4;
+}
+.formLable2 {
+	line-height: 22px;
+	/*background-color: #c5def4;*/
+	background: url(img/lable.jpg) repeat 0 0;
+	FONT-SIZE: 12px;
+	COLOR: #000000;
+	FONT-FAMILY: 宋体;
+	/*border: 1px solid #ebf6f8;*/
+	border-left: 0;
+	border-top: 0;
+	text-align: center;
+	text-indent: 0.1em;
+	border: 1px solid #c5def4;
+}
+.formLable3 {
+	line-height: 22px;
+	/*background-color: #c5def4;*/
+	background: url(img/lable.jpg) repeat 0 0;
+	FONT-SIZE: 12px;
+	COLOR: #000000;
+	FONT-FAMILY: 宋体;
+	/*border: 1px solid #ebf6f8;*/
+	border-left: 0;
+	border-top: 0;
+	
+	text-indent: 0.1em;
+	border: 1px solid #c5def4;
+}
+/*list 页面 标题zcx -2010-11-30新加*/
+.caption{
+	line-height: 202px;	
+	background: url(img/lable.jpg) repeat 0 0;
+	FONT-SIZE: 12px;
+	COLOR: #000000;	
+	height:30px;
+	border-left: 0;
+	border-top: 0;
+	text-align: center;
+	text-indent: 0.1em;
+	border: 1px solid #c5def4;
+	white-space: nowrap;
+}	
+.xformtext {
+	height: 22px;
+	line-height: 18px;
+	vertical-align: middle;
+}
+
+.formText {
+	background-color: #ffffff;
+	border: 1px solid #c5def4;
+	line-height: 26px;
+	text-align: left;
+	FONT-SIZE: 12px;
+	COLOR: #000000;
+	FONT-FAMILY: 宋体;
+}
+
+/* 变灰不可编辑 bug ？？zcx*/
+.disableStyle {
+	line-height: 22px;
+	background-color: #c5def4;
+	FONT-SIZE: 12px;
+	FONT-FAMILY: 宋体;
+	/*border: 1px solid #ebf6f8;*/
+	border-left: 0;
+	border-top: 0;
+	text-align: left;
+	text-indent: 0.1em;
+	border: 1px solid #c5def4;
+	color: #CCCCCC;
+}
+
+FORM {
+	MARGIN: 0px
+}
+
+.picButton {
+	background-image: url(../../images/easyjweb/ico/table_form_bg_2.gif);
+	border: 1px solid #444444;
+	cursor: hand;
+}
+
+.textfield {
+	width: 100%;
+	background-image: url(../../images/easyjweb/ico/table_form_bg_3.gif);
+	border: 1px solid #999999;
+}
+
+.file { /*width: 80%; style="cursor:pointer;"*/
+	background-image: url(../../images/easyjweb/ico/table_form_bg_1.gif);
+	background-position: 0 0;
+	height: ;
+	cursor: pointer;
+	border: 1px solid #666666;
+}
+
+.colorButton {
+	background: #FFFFCC;
+	color: #0000CC;
+	vertical-align: middle;
+	border-top-width: 1px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 1px;
+	border-top-style: inset;
+	border-right-style: inset;
+	border-bottom-style: inset;
+	border-left-style: inset;
+	border-top-color: #006666;
+	border-right-color: #000066;
+	border-bottom-color: #000066;
+	border-left-color: #006666;
+	height: 25px;
+	text-align: center;
+	padding: 0px;
+}
+
+.smallInput {
+	border-bottom-color: #0000CC;
+	border-bottom-width: 1px;
+	border-top-color: #000000;
+	border-top-width: 1px;
+	border-left-color: #000000;
+	border-left-width: 1px;
+	border-rigth-color: #ff6633;
+	border-right-width: 1px;
+	FONT-SIZE: 10pt;
+	LINE-HEIGHT: normal;
+	border-top-style: inset;
+	border-right-style: inset;
+	border-bottom-style: inset;
+	border-left-style: inset;
+	border-right-color: #0000FF;
+	text-align: left;
+	vertical-align: middle;
+	color: #3366CC;
+	background-color: #ffffbb;
+}
+
+input.buttonface {
+	BACKGROUND: #ffcc00;
+	border: 1 solid #ff6633;
+	COLOR: #ff0000;
+	FONT-SIZE: 12px;
+	FONT-STYLE: normal;
+	FONT-VARIANT: normal;
+	FONT-WEIGHT: normal;
+	HEIGHT: 18px;
+	LINE-HEIGHT: normal
+}
+
+.view1 {
+	overflow: hidden;
+	cursor: default;
+}
+
+ul,li {
+	list-style-type: none;
+}
+
+input.name {
+	padding-left: 14px;
+	background: #fff;
+	background-repeat: no-repeat;
+	background-position: 2px center;
+}
+
+input.name {
+	background-image: url(../../images/easyjweb/name.png);
+}
+
+/*********************错误样式开始*********************/
+#errors {
+	clear: both;
+}
+
+#errors .title {
+	font-weight: bold;
+	width: 95%;
+	border: 1px solid #E6E6E6;
+	background-color: #FFFFAF;
+	text-align: left;
+	line-height: 28px;
+	font-size: 12px;
+	padding-left: 30px;
+}
+
+#errors #causedBy {
+	padding: 30px 30px 0 30px;
+	font-size: 12px;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+#errors #details {
+	border: 1px solid #E6E6E6;
+	background-color: #FAFAFA;
+	padding: 0 30px 0 30px;
+	font-size: 12px;
+	word-wrap: break-word;
+	overflow: hidden;
+	/*word-break: break-all;*/ /*width : 88%;*/
+}
+
+/*********************错误样式结束*********************/
+	/*********************分页样式开始*********************/ /**
+定义所有分页内容显示为粗体字
+*/
+#pagination {
+	clear: both;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+/**
+定义分页块内 ul 下 li的样式
+*/
+#pagination ul li {
+	float: left;
+	align: left;
+	padding: 2px 4px 2px 4px;
+	border: 1px solid #E6E6E6;
+	cursor: pointer;
+	margin-left: 4px;
+}
+
+#pagination ul li span.info {
+	cursor: default;
+}
+
+#pagination ul li span {
+	cursor: pointer;
+}
+
+#pagination ul li span input {
+	cursor: text;
+	width: 15px;
+	height: 10px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: 1px;
+}
+
+/**
+定义disabled样式
+*/
+#pagination li.disabled {
+	background-color: #fff;
+	color: #e6e6e6;
+	border: 1px solid #e6e6e6;
+	cursor: default;
+}
+
+/**
+定义当前页样式
+*/
+#pagination li.currentPage {
+	background-color: #D2EAF6;
+	cursor: default;
+}
+
+/**
+定义鼠标靠近样式
+*/
+#pagination li.over {
+	background-color: #D2EAF6;
+}
+
+/**
+定义鼠标离开样式
+*/
+#pagination li.out {
+	background-color: #fff;
+}
+
+/*********************分页样式结束*********************/
+	/*********************内部错误样式开始*********************/
+#internalError {
+	clear: both;
+	font-weight: bold;
+	width: 95%;
+	border: 1px solid #E6E6E6;
+	background-color: #FFFFAF;
+	text-align: left;
+	line-height: 28px;
+	font-size: 12px;
+	padding-left: 30px;
+}
+
+#internalErrorHowTo {
+	padding: 30px 30px 0 30px;
+	font-size: 12px;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+#internalErrorDetail {
+	padding: 0 30px 0 30px;
+	font-size: 12px;
+	word-wrap: break-word;
+	overflow: hidden;
+	/*word-break: break-all;*/ /*width : 88%;*/
+}
+
+/*********************内部错误样式结束*********************/
+	/*********************底部细线样式开始*********************/
+.line {
+	border: 1px solid #E6E6E6;
+	height: 1px;
+	width: 95%;
+	clear: both;
+}
+
+/*********************底部细线样式结束*********************/
+	/*********************版权样式开始*********************/
+.copyright {
+	clear: both;
+	color: #AAAAAA;
+	font-size: 12px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+/*********************版权样式结束*********************/
+/
+/************按钮样式定义***************/
+.btn3_mouseout {
+	BORDER-RIGHT: #2C59AA 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #2C59AA 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid :   DXImageTransform.Microsoft.Gradient (   GradientType
+		=   0, StartColorStr =   #ffffff, EndColorStr =   #C3DAF5 );
+	BORDER-LEFT: #2C59AA 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #2C59AA 1px solid
+}
+
+.btn3_mouseover {
+	BORDER-RIGHT: #2C59AA 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #2C59AA 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid :   DXImageTransform.Microsoft.Gradient (   GradientType
+		=   0, StartColorStr =   #ffffff, EndColorStr =   #D7E7FA );
+	BORDER-LEFT: #2C59AA 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #2C59AA 1px solid
+}
+
+.btn3_mousedown {
+	BORDER-RIGHT: #FFE400 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #FFE400 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid :   DXImageTransform.Microsoft.Gradient (   GradientType
+		=   0, StartColorStr =   #ffffff, EndColorStr =   #C3DAF5 );
+	BORDER-LEFT: #FFE400 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #FFE400 1px solid
+}
+
+.btn3_mouseup {
+	BORDER-RIGHT: #2C59AA 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #2C59AA 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid :   DXImageTransform.Microsoft.Gradient (   GradientType
+		=   0, StartColorStr =   #ffffff, EndColorStr =   #C3DAF5 );
+	BORDER-LEFT: #2C59AA 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #2C59AA 1px solid
+}
+
+.btn_2k3 {
+	width: 62px;
+	height: 25px;
+	line-height: 24px;
+	CURSOR: pointer;
+	text-align: center;
+	border: 0;
+	background: url(../../images/btn/bule_1.png) no-repeat 0 -40px;
+	background-position: 0 0;
+}
+.btn_long {
+	width: 94px;
+	height: 25px;
+	line-height: 24px;
+	CURSOR: pointer;
+	text-align: center;
+	border: 0;
+	background: url(../../images/btn/bule_flow.png) no-repeat 0 -40px;
+	background-position: 0 0;
+}
+.btn_longer {
+	width: 140px;
+	height: 25px;
+	line-height: 24px;
+	CURSOR: pointer;
+	text-align: center;
+	border: 0;
+	background: url(../../images/btn/bule_flow2.png) no-repeat 0 -40px;
+	background-position: 0 0;
+}
+.btn_longest {
+	width: 185px;
+	height: 25px;
+	line-height: 24px;
+	CURSOR: pointer;
+	text-align: center;
+	border: 0;
+	background: url(../../images/btn/bule_flow3.png) no-repeat 0 -40px;
+	background-position: 0 0;
+}
+.bt_2k3 {
+	BORDER-RIGHT: #002D96 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #002D96 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid :   DXImageTransform.Microsoft.Gradient (   GradientType
+		=   0, StartColorStr =   #FFFFFF, EndColorStr =   #9DBCEA );
+	BORDER-LEFT: #002D96 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #002D96 1px solid
+}
+
+.btn_submit {
+	width: 76px;
+	height: 29px;
+	line-height: 29px;
+	CURSOR: pointer;
+	text-align: center;
+	font-size:14px;
+	font-weight: bold;
+	color:#FFFFFF;
+	border: 0;
+	background: url(../../images/btn/anniu_07.png) no-repeat 0 -40px;
+	background-position: 0 0;
+}
+
+.btn_hover {
+	width: 76px;
+	height: 29px;
+	line-height: 29px;
+	font-size:14px;
+	font-weight: bold;
+	color:#FFFFFF;
+	CURSOR: pointer;
+	text-align: center;
+	border: 0;
+	background: url(../../images/btn/anniu_07_1.png) no-repeat 0 -40px;
+	background-position: 0 0;
+}
+
+.btn_bule {
+	width: 62px;
+	height: 25px;
+	line-height: 24px;
+	CURSOR: pointer;
+	text-align: center;
+	border: 0;
+	background: url(../../images/btn/bule_1.png) no-repeat 0 -40px;
+	background-position: 0 0;
+}
+
+.btn_edit {
+	margin-top: 3px;
+	width: 21px;
+	height: 21px;
+	line-height: 21px;
+	CURSOR: pointer;
+	text-align: center;
+	border: 0;
+	background: url(../../images/btn/edit.gif) no-repeat;
+	background-position: 0 0;
+}
+.btn_preview {
+	margin-top: 3px;
+	width: 21px;
+	height: 21px;
+	line-height: 21px;
+	CURSOR: pointer;
+	text-align: center;
+	border: 0;
+	background: url(../../images/btn/preview.gif) no-repeat;
+	background-position: 0 0;
+}
+
+.btn_del {
+	margin-top: 3px;
+	width: 21px;
+	height: 21px;
+	line-height: 21px;
+	CURSOR: pointer;
+	text-align: center;
+	border: 0;
+	background: url(../../images/btn/del.gif) no-repeat;
+	background-position: 0 0;
+}
+
+.btn_up {
+	margin-top: 3px;
+	width: 21px;
+	height: 21px;
+	line-height: 21px;
+	CURSOR: pointer;
+	text-align: center;
+	border: 0;
+	background: url(../../images/btn/up.gif) no-repeat;
+	background-position: 0 0;
+}
+.btn_order {
+	margin-top: 3px;
+	width: 21px;
+	height: 21px;
+	line-height: 21px;
+	CURSOR: pointer;
+	text-align: center;
+	border: 0;
+	background: url(../../images/btn/order.png) no-repeat;
+	background-position: 0 0;
+}
+.btn_bule_hover {
+	width: 62px;
+	height: 25px;
+	line-height: 24px;
+	CURSOR: pointer;
+	text-align: center;
+	border: 0;
+	background: url(../../images/btn/yellow_1.png) no-repeat 0 -40px;
+	background-position: 0 0;
+}
+
+/***********按钮样式定义结束******************/ /***定义水平线样式**/
+hr {
+	width: 95%;
+	height: 1px;
+}
+
+.panel {
+	BACKGROUND: #d6e4ef;
+	COLOR: #000000
+}

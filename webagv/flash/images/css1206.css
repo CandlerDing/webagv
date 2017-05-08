@@ -1,0 +1,26 @@
+body, dl,dt,dd,ul,ol,li,p,h1,h2,h3,h4,h5,form,table,td,tr,img{margin:0;padding:0;border:0;font-family:Sans-serif,"",Arial,;font-size:12px;color:#444;font-weight:normal;}
+ul,li{list-style:none;}
+table{border-collapse:collapse;}/**/
+img{border:0;}
+input, textarea, select {font-family:inherit;font-size:inherit;font-weight:inherit;}
+a{color:#333333;text-decoration:none;}
+a:hover{text-decoration:none; color:#ff0000}
+body{ background:#f0f0f0}
+
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear:both;}
+.fb{font-weight:bold;}
+.f14{ font-size:14px}
+.nodisplay{display:none;}
+.margin_top{ margin-top:15px}
+
+#peop{width:600px; height:340px;} 
+.prev{height:45px; margin-top:115px;float:left;width:3px; background:url(left.jpg) no-repeat; margin-right:0px;  display:inline;}
+.next2{height:45px; margin-top:115px;float:left;width:3px; background:url(right.jpg) no-repeat; margin-left:0px; display:inline;}
+.anyClass{width:590px;height:340px;float:left;padding-top:5px; overflow:hidden;}
+.shiting2 dl{ margin:0 6px;  width:285px; height:340px;}
+.shiting2 dt{ width:285px; height:330px; float:left;display:inline; margin:10px 0}
+.shiting2 dt img{ width:275px; height:316px; float:left;border:1px solid #939293; padding:2px}
+.shiting2 dd{ line-height:3px; text-align:center; font-size:14px; width:285px;}
+

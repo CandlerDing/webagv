@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>在iframe中打开的</title>
+	<link rel="stylesheet" type="text/css" href="../../easyui1.3.3/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../../easyui1.3.3/themes/icon.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+	<script type="text/javascript" src="../../easyui1.3.3/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="dialog.ext.js"></script>
+	<script>
+		function createWindow(){
+			//$.window创建的是一个easyui的dialog窗口
+			var dialog = $.window({
+				title:"普通窗口",
+				contents:"我是内容",
+				height:200,
+				onComplete:function(jq){//这是一个很有用的事件
+					var target = this;//this其实就是当前窗口的jq对象,可以直接用.例如:this.destroy().就是关闭窗口
+				}
+			});
+		}
+		
+		function createWindowTpf(){
+			var dialog = $.window({
+				title:"通过模板加载内容",
+				tplRef:"tpl",//这个属性指定模板id
+				height:200,
+				onComplete:function(){
+					//窗口里面的初始化,最好是在这个事件里面进行
+					this.find("#btn").click(function(){
+						alert("这样绑定事件才靠谱!");
+					});
+				}
+			});
+		}
+		//这个不能在chrome里面测试,除非你放到服务器里面
+		function createWindowUrl(){
+			var dialog = $.window({
+				title:"通过URL加载内容",
+				url:"ajax.html",
+				height:200,
+				onComplete:function(){
+					//窗口里面的初始化,最好是在这个事件里面进行
+					this.find("#btn").click(function(){
+						alert("这样绑定事件才靠谱!");
+					});
+				}
+			});
+		}
+		
+		function createWindowIframe(){
+			var dialog = $.window({
+				title:"通过URL加载内容",
+				url:"iframe.html",
+				isIframe:true,
+				height:200,
+				onComplete:function(jq,iframe){
+					//窗口里面的初始化,最好是在这个事件里面进行
+					//通过工具方法,获取到iframe的window对象
+					var fwindow = $.window.util.getFrameWindow(iframe);
+					//用iframe的window对象获取iframe里面的加载jq对象
+					var ijq = fwindow.jQuery;
+					//也可以这样绑定事件
+					ijq("#btn").click(function(){
+						alert("这样绑定事件才靠谱!");
+					});
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+	<h2>iframe也是可以自由穿透的,当然你得保证不跨域的前提</h2>
+	<a href="javascript:createWindow()" class="easyui-linkbutton">普通创建方式</a> 
+	<a href="javascript:createWindowTpf()" class="easyui-linkbutton">通过模板加载内容</a> 
+	<a href="javascript:createWindowUrl()" class="easyui-linkbutton">通过url加载内容</a>
+	<a href="javascript:createWindowIframe()" class="easyui-linkbutton">通过iframe加载内容</a>
+	<!--模板定义很简单.只需要在界面用一个容器(例如div)包裹一段html注释就ok了.当然你需要给容器定义ID,注释里面就是普通的html就行-->
+	<div style="display:none;" id="tpl">
+	<!--
+		我是模板定义的内容.右键查看源码,获取模板定义规则.<button id="btn">按钮事件</button>
+		<hr/>
+		组件也是可以的<a href="javascript:void(0)" class="easyui-linkbutton">组件按钮</a> 
+	-->
+	</div>
+</body>
+</html>

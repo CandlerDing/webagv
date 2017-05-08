@@ -1,0 +1,1504 @@
+﻿<HEAD>
+<META http-equiv="Content-Type" content="text/html;Charset="UTF_8">
+<SCRIPT>
+var L_DEFAULTHTML_TEXT="<DIV></DIV>";
+function _CFont(szDef,szText,bSymbol){
+return new Array(szDef,szText,bSymbol);
+};
+defaultFonts=new Array();
+defaultFonts[0]=_CFont("Geneva,Arial,Sans-serif","Arial",false);
+defaultFonts[1]=_CFont("Arial Black,Geneva,Arial,Sans-serif","Arial Black",false);
+defaultFonts[2]=_CFont("Courier New,Courier,Monospace","Courier New",false);
+defaultFonts[3]=_CFont("Times New Roman,Times,Serif","Times New Roman",false);
+defaultFonts[4]=_CFont("Verdana,Geneva,Arial,Sans-serif","Verdana",false);
+defaultFonts[5]=_CFont("Lucida Handwriting,Cursive","Lucida Handwriting",false);
+defaultFonts[6]=_CFont("Garamond,Times,Serif","Garamond",false);
+defaultFonts[7]=_CFont("Webdings","Webdings",true);
+defaultFonts[8]=_CFont("Wingdings","Wingdings",true);
+defaultFonts[9]=_CFont("宋体","宋体",false);
+defaultFonts[10]=_CFont("黑体","黑体",false);
+defaultFonts[11]=_CFont("细明体","细明体",false);
+var L_TOOLBARGIF_TEXT="rte.gif";
+var aSizes=new Array(25,25,25,8,25,25,8,25,25,25,8,52,52,52,8,25,25,25,8,25,25,25,8,25,25,25,25,8,25);
+var isIE4=(navigator.appVersion.indexOf("MSIE 4")>0)
+//替换HTML字符
+function replacestr(htmlstr)
+{
+  htmlstr = replace(htmlstr,"&quot;", "\"\"") //双引号
+  htmlstr = replace(htmlstr,"&lt;", "<")     
+  htmlstr = replace(htmlstr,"&gt;", ">")     
+  htmlstr = replace(htmlstr,"&amp;", "&")
+  return htmlstr
+}
+
+function changeMode()
+{
+//alert(g_state.bMode);
+if(g_state.bMode){
+g_state.bMode=false;
+idEditbox.document.body.innerText=idEditbox.document.body.innerHTML;
+}
+else
+{
+g_state.bMode=true;
+idEditbox.document.body.innerHTML=idEditbox.document.body.innerText;
+}
+
+}
+/*******************************/
+ //公共方法: setHTML
+ //参数: szHTML:文本
+ //设置编辑器文本的内容
+/******************************/
+function setHTML(szHTML)
+{
+//szHTML=replacestr(szHTML)
+if(szHTML=="")szHTML=L_DEFAULTHTML_TEXT
+if(g_state.bMode)
+{
+idEditbox.document.body.innerHTML=szHTML
+}
+else
+{
+idEditbox.document.body.innerText=szHTML
+}
+if(g_state.bLoaded)setSelection(true)
+}
+/*******************************/
+ //公共方法: getHTML
+ //返回: 编辑器内容文本 
+ //获取编辑器文本的内容
+/******************************/
+function getHTML()
+{
+var szRet=(g_state.bMode?_CUtil_TrimCR(_CUtil_CleanHTML()):_CUtil_TrimCR(idEditbox.document.body.innerText))
+return szRet
+}
+/*******************************/
+ //公共方法: getPureText
+ //返回: 编辑器内容纯文本 
+ //获取编辑器文本的内容
+/******************************/
+function getPureText()
+{
+var szRet=idEditbox.document.body.createTextRange();
+return szRet.text;
+}
+/*******************************/
+ //方法: getText
+ //获取编辑器文本
+/******************************/
+function getText(){
+var szRet=""
+if(g_state.bMode)
+szRet=idEditbox.document.body.innerText
+else{
+setMode(true)
+szRet=idEditbox.document.body.innerText
+setMode(false)
+}
+return szRet
+}
+/*******************************/
+ //方法: getBody
+ //返回编辑器编辑区的body对象
+/******************************/
+function getBody()
+{
+var oRet=idEditbox.document.body
+return oRet
+}
+/*******************************/
+ //方法: getWidth
+ //返回编辑器offsetWidth对象
+/******************************/
+function getWidth()
+{
+var nRet=document.body.offsetWidth
+return nRet
+}
+/*******************************/
+ //方法: getWidth
+ //返回编辑器offsetHeight对象
+/******************************/
+function getHeight()
+{
+var nRet=document.body.offsetHeight
+return nRet
+}
+/*******************************/
+ //方法: insertHTML
+ //插入对象的HTML文本
+/******************************/
+function insertHTML(szHTML)
+{
+if (!g_state.hasFocus) return;
+var sType
+var sel=g_state.GetSelection()
+sType=sel.type
+if(g_state.bMode)
+{
+ if(sType=="Control")
+ sel.item(0).outerHTML=szHTML
+ else
+ {
+   sel.pasteHTML(szHTML)
+   idEditbox.document.body.focus()
+   g_state.hasFocus=true
+  }
+}
+else
+ sel.text=szHTML
+g_state.selection=null
+}
+/*******************************/
+ //方法: appendHTML
+ //添加对象的HTML文本
+/******************************/
+function appendHTML(szHTML){
+if(g_state.bMode)
+idEditbox.document.body.insertAdjacentHTML("beforeEnd",szHTML)
+else
+idEditbox.document.body.insertAdjacentText("beforeEnd",szHTML)
+}
+/*******************************/
+ //方法: setBGColor
+ //设置编辑器背景色
+/******************************/
+function setBGColor(szValue)
+{
+g_state.bgColor=szValue
+idEditbox.document.body.bgColor=g_state.bgColor
+}
+/*******************************/
+ //方法: setSelection
+ //保存编辑器中用户所选高亮的部分
+/******************************/
+function setSelection(bDir){
+var tr=idEditbox.document.body.createTextRange()
+tr.collapse(bDir)
+tr.select()
+g_state.SaveSelection()
+}
+/*******************************/
+ //方法: setDefaultStyle
+ //设置编辑器样式
+/******************************/
+function setDefaultStyle(szValue)
+{
+g_state.css=szValue
+if(g_state.bMode)
+idEditbox.document.body.style.cssText=g_state.css
+}
+/*******************************/
+ //方法: setSkin
+ //设置编辑器SKIN样式
+/******************************/
+function setSkin(szSkin)
+{
+if(szSkin==null)
+document.styleSheets.skin.cssText=g_state.defaultSkin
+else
+document.styleSheets.skin.cssText=szSkin
+document.styleSheets.skin.disabled=false
+}
+/*******************************/
+ //方法: setToolbar
+ //设置编辑器功能条显示属性
+/******************************/
+function setToolbar(id,g_state)
+{
+var el=document.all[id]
+if(el)
+el.style.display=(g_state)?"":"none"
+if(id=="tbmode"){
+_setSize()
+}
+}
+/*******************************/
+ //方法: setMode
+ //设置编辑器模式
+/******************************/
+function setMode(bMode)
+{
+if(bMode!=g_state.bMode){
+g_state.bMode=bMode
+var objBody=idEditbox.document.body
+if(!bMode&&!g_state.bMode)
+{
+objBody.bgColor=objBody.style.cssText="#FFFFFF"
+if(g_state.customButtons)
+idStandardBar.style.display="none"
+else
+idToolbar.style.display="none"
+objBody.innerText=idEditbox.document.body.innerHTML
+objBody.className="textMode"
+}
+if((bMode)&&(g_state.bMode))
+{
+setDefaultStyle(g_state.css)
+setBGColor(g_state.bgColor)
+objBody.className=idStandardBar.style.display=idToolbar.style.display=""
+objBody.innerHTML=idEditbox.document.body.innerText
+}
+_setSize()
+setSelection(true)
+}
+return bMode
+}
+/*******************************/
+ //方法: _Format
+ //编辑功能实现
+/******************************/
+function _Format(szHow,szValue){
+if (!g_state.hasFocus) return;
+var oSel=g_state.GetSelection()
+var sType=oSel.type
+var oTarget=(sType=="None"?idEditbox.document:oSel)
+var oBlock=(oSel.parentElement!=null?_CUtil_GetBlock(oSel.parentElement()):oSel.item(0))
+switch(szHow)
+{
+case "Undo":
+case "Redo":
+idEditbox.document.execCommand(szHow)
+break
+case "Justify":
+if(oBlock)
+{
+oBlock.style.textAlign=""
+if(((oBlock.tagName=="TABLE")||(oBlock.tagName=="IMG"))&&(("left"==oBlock.align)&&("Left"==szValue))){
+oBlock.align=""
+break;
+}
+oBlock.align=szValue
+if((oBlock.tagName=="HR")||((oBlock.tagName=="IMG")&&szValue!="Center"))break;
+}
+szHow=szHow+szValue
+szValue=""
+default:
+oTarget.execCommand(szHow,false,szValue)
+//debug
+//alert(idEditbox.document.body.innerHTML)
+break
+}
+g_state.RestoreSelection()
+return true
+}
+/*******************************/
+ //方法: _pageReady
+ //编辑器编辑区初始化
+/******************************/
+function _pageReady()
+{
+idEditbox.document.body.onblur=idEditbox.onblur=g_state.SaveSelection
+idEditbox.document.onkeydown=_Editor_KeyDownHandler
+idEditbox.document.onmousedown=_Editor_ClickHandler
+idEditbox.document.ondblclick=_Editor_DblClickHandler
+idEditbox.document.body.oncontextmenu=new Function("return false")
+//qiuchun 注释:在JSP环境中,下面的访问为非法,可能是基于安全性考虑
+/*if(g_state.szSearch!="")idPopup.document.domain=idEditbox.document.domain=document.domain=g_state.szSearch
+else{
+g_state.szSearch=_CUtil_DomainSuffix(location.hostname)
+if(g_state.szSearch!="")idPopup.document.domain=idEditbox.document.domain=document.domain=parent.document.domain=g_state.szSearch
+}*/
+if(document.styleSheets.skin.disabled)setSkin(null)
+_setSize()
+idEditor.style.visibility=""
+g_state.bLoaded=true
+// var tr=idEditbox.document.body.createTextRange()
+// tr.select()
+// g_state.SaveSelection()
+// setSelection(false)
+setBGColor(g_state.bgColor)
+}
+/*******************************/
+ //方法: _initEditor
+ //初始化编辑器
+/******************************/
+function _initEditor(){
+g_state=new _CState()
+window.onresize=_setSize
+var sz=""
+sz+="<STYLE>A{text-decoration:none}\nTD{font-size:14.9px}\n.textMode{border-top: 1px black solid;font-size:14.9px}\n.NOBORDER TD{border:1px gray solid}BODY{border:1px black solid;border-top:none;font-size:14.9px}</STYLE><BODY ONCONTEXTMENU=\"return false\">"+L_DEFAULTHTML_TEXT+"</BODY>"
+_CPopup_Init()
+idEditbox.document.designMode="on"
+idEditbox.document.open("text/html","replace")
+idEditbox.document.write(sz)
+idEditbox.document.close()
+setTimeout("_pageReady()",100)
+}
+/*******************************/
+ //方法: _Editor_ClickHandler
+ //编辑器onmousedown句柄
+/******************************/
+function _Editor_ClickHandler(){
+g_state.hasFocus=true
+g_state.selection=null
+}
+/*******************************/
+ //方法: _Editor_KeyDownHandler
+ //编辑器onkeydown句柄
+/******************************/
+function _Editor_KeyDownHandler(){
+g_state.hasFocus=true
+var ev=this.parentWindow.event
+if((ev.keyCode==78||ev.keyCode==72)&&ev.ctrlKey){
+if(ev.keyCode==78)
+window.open(parent.location)
+ev.keyCode=0;ev.returnValue=false
+}
+if(ev.keyCode==9)
+{g_state.SaveSelection()}
+else
+g_state.selection=null
+if (ev.keyCode==70&&ev.ctrlKey)
+{
+     _doSearch();
+	 //_CPopup_Show("Search")
+	 ev.keyCode=0;ev.returnValue=false;
+}
+}
+
+var blnIsNew = false;
+var strSearch = '';
+var sBookMark = '';
+var oRange = null;
+var bRange = null;
+var oWhole=null;
+var intStart=0;
+var intEnd=0;
+var xRange = null;
+
+function _doSearch()
+{
+    xRange = idEditbox.document.body.createTextRange();
+	oWhole=_CUtil_TrimCR(xRange.text);
+	oRange = xRange.duplicate();
+	bRange = xRange.duplicate();
+    _Search2("",parseInt(idEditbox.document.body.innerText.length,10),4);
+}
+function _Search2(input,iScope,iFlag)
+{ 
+   if (input=="")
+     input=window.prompt("查找(注意:文档中如含有表格,图片等元素,查找定位可能会出现误差!)\n请在下面的输入框中输入查找内容:","");
+   else
+     input=window.prompt("查找(注意:文档中如含有表格,图片等元素,查找定位可能会出现误差!)\n请在下面的输入框中输入查找内容:",input);
+	
+    var strInput = input;
+	if (strInput == '' || !strInput) {strSearch='';return false;}
+	if (strInput != strSearch)
+	{   
+	   blnIsNew = true;
+	   strSearch = strInput;
+	   oRange=bRange.duplicate();
+	      
+	} 
+	else
+		blnIsNew=false;
+		
+	if (blnIsNew)
+	{
+	   if (oWhole.indexOf(strSearch)>=0)
+	   {
+	       intStart=intEnd+oWhole.indexOf(strSearch);
+		   intEnd=intStart+parseInt(strSearch.length,10);
+		   oRange.moveEnd("character",-iScope);
+           oRange.moveEnd("character",intEnd);
+		   oRange.moveStart("character",intStart);
+		   oRange.select();
+		   oWhole=oWhole.substring(oWhole.indexOf(strSearch)+parseInt(strSearch.length,10),iScope);
+		   strSearch='';
+		   _Search2(strInput,iScope,iFlag);
+	   }
+	   	else
+		{ 
+		   intStart=intEnd=0;
+		   var b = window.confirm('搜索已经到达文档结尾处，是否重新搜索？');
+		   if (b) 
+		   {strSearch='';_doSearch();}
+		   else
+		   {
+		     strSearch='';
+		   }
+		}   
+    }
+	else
+	{ 
+	   intStart=intEnd=0;
+	   strSearch='';
+	   alert('未找到查找内容!'); 
+	}
+}
+
+/*******************************/
+ //方法: _Editor_DblClickHandler
+ //编辑器ondblclick句柄
+/******************************/
+function _Editor_DblClickHandler(){
+var el=this.parentWindow.event.srcElement
+if(el.tagName=="IMG"){
+el.removeAttribute("width")
+el.removeAttribute("height")
+el.style.removeAttribute("width")
+el.style.removeAttribute("height")
+el.width=el.width
+el.height=el.height
+}
+if(el.tagName=="TABLE")
+_CPopup_Show('Table')
+}
+/*******************************/
+ //方法: _setSize
+ //编辑器设置大小
+ /******************************/
+function _setSize(){
+document.all.idEditbox.style.pixelHeight=document.body.clientHeight - idToolbar.offsetHeight - document.all.idMode.offsetHeight
+document.all.idPopup.style.pixelLeft=(document.body.clientWidth - idPopup.document.all.puRegion.offsetWidth)/ 2
+document.all.idPopup.style.pixelLeft=(document.body.clientWidth)/ 2
+}
+/*******************************/
+ //方法: _drawToolbar
+ //编辑器画功能区
+/******************************/
+function _drawToolbar()
+{
+var aIds=new Array("cut","copy","paste","bar1","undo","redo","bar2","link","table","image","bar3","formatblock","fontstyle","fontsize","bar4","bold","italic","underline","bar5","left","center","right","bar6","orderedlist","unorderedlist","outdent","indent","bar7","textcolor")
+var aTips=new Array("剪切","复制","粘贴","","撤销","恢复","","超链接","插入表格","插入图片","","字体格式","字体","字体尺寸","","加粗","斜体","下划线","","左对齐","居中","右对齐","","编号","项目符号","减少缩进","增加缩进","","字体颜色")
+var aCommand=new Array("_Format('cut')","_Format('copy')","_Format('paste')",null,"_Format('Undo')","_Format('Redo')",null,"_CPopup_Show('Link')","_CPopup_Show('Table')","_CPopup_Show('Image')",null,"_CPopup_Show('formatblock')","_CPopup_Show('font')","_CPopup_Show('fontsize')",null,"_Format('bold')","_Format('italic')","_Format('underline')",null,"_Format('Justify','Left')","_Format('Justify','Center')","_Format('Justify','Right')",null,"_Format('insertorderedlist')","_Format('insertunorderedlist')","_Format('outdent')","_Format('indent')",null,"_CPopup_Show('ForeColor')")
+var sz="<DIV ID=idStandardBar><NOBR>",iLeft=0,iHeight=24
+for(var i=0 ;i<aSizes.length;i++)
+{
+sz+="<SPAN CLASS=tbButton ONKEYPRESS=\"if(event.keyCode==13){"+aCommand[i]+";event.keyCode=0}\" ID=\"tb"+aIds[i]+"\" STYLE=\"width:"+aSizes[i]+";height:"+iHeight+"\">" +"<SPAN STYLE=\"position:absolute;width:"+aSizes[i]+";height:"+iHeight+";clip:rect(0 "+aSizes[i]+" "+iHeight+" 0)\"><IMG ALT=\""+aTips[i]+"\" TITLE=\""+aTips[i]+"\" ONCLICK=\""+aCommand[i]+";event.cancelBubble=true\" ONMOUSEDOWN=\"if(event.button==1)this.style.pixelTop=-"+(iHeight*2)+"\" ONMOUSEOVER=\"this.style.pixelTop=-"+iHeight+"\" ONMOUSEOUT=\"this.style.pixelTop=0\" ONMOUSEUP=\"this.style.pixelTop=-"+iHeight+"\" SRC=\""+L_TOOLBARGIF_TEXT+"\" STYLE=\"position:absolute;top:0;left:-"+iLeft+"\"></SPAN></SPAN>" +(aTips[i]==""?"</NOBR><NOBR>":"")
+iLeft+=aSizes[i]
+}
+sz+="</NOBR>"
+document.write(sz+"</DIV>")
+}
+/*******************************/
+ //方法: _drawModeSelect
+ //编辑器画MODE区
+/******************************/
+function _drawModeSelect(){
+var sz="<TABLE CELLSPACING=0 CELLPADDING=0 ID=idMode></TABLE>"
+document.write(sz)
+}
+/*******************************/
+ //方法: _CState
+ //对象,存储各种状态和对象变量
+/******************************/
+function _CState()
+{
+this.hasFocus=true
+this.selection=null
+this.bMode=true
+this.customButtons=false
+this.css=this.bgColor="#FFFFFF"
+this.defaultSkin=document.styleSheets.skin.cssText
+this.popupSkin=document.styleSheets.popupSkin.cssText
+this.szSearch=location.search.substring(1)
+this.aBindings=new Array()
+this.aListPopups=new Object()
+this.aCache=new Object()
+this.bLoaded=false
+this.oPhoto=null
+this.RestoreSelection=_CState_RestoreSelection
+this.GetSelection=_CState_GetSelection
+this.SaveSelection=_CState_SaveSelection
+}
+function _CState_RestoreSelection()
+{
+if(this.selection)this.selection.select()
+}
+function _CState_GetSelection()
+{
+var oSel=this.selection
+if(!oSel){
+oSel=idEditbox.document.selection.createRange()
+oSel.type=idEditbox.document.selection.type
+}
+return oSel
+}
+function _CState_SaveSelection()
+{
+try
+{
+this.selection=idEditbox.document.selection.createRange()
+if(!this.selection)
+this.selection=new Object
+this.selection.type=idEditbox.document.selection.type
+}
+catch(x)
+{alert(x.message)}
+}
+/*******************************/
+ //方法: _CPopup_Init
+ //编辑器初始化弹出功能菜单
+/******************************/
+function _CPopup_Init()
+{
+var sz="<HTML ID=popup><STYLE>" +document.styleSheets.defPopupSkin.cssText +"\n" +document.styleSheets.popupSkin.cssText +"</STYLE><BODY ONCONTEXTMENU=\"return false\" ONSCROLL=\"return false\" SCROLL=no TABINDEX=-1 ONSELECTSTART=\"return event.srcElement.tagName=='INPUT'\" ><DIV ID=puRegion><TABLE ID=header><TR><TH NOWRAP ID=caption></TH><TH VALIGN=middle ALIGN=RIGHT><DIV ID=close ONCLICK=\"parent._CPopup_Hide()\">×</DIV></TH></TR></TABLE><DIV ALIGN=CENTER ID=content></DIV></DIV></BODY></HTML>"
+idPopup.document.open("text/html","replace")
+idPopup.document.write(sz)
+idPopup.document.close()
+}
+/*******************************/
+ //方法: _CPopup_Hide
+ //编辑器隐藏功能弹出菜单
+/******************************/
+function _CPopup_Hide()
+{
+document.all.idPopup.style.zIndex=-1
+document.all.idPopup.style.visibility="hidden"
+try
+{
+var popObj = idPopup.document
+idPopup.document._type=""
+idPopup.document.onkeydown=idPopup.document.onmouseover=idPopup.document.onclick=null
+}
+catch(x)
+{}
+//add
+idEditbox.document.body.focus()
+g_state.hasFocus=true
+}
+/*******************************/
+ //方法: _CPopup_Show
+ //编辑器显示弹出菜单
+/******************************/
+function _CPopup_Show(szType)
+{
+var oRenderer,szCacheKey="PopupRenderer."+szType
+if(!isIE4)
+{ g_state.SaveSelection()}
+if(idPopup.document._type==szType)
+{ 
+  _CPopup_Hide()
+}
+else
+{
+document.all.idPopup.style.zIndex=-1
+oRenderer=g_state.aCache[szCacheKey]
+if((!oRenderer)||("Search"==szType)||("Image"==szType)||("Link"==szType))
+{
+g_state.aCache[szCacheKey]=oRenderer=new _CPopupRenderer(szType)
+}
+document.all.idPopup.style.visibility=""
+document.all.idPopup.style.pixelHeight=document.all.idPopup.style.pixelWidth=idPopup.document.all.puRegion.style.pixelHeight=idPopup.document.all.puRegion.style.pixelWidth=50
+idPopup.document._type=szType
+idPopup.document._renderer=oRenderer
+idPopup.document.all.caption.innerText=oRenderer.GetCaption()
+idPopup.document.all.content.innerHTML=oRenderer.GetHTML()
+idPopup.document.onkeydown=new Function("this._renderer.OnKeyDown()")
+idPopup.document.onmouseover=new Function("this._renderer.OnMouseOver()")
+idPopup.document.onclick=new Function("this._renderer.OnClick()")
+oRenderer.ResetContext(idPopup.document)
+setTimeout("_CPopupRenderer_Display('"+szType+"')",100)
+}
+}
+/*******************************/
+ //方法: _CPopupRenderer_Display
+ //编辑器功能子菜单显示
+/******************************/
+function _CPopupRenderer_Display(szType){
+var oRenderer,szCacheKey="PopupRenderer."+szType
+oRenderer=g_state.aCache[szCacheKey]
+if(oRenderer.autoSize){
+idPopup.document.all.puRegion.style.pixelHeight=document.all.idPopup.style.pixelHeight=idPopup.document.all.puRegion.offsetHeight
+idPopup.document.all.puRegion.style.pixelWidth=document.all.idPopup.style.pixelWidth=idPopup.document.all.puRegion.offsetWidth+50
+document.all.idPopup.style.pixelLeft=(document.body.clientWidth - idPopup.document.all.puRegion.offsetWidth)/ 2
+}
+else{
+idPopup.document.all.puRegion.style.pixelHeight=document.all.idPopup.style.pixelHeight=document.body.clientHeight - idToolbar.offsetHeight- document.all.idMode.offsetHeight-20
+idPopup.document.all.puRegion.style.pixelWidth=document.all.idPopup.style.pixelWidth=document.body.clientWidth - 50
+document.all.idPopup.style.pixelLeft=25
+}
+document.all.idPopup.style.zIndex=2
+idPopup.focus()
+if (szType=="Search") idPopup.document.all.txtSearch.focus()
+}
+/*******************************/
+ //方法: _CPopupRenderer
+ //对象,控制功能弹出菜单
+/******************************/
+function _CPopupRenderer(szType)
+{
+this.szType=szType
+this.elCurrent=this.oDocument=null
+this.ResetContext=_CPopupRenderer_ResetContext
+this.GetCaption=_CPopupRenderer_GetCaption
+this.GetHTML=_CPopupRenderer_GetHTML
+this.autoSize=true
+this.OnMouseOver=new Function()
+this.OnKeyDown=_CListPopupRenderer_GenericOnKeyDown
+switch(szType)
+{
+case "formatblock":
+case "font":
+case "fontsize":
+this.OnMouseOver= _CListPopupRenderer_OnMouseOver
+this.OnKeyDown=_CListPopupRenderer_OnKeyDown
+case "ForeColor":
+this.OnClick=_CListPopupRenderer_OnClick
+this.Highlight=_CListPopupRenderer_Highlight
+this.Select=_CListPopupRenderer_Select
+break
+default:
+this.OnClick=new Function()
+break
+}
+switch(szType)
+{
+case "formatblock":
+this.szCaption="选择当前字体格式"
+this.PrepareHTML=_CFormatBlockPopupRenderer_PrepareHTML
+this.szHTML=this.PrepareHTML()
+break
+case "font":
+this.szCaption="选择当前字体"
+this.PrepareHTML=_CFontFacesPopupRenderer_PrepareHTML
+this.szHTML=this.PrepareHTML()
+break
+case "fontsize":
+this.szCaption="选择当前字体尺寸"
+this.PrepareHTML = _CFontSizesPopupRenderer_PrepareHTML2 //_CFontSizesPopupRenderer_PrepareHTML
+this.szHTML=this.PrepareHTML()
+break
+case "Link":
+this.szCaption="创建、修改链接"
+this.PrepareHTML=_CLinkPopupRenderer_PrepareHTML
+this.szHTML=this.PrepareHTML()
+break
+case "Image":
+this.szCaption="创建、修改图片"
+this.PrepareHTML=_CImagePopupRenderer_PrepareHTML
+this.szHTML=this.PrepareHTML()
+break
+case "Table":
+this.szCaption="创建、修改表格"
+this.PrepareHTML=_CTablePopupRenderer_PrepareHTML
+this.szHTML=this.PrepareHTML()
+break
+case "ForeColor":
+this.szCaption="选择当前字体颜色"
+this.szHTML="<DIV ID=ColorPopup ALIGN=CENTER>"+_CUtil_BuildColorTable("")+"</DIV>"
+break
+case "Search":
+this.szCaption="查找"
+this.PrepareHTML=_CSearchPopupRenderer_PrepareHTML
+this.szHTML=this.PrepareHTML()
+break
+default:
+this.szCaption=""
+break
+}
+}
+function _CPopupRenderer_ResetContext(oDoc)
+{
+this.oDocument=oDoc
+this.elCurrent=null
+if(this.szType=="Table"){
+var oSel=idEditbox.document.selection.createRange()
+var oBlock=(oSel.parentElement!=null?_CUtil_GetElement(oSel.parentElement(),"TABLE"):_CUtil_GetElement(oSel.item(0),"TABLE"))
+if(oBlock!=null){
+oDoc.all.tabEdit.className=""
+oDoc.all.tabEditBodytxtPadding.value=oBlock.cellPadding
+oDoc.all.tabEditBodytxtSpacing.value=oBlock.cellSpacing
+oDoc.all.tabEditBodytxtBorder.value=oBlock.border
+oDoc.all.tabEditBodytxtBorderColor.value=oBlock.borderColor
+oDoc.all.tabEditBodytxtBackgroundImage.value=oBlock.background
+oDoc.all.tabEditBodytxtBackgroundColor.value=oBlock.bgColor
+}
+oDoc.elCurrent=oBlock
+}
+}
+function _CPopupRenderer_GetCaption()
+{
+return this.szCaption
+}
+function _CPopupRenderer_GetHTML()
+{
+return this.szHTML
+}
+function _CFontSizesPopupRenderer_PrepareHTML()
+{
+var sz="<TABLE ALIGN=center ID=idList CELLSPACING=0 CELLPADDING=0>"
+for(var i=1;i <= 7;i++)
+{
+sz+="<TR><TD NOWRAP _item="+i+" ALIGN=center STYLE=\"margin:0pt;padding:0pt\"><FONT SIZE="+i+">" +"脉搏集团("+i+")</FONT></TD></TR>"
+}
+sz+="</TABLE>"
+return sz
+}
+
+function _CFontSizesPopupRenderer_PrepareHTML2()
+{
+var sz="<TABLE ALIGN=center  CELLSPACING=0 CELLPADDING=0  style='font-size:14.9px'>"
+sz += "<TR>"
+sz += "<TD><br><NOBR>"
+sz += "<INPUT id='radDefault' type='radio' value='0' name='FontGroup'> 默认字体: "
+sz += "<SELECT id='selDefault' style='WIDTH: 64px' name='selDefault'>"
+sz += "<OPTION selected value='1'>1号</OPTION>"
+sz += "<OPTION value='2'>2号</OPTION>"
+sz += "<OPTION value='3'>3号</OPTION>"
+sz += "<OPTION value='4'>4号</OPTION>"
+sz += "<OPTION value='5'>5号</OPTION>"
+sz += "<OPTION value='6'>6号</OPTION>"
+sz += "<OPTION value='7'>7号</OPTION>"
+sz += "</SELECT></NOBR><br>&nbsp;<font color='#191970'>(应用于当前选中文字)</font>"
+sz += "</TD>"
+sz += "</TR>"
+sz += "<TR>"
+sz += "<TD><BR><nobr>"
+sz += "<INPUT id='radCustom' type='radio' CHECKED value='1' name='FontGroup'> 自定义:  "
+sz += "大小 <INPUT id='txtSize' style='WIDTH: 50px; HEIGHT: 22px' type='text' size='1' value='14.9' maxlength='4' name='txtSize'>"
+sz += " 单位 <SELECT id='selCustom' name='selCustom'>"
+sz += "<OPTION  value='pt'>磅</OPTION>"
+sz += "<OPTION  selected value='px'>像素</OPTION>"
+sz += "<OPTION value='%'>百分比</OPTION>"
+sz += "</SELECT></nobr><br>&nbsp;<font color='#191970'>(应用于包含当前选中文字的整个段落)</font>"
+sz += "</TD>"
+//sz += "</TR><TR><TD><br>行间距:  <input id='txtLineHeight' style='width:40px',type='text' maxlength='4' name='txtLineHeight' value=''>"
+sz += "</TR><TR><TD><br>&nbsp;&nbsp;行距: "
+sz += "<SELECT id='selLH' name='selLH' style='width:70px'>"
+sz += "<OPTION selected value=''>--默认--</OPTION>"
+sz += "<OPTION  value='50%'>0.5倍行距</OPTION>"
+sz += "<OPTION  value='100%'>单倍行距</OPTION>"
+sz += "<OPTION  value='150%'>1.5倍行距</OPTION>"
+sz += "<OPTION  value='200%'>2倍行距</OPTION>"
+sz += "<OPTION  value='300%'>3倍行距</OPTION>"
+sz += "</SELECT></TD></TR>"
+/*sz += "<SELECT id='selLine' name='selLine'>"
+sz += "<OPTION  value='pt'>磅</OPTION>"
+sz += "<OPTION  selected value='px'>像素</OPTION>"
+sz += "<OPTION value='%'>百分比</OPTION>"
+sz += "</SELECT></TD></TR>"*/
+sz += "<TR>"
+sz += "<TD ALIGN=center><br><INPUT TYPE=submit ONCLICK=\"parent._CTablePopupRenderer_FontSizeHandler(this.document)\" VALUE=\" 确 定 \"> <INPUT TYPE=reset VALUE=\" 取 消 \" ONCLICK=\"parent._CPopup_Hide()\"</TD>"
+sz += "</TR>"
+sz += "</TABLE>"
+return sz
+}
+
+function _CTablePopupRenderer_FontSizeHandler(doc)
+{
+   var SizeUnit = null;
+   var HeightUnit = null;
+   var intLH = 0;
+   if (!g_state.hasFocus) return;
+   
+	var oSel=g_state.GetSelection();
+	var sType=oSel.type;
+	var oTarget=(sType=="None"?idEditbox.document:oSel);
+	//alert(oSel.parentElement().tagName);
+    var oBlock=(oSel.parentElement!=null?_CUtil_GetBlock(oSel.parentElement()):oSel.item(0));
+	//alert(oBlock.innerHTML);
+   /*
+     第一次设置的行距处理,现在因为太专业而被废除
+   if (doc.all.txtLineHeight.value!="")
+   {
+     intLH = parseInt(doc.all.txtLineHeight.value,10);
+	 if (isNaN(intLH)) {alert("行间距只能输入有效数字!");return false;}
+	 HeightUnit =  "%";//doc.all.selLine.value;
+	 if (intLH!=0 && oBlock!=null)
+	 {
+	   oBlock.style.lineHeight =   intLH+HeightUnit;
+	 }
+	 
+   }*/
+   if (doc.all.selLH.value!='' && oBlock!=null)
+   {
+       oBlock.style.lineHeight = doc.all.selLH.value;
+   }
+   if (doc.all.radDefault.checked) //默认字体
+   {
+      _Format("FontSize",doc.all.selDefault.value);
+   }
+   else
+   {
+       var intSize = 0;
+	   try
+	   { 
+	      intSize = parseInt(doc.all.txtSize.value,10);
+		  if ((isNaN(intSize)||intSize==0))
+		  {
+		     alert("字体大小只能输入有效数字!");return false;
+		  }
+		  SizeUnit = doc.all.selCustom.value;
+		  			
+	   }
+	   catch(x)
+	   {
+	      alert("字体大小只能输入有效数字!");
+		  return false;
+	   }
+	   if (oBlock != null)
+	   {
+	     
+          oBlock.style.fontSize = intSize+SizeUnit;
+	   }
+		
+   }
+   g_state.RestoreSelection();
+}
+
+function _CFontFacesPopupRenderer_PrepareHTML()
+{
+var sz="<TABLE ALIGN=center ID=idList CELLSPACING=0 CELLPADDING=0>"
+for(var i=0;i<defaultFonts.length;i++)
+{
+if(i%2==0)sz+="<TR>"
+sz+="<TD NOWRAP _item="+i+" ALIGN=center STYLE=\"margin:0pt;padding:0pt\"><FONT FACE=\""+defaultFonts[i][0]+"\">" +defaultFonts[i][1] +"</FONT>"+(defaultFonts[i][2]?("("+defaultFonts[i][1]+")"):"")+"</TD>"
+if(i%2)sz+="</TR>"
+}
+if(i%2)sz+="</TR>"
+sz+="<TR><TD ROWSPAN=2 ONCLICK=\"parent._CFontFacesPopupRenderer_InsertOther(this)\" ALIGN=center _item=\"custom\" STYLE=\"margin:0pt;padding:0pt\" NOWRAP ID=customFont>其他字体...</TD></TR>"
+sz+="</TABLE>"
+return sz
+}
+/*******************************/
+ //方法: _CFontFacesPopupRenderer_InsertOther()
+ //选择其它字体
+/******************************/
+function _CFontFacesPopupRenderer_InsertOther(){
+var szFont=prompt("请输入您指定的字体名称: ","宋体")
+if((szFont!=null)&&(szFont!=""))
+_Format("FontName",szFont)
+_CPopup_Hide()
+}
+/*******************************/
+ //方法: _CFormatBlockPopupRenderer_PrepareHTML()
+ //格式文本准备
+/******************************/
+function _CFormatBlockPopupRenderer_PrepareHTML()
+{
+var sz,defaultParagraphs=new Array()
+defaultParagraphs[0]=new Array("<P>","普通")
+for(var i=1;i <= 6;i++)
+defaultParagraphs[i]=new Array("<H"+i+">","标题"+i+"(H"+i+")")
+defaultParagraphs[7]=new Array("<PRE>","格式化文本(PRE)")
+sz="<TABLE CLASS=block ALIGN=center ID=idList CELLSPACING=0 CELLPADDING=0>"
+for(var i=0;i<defaultParagraphs.length;i++)
+{
+sz+="<TR><TD NOWRAP _item="+i+" ALIGN=center STYLE=\"margin:0pt;padding:0pt\">"+defaultParagraphs[i][0] +defaultParagraphs[i][1] +"</"+defaultParagraphs[i][0].substring(1)+"</TD></TR>"
+}
+sz+="</TABLE>"
+return sz
+}
+/*******************************/
+ //方法: _CTablePopupRenderer_PrepareHTMLPage
+ //表格选择框内容准备
+/******************************/
+function _CTablePopupRenderer_PrepareHTMLPage(szID,bDisplay){
+var sz="<TABLE height=100% "+((!bDisplay)?" style=\"display:none\"":"")+" width=100% CELLSPACING=0 CELLPADDING=0 ID="+szID+"><TR ID=tableContents><TD ID=tableOptions VALIGN=TOP NOWRAP WIDTH=150 ROWSPAN=2><A HREF=\"javascript:parent._CTablePopupRenderer_Select(this,'"+szID+"','prop1')\">设定行列</A><BR><A HREF=\"javascript:parent._CTablePopupRenderer_Select(this,'"+szID+"','prop2')\">设定边框与间隔</A><BR><A HREF=\"javascript:parent._CTablePopupRenderer_Select(this,'"+szID+"','prop3')\">设定边框</A><BR><A HREF=\"javascript:parent._CTablePopupRenderer_Select(this,'"+szID+"','prop4')\">设定背景</A><BR></TD><TD BGCOLOR=black ID=puDivider ROWSPAN=2></TD><TD ID=tableProps VALIGN=TOP>"
+if(szID=="tabNewBody"){
+sz+= "<DIV ID='"+szID+"prop1'><P CLASS=tablePropsTitle>设定行列</P><TABLE><TR><TD>行: </TD><TD><INPUT SIZE=2 MAXLENGTH=2 TYPE=text ID="+szID+"txtRows VALUE=2 ></TD></TR><TR><TD>列: </TD><TD><INPUT SIZE=2 MAXLENGTH=2 TYPE=text ID="+szID+"txtColumns VALUE=2 ></TD></TR></TABLE></DIV>"
+}
+else{
+sz+= "<DIV ID='"+szID+"prop1'><P CLASS=tablePropsTitle>设定行列</P>" +"<INPUT type=button ID="+szID+"txtRows VALUE=\"插入行\" ONCLICK=\"parent._CTablePopupRenderer_AddRow(this)\"><P><INPUT type=button ID="+szID+"txtCells VALUE=\"插入列\" ONCLICK=\"parent._CTablePopupRenderer_AddCell(this)\"><BR></DIV>"
+}
+sz+="<DIV ID='"+szID+"prop2' STYLE=\"display:none\"><P CLASS=tablePropsTitle>设定边框与间隔</P>单元格边框: <INPUT SIZE=2 TYPE=text ID="+szID+"txtPadding VALUE=1><BR>单元格间隔: <INPUT SIZE=2 TYPE=text ID="+szID+"txtSpacing VALUE=1></DIV><DIV ID="+szID+"prop3 STYLE=\"display:none\"><P CLASS=tablePropsTitle>设定边框</P>边框宽度: <INPUT SIZE=2 TYPE=text ID="+szID+"txtBorder VALUE=1><BR>边框颜色: <INPUT SIZE=4 TYPE=text ID="+szID+"txtBorderColor value=#000000><BR>" +_CUtil_BuildColorTable("idBorder"+szID,"","parent._CTablePopupRenderer_ColorSelect(this,'"+szID+"txtBorderColor')")+"</DIV><DIV ID="+szID+"prop4 SIZE=12 STYLE=\"display:none\"><P CLASS=tablePropsTitle>设定背景</P>背景图片: <INPUT TYPE=text ID="+szID+"txtBackgroundImage SIZE=15><BR>背景颜色: <INPUT TYPE=text SIZE=4 ID="+szID+"txtBackgroundColor><BR>" +_CUtil_BuildColorTable("idBackground"+szID,"","parent._CTablePopupRenderer_ColorSelect(this,'"+szID+"txtBackgroundColor')")+"</DIV></TD></TR><TR><TD align=center ID=tableButtons valign=bottom>"
+if(szID=="tabNewBody"){
+sz+="<INPUT TYPE=submit ONCLICK=\"parent._CTablePopupRenderer_BuildTable('"+szID+"',this.document)\" VALUE=\"创建表格\"> <INPUT TYPE=reset VALUE=\" 取 消 \" ONCLICK=\"parent._CPopup_Hide()\">"
+}else{
+sz+="<INPUT TYPE=submit ONCLICK=\"parent._CTablePopupRenderer_BuildTable('"+szID+"',this.document)\" VALUE=\"修改表格\"> <INPUT TYPE=reset VALUE=\" 取 消 \" ONCLICK=\"parent._CPopup_Hide()\">"
+}
+sz+= "</TD></TR></TABLE>"
+return sz
+}
+function _CTablePopupRenderer_PrepareHTML()
+{
+var sz="<TABLE CLASS=tabBox ID=\"tabSelect\" CELLSPACING=0 CELLPADDING=0 WIDTH=95%><TR HEIGHT=15><TD CLASS=tabItem STYLE=\"border-bottom:none\" NOWRAP><DIV ONCLICK=\"if(tabEdit.className!='disabled'){this.className='selected';this.parentElement.style.borderBottom=tabEdit.className=tabNewBody.style.display='';tabEditBody.style.display='none';tabEdit.parentElement.style.borderBottom='1px black solid'}\" CLASS=selected ID=tabNew>创建表格</DIV></TD><TD CLASS=tabItem NOWRAP><DIV ONCLICK=\"if(this.className!='disabled'){this.className='selected';this.parentElement.style.borderBottom=tabNew.className=tabEditBody.style.display='';tabNew.parentElement.style.borderBottom='1px black solid';tabNewBody.style.display='none'}\" CLASS=disabled ID=tabEdit>修改表格</DIV></TD><TD CLASS=tabSpace WIDTH=100%>&nbsp;</TD></TR><TR><TD VALIGN=TOP CLASS=tabBody COLSPAN=3>"+_CTablePopupRenderer_PrepareHTMLPage("tabNewBody",true)+_CTablePopupRenderer_PrepareHTMLPage("tabEditBody",false)+"</TD></TR></TABLE>"
+return sz
+}
+
+function _CTablePopupRenderer_Select(el,szID,id)
+{
+var d=el.document
+for(var i=1;i<5;i++)
+d.all[szID+"prop"+i].style.display="none"
+d.all[szID+id].style.display=""
+}
+
+function _CTablePopupRenderer_ColorSelect(el,id)
+{
+el.document.all[id].value=el.bgColor
+}
+/*******************************/
+ //方法: _CTablePopupRenderer_AddCell
+ //画表格列
+/******************************/
+function _CTablePopupRenderer_AddRow(el){
+var elRow=el.document.elCurrent.insertRow()
+for(var i=0;i<el.document.elCurrent.rows[0].cells.length;i++){
+var elCell=elRow.insertCell()
+elCell.innerHTML="&nbsp;"
+}
+}
+/*******************************/
+ //方法: _CTablePopupRenderer_AddCell
+ //画表格单元格
+/******************************/
+function _CTablePopupRenderer_AddCell(el){
+for(var i=0;i<el.document.elCurrent.rows.length;i++){
+var elCell=el.document.elCurrent.rows[i].insertCell()
+elCell.innerHTML="&nbsp;"
+}
+}
+/*******************************/
+ //方法: _CTablePopupRenderer_BuildTable
+ //画表格
+/******************************/
+function _CTablePopupRenderer_BuildTable(szID,d)
+{
+if(szID=="tabNewBody"){
+var sz="<TABLE "+(((d.all[szID+"txtBorder"].value=="")||(d.all[szID+"txtBorder"].value=="0"))?"class=\"NOBORDER\"":"")+(d.all[szID+"txtPadding"].value!=""?"cellPadding=\""+d.all[szID+"txtPadding"].value+"\" ":"")+(d.all[szID+"txtSpacing"].value!=""?"cellSpacing=\""+d.all[szID+"txtSpacing"].value+"\" ":"")+(d.all[szID+"txtBorder"].value!=""?"border=\""+d.all[szID+"txtBorder"].value+"\" ":"")+(d.all[szID+"txtBorderColor"].value!=""?"bordercolor=\""+d.all[szID+"txtBorderColor"].value+"\" ":"")+(d.all[szID+"txtBackgroundImage"].value!=""?"background=\""+d.all[szID+"txtBackgroundImage"].value+"\" ":"")+(d.all[szID+"txtBackgroundColor"].value!=""?"bgColor=\""+d.all[szID+"txtBackgroundColor"].value+"\" ":"")+">"
+if(d.all[szID+"txtRows"].value>99)d.all[szID+"txtRows"].value=99
+if(d.all[szID+"txtColumns"].value>99)d.all[szID+"txtColumns"].value=50
+for(var r=0;r<parseInt(d.all[szID+"txtRows"].value);r++)
+{
+sz+="<TR>"
+for(var c=0;c<parseInt(d.all[szID+"txtColumns"].value);c++)
+sz+="<TD>&nbsp;</TD>"
+sz+="</TR>"
+}
+sz+="</TABLE>"
+insertHTML(sz)
+}else
+if(d.elCurrent){
+d.elCurrent.cellPadding=d.all.tabEditBodytxtPadding.value
+d.elCurrent.cellSpacing=d.all.tabEditBodytxtSpacing.value
+d.elCurrent.border=d.all.tabEditBodytxtBorder.value
+d.elCurrent.className=(d.elCurrent.border==""||d.elCurrent.border==0)?"NOBORDER":""
+d.elCurrent.borderColor=d.all.tabEditBodytxtBorderColor.value
+d.elCurrent.bgColor=d.all.tabEditBodytxtBackgroundColor.value
+d.elCurrent.background=d.all.tabEditBodytxtBackgroundImage.value
+}
+g_state.RestoreSelection()
+_CPopup_Hide()
+}
+
+function _CListPopupRenderer_OnClick()
+{
+var elTD=_CUtil_GetElement(this.oDocument.parentWindow.event.srcElement,"TD")
+if(elTD &&elTD._item)this.Select(elTD)
+}
+
+function _CListPopupRenderer_GenericOnKeyDown(){
+var ev=this.oDocument.parentWindow.event
+if(ev.keyCode==27)_CPopup_Hide()
+}
+
+function _CListPopupRenderer_OnKeyDown()
+{
+var el
+var iRow=iCell=0
+var ev=this.oDocument.parentWindow.event
+var idList=this.oDocument.all.idList
+var elTR=_CUtil_GetElement(this.elCurrent,"TR")
+var elTD=_CUtil_GetElement(this.elCurrent,"TD")
+if(elTR!=null)
+{
+iRow=elTR.rowIndex
+iCell=elTD.cellIndex
+}
+switch(ev.keyCode)
+{
+case 37:
+iCell--
+if(iCell<0)
+iCell=idList.rows[iRow].cells.length-1
+break
+case 38:
+iRow--
+if(iRow<0)
+iRow=idList.rows.length-1
+break
+case 39:
+iCell++
+if(iCell>idList.rows[iRow].cells.length-1)
+iCell=0
+break
+case 40:
+iRow++
+if(iRow>idList.rows.length-1)
+iRow=0
+break
+case 13:
+break;
+case 27:
+_CPopup_Hide()
+break;
+default:
+return;
+}
+el=idList.rows[iRow].cells[iCell]
+if(el &&el._item)
+if(13==ev.keyCode){
+ev.keyCode=0
+this.Select(el)
+}
+else
+this.Highlight(el)
+}
+
+function _CListPopupRenderer_OnMouseOver()
+{
+var el=_CUtil_GetElement(this.oDocument.parentWindow.event.srcElement,"TD")
+if(el &&el._item &&el!=this.elCurrent)
+this.Highlight(el)
+}
+
+function _CListPopupRenderer_Highlight(el)
+{
+var elC=this.elCurrent
+if(elC)elC.style.borderWidth=elC.style.borderColor=elC.style.borderStyle=""
+el.style.borderWidth="1px"
+el.style.borderColor="green"
+el.style.borderStyle="solid"
+this.elCurrent=el
+}
+/*******************************/
+ //方法: _CListPopupRenderer_Select
+ //功能选择
+/******************************/
+function _CListPopupRenderer_Select(elTD)
+{
+g_state.RestoreSelection()
+var el=elTD.children[0]
+switch(this.szType)
+{
+case "font":
+if(!el)
+parent._CFontFacesPopupRenderer_InsertOther(this)
+else
+_Format("FontName",el.face)
+break
+case "fontsize":
+_Format("FontSize",el.size)
+break
+case "formatblock":
+_Format("FormatBlock","<"+el.tagName+">")
+break
+case "ForeColor":
+_Format("ForeColor",elTD.bgColor)
+break
+}
+_CPopup_Hide()
+}
+/*******************************/
+ //方法: _CLinkPopupRenderer_AddLink(d)
+ //添加链接
+/******************************/
+function _CLinkPopupRenderer_AddLink(d)
+{
+var szURL=d.all.urlValue.value
+var szType=d.all.urlType[d.all.urlType.selectedIndex].text
+var oSel=g_state.GetSelection()
+szURL=((0==szURL.indexOf("mailto:")||0==szURL.indexOf("http://")||0==szURL.indexOf("ftp://"))?"":szType)+szURL
+if(szURL!="")
+{
+if((oSel.parentElement)&&(oSel.text==""))
+{
+oSel.expand("word")
+if(oSel.text=="")
+{
+var sText=""
+var oStore=oSel.duplicate()
+if(d.all.pageList){
+var idx=d.all.pageList.selectedIndex
+if(d.all.pageList[idx].value==szURL)
+sText=d.all.pageList[idx].text
+else
+sText=szURL
+}
+else
+sText=szURL
+oSel.pasteHTML('<A HREF="'+szURL+'">'+sText+'</A>')
+oSel.setEndPoint("StartToStart",oStore)
+oSel.select()
+_CPopup_Hide()
+return
+}
+}
+else
+if((oSel.item)&&(oSel.item(0).tagName=="IMG"))
+{
+oSel.item(0).width=oSel.item(0).offsetWidth
+oSel.item(0).height=oSel.item(0).offsetHeight
+oSel.item(0).border=(d.all.displayBorder.checked)?1:""
+}
+if(d.all.urlValue.value!="")
+oSel.execCommand("CreateLink",false,szURL)
+else
+oSel.execCommand("UnLink",false,szURL)
+}
+oSel.select()
+_CPopup_Hide()
+}
+/*******************************/
+ //方法: _CLinkPopupRenderer_PrepareHTML
+ //添加链接文本准备
+/******************************/
+function _CLinkPopupRenderer_PrepareHTML()
+{
+var oSel=g_state.GetSelection()
+var oEl,bImg=false,szURL=sz=""
+if(oSel.parentElement)
+{
+oEl=_CUtil_GetElement(oSel.parentElement(),"A")
+}
+else
+{
+oEl=_CUtil_GetElement(oSel.item(0),"A")
+bImg=oSel.item(0).tagName=="IMG"
+}
+if(oEl)szURL=oEl.href
+sz ="<TABLE ALIGN=center>"
+var arTypes=new Array("http","ftp","mailto")
+var arText=new Array("http://","ftp://","mailto:")
+var szType=szURL.substring(0,szURL.indexOf(":"))
+if(("http"==szType)||("ftp"==szType))
+szURL=szURL.substring(szURL.indexOf("//")+2)
+else
+szURL=szURL.substring(szURL.indexOf(":")+1)
+sz+="<BR>输入或修改一个链接地址: <NOBR><SELECT ID=urlType>"
+for(var i=0;i<arTypes.length;i++){
+sz+= "<OPTION VALUE='"+arTypes[i]+"' "+(arTypes[i]==szType?" SELECTED ":"")+">"+arText[i]
+}
+sz+="</SELECT><INPUT ID=urlValue SIZE=45 VALUE=\""+szURL+"\" TYPE=text></NOBR>"
+if(bImg)
+{
+sz+="<BR><INPUT TYPE=checkbox ID=displayBorder "+((oSel.item(0).border!=0)?" checked ":"")+">是否显示图片链接边框?"
+}
+sz+="</TD></TR><TR><TD ALIGN=center><INPUT ONCLICK=\"parent._CLinkPopupRenderer_AddLink(this.document)\" TYPE=submit ID=idSave VALUE=\" "+(szURL==""?"插 入":"修 改")+" \"> <INPUT ONCLICK=\"parent._CPopup_Hide()\" TYPE=reset ID=idCancel VALUE=\" 取 消 \"></TD></TR></TABLE>"
+return sz
+}
+/*******************************/
+ //方法: _CSearchPopupRenderer_PrepareHTML
+ //查找文本准备
+/******************************/
+function _CSearchPopupRenderer_PrepareHTML()
+{
+sz ="<TABLE ALIGN=center>"
+sz+="<TABLE style='WIDTH: 400px; HEIGHT: 90px' cellSpacing=1 cellPadding=1 border=0>"
+sz+="<TR>"
+sz+="    <TD width='75%'>查找内容:"
+sz+="      <input width='50px' id='txtSearch' maxlength='50' style='WIDTH: 219px; HEIGHT: 22px'  size=26>"
+sz+="    </TD>"
+sz+="    <TD>"
+sz+="    <input type='button' value='查找下一个'  onclick='parent._CSearchPopupRenderer_Search(this.document)' style='WIDTH: 99px; HEIGHT: 24px' size=49>"
+sz+="    </TD>"
+sz+="    </TR>"
+sz+="  <TR>"
+sz+="    <TD>"
+sz+="      <TABLE style='WIDTH: 100%; HEIGHT: 100%' cellSpacing=1 cellPadding=1 border=0>"
+sz+="      <TR>"
+sz+="          <TD width='50%'>"
+sz+="          <input type='checkbox' id='_Swhole' name='_Swhole'>全字匹配"
+sz+="          </TD>"
+sz+="          <TD rowspan='2' valign='top'>"
+sz+="          <fieldset style='WIDTH: 98%; HEIGHT: 90%'><legend>方向</legend>"
+sz+="          &nbsp;<input type='radio' name='direction' value='-1'>向上"
+sz+="          <input type='radio' name='direction' checked value='1'>向下"
+sz+="          </fieldset>         "
+sz+="          </TD></TR>"
+sz+="        <TR>"
+sz+="          <TD valign='top'> <input type='checkbox' id='_Scapital' name='_Scapital'>区分大小写</TD>"
+sz+="          </TR></TABLE>"
+sz+="     </TD>"
+sz+="    <TD valign='top'>"
+sz+="    <INPUT ONCLICK=\"parent._CancelSearch()\" TYPE=reset ID=idCancel VALUE=\" 取 消 \" style='WIDTH: 99px; HEIGHT: 24px' size=49>"
+sz+="    </TD></TR>"
+sz+="</TABLE>"
+
+return sz
+}
+
+function _CancelSearch()
+{
+    strSearch='';
+    _CPopup_Hide();
+}
+/*******************************/
+ //方法: _CSearchPopupRenderer_Search
+ //查找
+/******************************/
+function _CSearchPopupRenderer_Search(d)
+{
+   var iScope=1;
+   var iFlag=0;
+   if (d.all.txtSearch.value!='')
+   {
+		var ditem=null;
+		for(var i=0;i< d.all.direction.length;i++)
+		{
+		  ditem = d.all.direction.item(i);
+		  if (ditem.checked)
+		  {
+				iScope = ditem.value;
+		  }
+		}
+		if(iScope>=0)
+		{
+		   iScope=parseInt(idEditbox.document.body.innerText.length,10);
+		}
+		else
+		   iScope=-parseInt(idEditbox.document.body.innerText.length,10);
+       if (d.all._Swhole.checked==true)
+	   {
+	      iFlag+=2;
+	   }
+	   if (d.all._Scapital.checked==true)
+	   {
+	      iFlag+=4;
+	   }
+	   _Search(d.all.txtSearch.value,iScope,iFlag);
+   }
+   
+}
+
+/*******************************/
+ //方法: _CImagePopupRenderer_AddImage
+ //添加图片
+/******************************/
+function _CImagePopupRenderer_AddImage(d)
+{
+var szURL=d.all.urlValue.value
+var szType=d.all.urlType[d.all.urlType.selectedIndex].text
+var oSel=g_state.GetSelection()
+var szALT=d.all.imgAlt.value
+var szALIGN=d.all.imgAlign[d.all.imgAlign.selectedIndex].value
+var szBORDER=d.all.imgBorder.value
+var SelImg
+if(!oSel.parentElement)SelImg=oSel.item(0)
+szURL=((0==szURL.indexOf("http://")||0==szURL.indexOf("ftp://"))?"":szType)+szURL
+if(szURL!="")
+{
+if(SelImg)
+{
+if(SelImg.src!=szURL)SelImg.src=szURL
+if(SelImg.alt!=szALT)SelImg.alt=szALT
+if(SelImg.align.toLowerCase()!=szALIGN)_Format("Justify",szALIGN)
+if(SelImg.border!=szBORDER)SelImg.border=szBORDER
+}
+else
+insertHTML('<IMG SRC="'+szURL+'"'+(szALT==""?"":' ALT="'+szALT+'"')+(szALIGN==""?"":' ALIGN="'+szALIGN+'"')+(szBORDER==""?"":' BORDER="'+szBORDER+'"')+'>')
+oSel.select()
+_CPopup_Hide()
+return
+}
+}
+/*******************************/
+ //方法: _CImagePopupRenderer_PrepareHTML
+ //图片选择显示准备HTML文本
+/******************************/
+function _CImagePopupRenderer_PrepareHTML()
+{
+var oSel=g_state.GetSelection()
+var szURL=szALT=szALIGN=szBORDER=sz=""
+var SelImg
+if(!oSel.parentElement)
+{
+SelImg=oSel.item(0)
+if(SelImg.tagName=="IMG")
+{
+szURL=SelImg.href
+szALT=SelImg.alt
+szALIGN=SelImg.align.toLowerCase()
+szBORDER=SelImg.border
+}
+}
+sz ="<TABLE ALIGN=center><BR>输入或修改一个图片地址: <NOBR><SELECT ID=urlType><option value=''></option>"
+var arTypes=new Array("http","ftp")
+var arText=new Array("http://","ftp://")
+var szType=szURL.substring(0,szURL.indexOf(":"))
+if(("http"==szType)||("ftp"==szType))
+szURL=szURL.substring(szURL.indexOf("//")+2)
+else
+szURL=szURL.substring(szURL.indexOf(":")+1)
+for(var i=0;i<arTypes.length;i++){
+sz+= "<OPTION VALUE='"+arTypes[i]+"' "+(arTypes[i]==szType?" SELECTED ":"")+">"+arText[i]
+}
+sz+="</SELECT><INPUT ID=urlValue SIZE=45 VALUE=\""+szURL+"\" TYPE=text></NOBR>"
+sz+="<BR><NOBR>注释文本: <INPUT ID=imgAlt SIZE=44 VALUE=\""+szALT+"\" TYPE=text></NOBR>"
+sz+="<BR><NOBR>对齐模式: <SELECT ID=imgAlign>"
+var arTypes=new Array("","left","right","top","texttop","middle","absmiddle","baseline","bottom","absbottom","center")
+var arText=new Array("默认","左对齐","右对齐","顶边对齐","文本上方","相对垂直居中","绝对垂直居中","基线","相对底边对齐","绝对底边对齐","水平居中")
+for(var i=0;i<arTypes.length;i++){
+sz+= "<OPTION VALUE='"+arTypes[i]+"' "+(arTypes[i]==szALIGN?" SELECTED ":"")+">"+arText[i]
+}
+sz+="</SELECT> 边框粗细: <INPUT ID=imgBorder SIZE=5 VALUE=\""+szBORDER+"\" TYPE=text></NOBR>"
+sz+="</TD></TR><TR><TD ALIGN=center><INPUT ONCLICK=\"parent._CImagePopupRenderer_AddImage(this.document)\" TYPE=submit ID=idSave VALUE=\" "+(szURL==""?"插 入":"修 改")+" \"> <INPUT ONCLICK=\"parent._CPopup_Hide()\" TYPE=reset ID=idCancel VALUE=\" 取 消 \"></TD></TR></TABLE>"
+return sz
+}
+
+function _CUtil_GetElement(oEl,sTag)
+{
+while(oEl!=null &&oEl.tagName!=sTag)
+oEl=oEl.parentElement
+return oEl
+}
+/*******************************/
+ //方法: _CUtil_BuildColorTable
+ //输出颜色选择表HTML文本
+/******************************/
+function _CUtil_BuildColorTable(sID,fmt,szClick)
+{
+var sz,cPick=new Array("00","33","66","99","CC","FF"),iCnt=2
+var iColors=cPick.length,szColor=""
+sz="<TABLE CELLSPACING=0 CELLPADDING=0><TR><TD VALIGN=middle><DIV CLASS=currentColor ID=\""+sID+"Current\">&nbsp;</DIV></TD><TD><TABLE ONMOUSEOUT=\"document.all."+sID+"Current.style.backgroundColor=''\" ONMOUSEOVER=\"document.all."+sID+"Current.style.backgroundColor=event.srcElement.bgColor\" CLASS=colorTable CELLSPACING=0 CELLPADDING=0 ID=\""+sID+"\">"
+for(var r=0;r<iColors;r++){
+sz+="<TR>"
+for(var g=iColors-1;g>=0;g--)
+for(var b=iColors-1;b>=0;b--){
+szColor=cPick[r]+cPick[g]+cPick[b]
+sz+="<TD BGCOLOR=\"#"+szColor+"\"_item=\""+szColor+"\" TITLE=\"#"+szColor+"\" "+(szClick?"ONCLICK=\""+szClick+"\" ":"")+">&nbsp;</TD>"
+}
+sz+="</TR>"
+}
+sz+="</TABLE></TD></TR></TABLE>"
+return sz
+}
+/*******************************/
+ //方法: replace
+ //字符替换
+/******************************/
+function replace(str,replace_what,replace_with)
+{
+var ndx=str.indexOf(replace_what);
+
+var delta=replace_with.length - replace_what.length;
+while(ndx >= 0)
+{
+str=str.substring(0,ndx)+replace_with+str.substring(ndx+replace_what.length);
+ndx=str.indexOf(replace_what,ndx+delta+1);
+}
+return str;
+}
+
+function _CUtil_TrimCR(sValue){
+return replace(sValue,"\r\n"," ")
+}
+
+function _CUtil_TrimDIV(sValue){
+//return replace(sValue,"<BR>","")
+return replace(replace(replace(sValue,"<DIV>",""),"</DIV>",""),"<BR>","")
+}
+/*******************************/
+ //方法: _CUtil_GetBlock
+ //获取编辑文本块
+/******************************/
+function _CUtil_GetBlock(oEl)
+{
+var sBlocks="|H1|H2|H3|H4|H5|H6|P|PRE|LI|TD|DIV|BLOCKQUOTE|DT|DD|TABLE|HR|IMG|BODY|"
+while((oEl!=null)&&(sBlocks.indexOf("|"+oEl.tagName+"|")==-1))
+oEl=oEl.parentElement
+return oEl
+}
+/*
+function _CUtil_DomainSuffix(szHost){
+var idx=szHost.indexOf("commun")
+if(idx>=0){
+idx=szHost.indexOf(".",idx)
+return szHost.substring(idx+1)
+}else
+{
+idx=szHost.lastIndexOf(".",szHost.length-5)
+return szHost.substring(idx+1)
+}
+return szHost
+}*/
+/*******************************/
+ //方法: _CUtil_CleanHTML
+ //清除编辑文本
+/******************************/
+function _CUtil_CleanHTML(){
+var bBindings=(g_state.aBindings.length>0)
+var elAll=idEditbox.document.all
+var iCount=elAll.length
+for(var i=iCount-1;i>=0;i--){
+if(elAll[i].tagName=="IMG"){
+elAll[i].width=elAll[i].offsetWidth
+elAll[i].height=elAll[i].offsetHeight
+}
+if((elAll[i].tagName=="INPUT")&&(bBindings))
+elAll[i].outerHTML='['+elAll[i].name+']';
+}
+return idEditbox.document.body.innerHTML
+}
+var g_state
+window.onload = _initEditor
+/*******************************/
+ //方法: _drawIE4Focus
+ //IE4不支持IFRAME,故采用TEXTBOX代替
+/******************************/
+function _drawIE4Focus(){
+if(isIE4)document.write("<INPUT TYPE=textbox STYLE=\"width:0;height:0;left:0;position:absolute\">")
+}
+</SCRIPT>
+<STYLE>
+body{border-style:none;border-width:medium;margin:0pt;padding:0pt}
+#idMode{margin-top:0pt}
+.tbButton{text-align:left;margin-left:0pt;margin-right:1pt;margin-top:0pt;margin-bottom:0pt;padding:0pt}
+#EditBox{position:relative;}
+</STYLE>
+<STYLE id="skin" disabled>
+#idEditRegion{margin-left:0px;margin-right:0px;margin-top:0px;margin-bottom:0px;padding:0px}
+#tbUpRight,#tbUpLeft{width:13px}
+#idMode{margin-left:11px;padding:0pt}
+#idMode label{color:navy;text-decoration:none;font-size:14.9px}
+</STYLE>
+<STYLE id="defPopupSkin">
+#popup body{border-top-style:none;border-top-width:medium;margin:0px;padding:0pt}
+#popup .colorTable{height:91px}
+#popup #header{width:100%}
+#popup #close{cursor:default;font-size:12px;width:18px;text-align:center}
+#popup #content{padding:0pt}
+#popup table{vertical-align:top}
+#popup .tabBody{border-left:1px solid black;border-right:1px solid black;border-top-style:none;border-top-width:medium;border-bottom:1px solid black}
+#popup .tabItem,#popup .tabSpace{border-left:1px solid black;border-bottom:1px solid black}
+#popup .tabItem{font-size:14.9px;border-top:1px solid black}
+#popup .currentColor{width:20px;height:20px;border:1px solid black;margin-left:0pt;margin-right:15pt;margin-top:0pt;margin-bottom:0pt}
+#popup .tabItem div{cursor:hand;margin:3px;padding:0px}
+#popup .tabItem div.disabled{color:gray;cursor:default}
+#customFont{font-size:14.9px}
+</STYLE>
+<STYLE id="popupSkin">
+#popup body{background-color:#F1F1F1;border:1px solid #6699CC;background-position:0%;font-size:14.9px}
+#popup #header{background-color:#6699CC;color:white;background-position:0%}
+#popup #caption{text-align:left;font-size:14.9px}
+#popup .ColorTable,#popup #idList td#current{border:1px solid black}
+#popup #idList td{cursor:hand;border:1px solid #F1F1F1}
+#popup #close{cursor:hand;color:#99CCFF;border:1px solid #99CCFF;margin-right:6px;padding-left:4px;padding-right:4px;padding-top:0px;padding-bottom:2px}
+#popup #tableProps .tablePropsTitle{color:#6699CC;text-align:left;border-bottom:1px solid black;margin-left:0pt;margin-right:0pt;margin-top:0pt;margin-bottom:5pt}
+#tableButtons,#tableProps{padding:5px}
+#popup #tableContents{height:175px}
+#popup #tableProps .tablePropsTitle,#popup #tableProps,#popup #tableProps table{font-size:14.9px}
+#popup #tableOptions{font-size:14.9px;padding-left:5pt;padding-right:5pt;padding-top:15pt;padding-bottom:15pt}
+#popup #puDivider{background-color:black;width:1px;background-position:0%}
+#popup #content{margin:0pt;padding-left:3pt;padding-right:3pt;padding-top:5pt;padding-bottom:8pt}
+#popup #ColorPopup{
+	width:250px;
+}
+#popup .ColorTable tr{height:6px}
+#popup .ColorTable td{width:6px;cursor:hand}
+#popup .block p,#popup .block h1,#popup .block h2,#popup .block h3,#popup .block h4,#popup .block h5,#popup .block h6,#popup .block pre{margin:0pt;padding:0pt}
+</STYLE>
+</style>
+</HEAD>
+<BODY STYLE="background-color:transparent" oncontextmenu="//return false" tabindex="-1" scroll="no" onselectstart="return false" ondragstart="return false" onscroll="return false">
+<DIV id="idEditor" style="VISIBILITY:hidden">
+<TABLE id="idToolbar" width="100%" cellspacing="0" cellpadding="0" onclick="_CPopup_Hide()">
+<TR><TD bgColor=menu><SCRIPT>_drawToolbar()</SCRIPT></TD></TR>
+<TR><TD bgColor=#000000 HEIGHT=1></TD></TR>
+</TABLE>
+<IFRAME id="idPopup" NAME="idPopup" STYLE="HEIGHT:200px;LEFT:25px;MARGIN-TOP:8px;POSITION:absolute;VISIBILITY:hidden;WIDTH:200px;Z-INDEX:-1"></IFRAME>
+<DIV id="idEditRegion">
+<IFRAME TABINDEX=1 ID="idEditbox" NAME="idEditbox" WIDTH="100%" HEIGHT="100%" MARGINHEIGHT="1" MARGINWIDTH="1" ONFOCUS="_CPopup_Hide();"></IFRAME>
+</DIV>
+<SCRIPT>_drawIE4Focus()</SCRIPT>
+<DIV id="tbmode">
+<SCRIPT>_drawModeSelect()</SCRIPT>
+</DIV>
+</DIV>
+</BODY>

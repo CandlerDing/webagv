@@ -1,0 +1,11 @@
+<style>
+a:hover{color:"#ff7700";}
+a{text-transform: none;text-decoration:none;color:"#000000"}
+a:hover{color:"#ff7700";}
+.ald{font-size:12px ;color:"#ffffff";line-height:16px;FILTER: Dropshadow(color=#000000, Offx=1, OffY=1, Positive=1); HEIGHT: 0px; WIDTH: 100px)}
+body,td,th,input{font-size:12px ;color:#000000;line-height:120%;}
+.bg{background:#3c86c7 url('../images/bg.jpg') repeat-x left top;}
+.aa{font-size:14px;line-height:22px}
+input{font-size:12px}
+img{border="0"}
+</style>

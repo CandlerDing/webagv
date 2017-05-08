@@ -1,0 +1,25 @@
+<HTML><HEAD><TITLE>����ѡ�񡡡�����������������������</TITLE>
+<META content="text/html; charset=gb2312" http-equiv=Content-Type>
+<META content="MSHTML 5.00.2014.210" name=GENERATOR></HEAD>
+<SCRIPT src="/javascript/easyjweb/Calendar.js"></SCRIPT>
+<BODY bgColor=#3366cc onload=fload()>
+
+
+<SCRIPT>
+function fload()
+{
+	fPopCalendar(document.all.txt1, document.all.txt1);
+}
+
+function fkeydown()
+{
+	if(event.keyCode==27){
+		event.returnValue = null;
+		window.returnValue = null;
+		window.close();
+	}
+}
+
+document.onkeydown=fkeydown;
+</SCRIPT>
+<INPUT id=txt1 style="DISPLAY: none"> </BODY></HTML>

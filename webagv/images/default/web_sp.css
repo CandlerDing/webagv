@@ -1,0 +1,531 @@
+hr {
+    border: 1pt solid #333; margin: 2pt;
+}
+body, table {
+    background-color: #fff;
+    font-family: 宋体;
+    font-size: 9pt;
+}
+body
+{
+    background : #ffffff;
+    margin: 0;
+    border-top: 1;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+* a img{
+	border: none;
+}
+.clear {
+	clear:both;
+}
+#list table {
+    spacing: 0;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#list td {
+    padding: 2px 2px 2px 2px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+//查询表单 div
+#queryform {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#queryform table {
+     spacing: 0;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#queryform td {
+     padding: 2px 2px 2px 2px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+//使用帮助信息
+#info{
+   width:100%;
+}
+#info table {
+   position: absolute;
+   bottom:0px;
+    width:100%;
+    spacing: 0;
+    background-image:url(info_bg.gif);
+}
+#info td {
+    padding: 2px 2px 2px 2px;
+    font-size:12pt;
+}
+//录入、修改表单
+#form {
+ margin-top: 0;
+    margin-bottom: 0;
+}
+#form table {
+     spacing: 0;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+#form .mastInput
+{
+	color:red;
+}
+#form td {
+    padding: 2px 2px 2px 2px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+#form .td_label {
+  background : #E1E8FF;
+  color:#00080;
+}
+#form .td_value
+{
+	background : #e1e8ff;
+    color:#00080;
+    }
+#form input {
+    border-color: #e1e8ff;
+    border-style: none;
+    border: 1px solid;
+}
+
+#form textarea {
+    border-color: #e1e8ff;
+    border-style: none;
+    border: 1px solid;
+    overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6,
+h1 *, h2 *, h3 *, h3 *, h5 *, h6 * {
+    font-family: 宋体, Bitstream Vera Sans, sans-serif;
+    color: #2b5e82;
+}
+a {
+    color: #000000;
+    text-decoration: none
+}
+a:link {
+    color: #000000;
+    text-decoration: none
+}
+a:hover {
+    color: #000000;
+    text-decoration: none
+}
+a:visited {
+    color: #000000;
+    text-decoration: none
+}
+//导航CSS
+#nav1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#nav1 img{
+    border:0;
+}
+#nav1 ul {
+    background-color: #eeeeee;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid gray;
+    border-top: 1px solid white;
+    border-bottom: 1px solid gray;
+}
+#nav1 li {
+    list-style-type: none;
+    padding: 0 10px;
+    border-right: 1px solid gray;
+    display: inline
+}
+#nav1 input {
+    font-size: 8pt;
+    border-color: #e1e8ff;
+    border-style: none;
+}
+
+.page_input {
+    color: #000080;
+    background-color: #e1e8ff
+    font-size: 12px;
+    border-right: #bddfff 1px solid;
+    border-top: #bddfff 1px solid;
+    border-left: #bddfff 1px solid;
+    border-bottom: #bddfff 1px solid;
+}
+.body_admin
+{
+    background : #ffffff; margin: 0; margin-top: 0;
+    border-top: 1;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    font-size:9pt
+
+}
+.body_admin1
+{
+    background : #BDDDFF; margin: 0; margin-top: 0;
+    border-top: 1;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    font-size:9pt
+}
+.body0
+{
+    background : #ffffff; margin: 0; margin-top: 0;
+    border-top: 1;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    font-size:9pt
+}
+
+.body1
+{
+    background : #BDDFFF; margin: 0; margin-top: 0;
+    border-top: 1;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    font-size:9pt
+}
+.work_flow_input
+{
+    BACKGROUND-COLOR: buttonface
+}
+
+.p5{background : #BDDFFF;}
+.title_bgcolor{
+	background:#BDDFFF;
+	color:#00080;
+	font-size:12pt;
+	height:35px;
+	font-weight:bold;
+	}
+.title_color{color : #BDDFFF;font-size:9pt}
+.head_style0 {border: 0 solid #B5C7FF;color:#00080;}
+.head_style {background:#e1e8ff;border: 1 solid #B5C7FF;color:#00080}
+
+
+.main_style0 {border: 1 solid #B5C7FF;}
+.main_style {background:#BDDFFF;border: 1 solid #B5C7FF}
+
+.data_bgcolor {
+    background : #E1E8FF;
+    color:#00080;
+}
+.data_bgcolor_even {
+    background : #FFFFFF;
+    color:#00080;
+}
+.data_bgcolor_even12 {
+    background : #FFFFFF;
+    color:#00080;
+    font-size:12pt;
+    height:35px;
+}
+.data_bgcolor_odd {
+    background : #E1E8FF;
+    color:#00080;
+}
+.data_bgcolor_odd12 {
+    background : #E1E8FF;
+    color:#00080;
+    font-size:12pt;
+    height:35px;
+}
+.foot_bgcolor {
+    background : #E1E8FF;
+    color: #00080;
+}
+
+.coolButton{font-size:9pt}
+.p1{font-size:9pt}
+.nav{font-family: Webdings;font-size:7.5pt;}
+.coolButton{font: menu}
+.coolBar1{background: buttonface;border-top: 1px solid buttonhighlight;	border-left: 1px solid buttonhighlight;	border-bottom: 1px solid buttonshadow; border-right: 1px solid buttonshadow; padding: 0px; font: menu;}
+.tblsortbody { font-size: 9pt }
+
+
+.cal_body
+{
+    background : #ffffff; margin: 0; margin-top: 20;
+    border-top: 1;
+    border-left: 1;
+    border-right: 1;
+    border-bottom: 0;
+    font-size:9pt
+}
+.cal_new
+{
+    background : #ffffff; margin: 0; margin-top: 1;
+    border-top: 1;
+    border-left: 1;
+    border-right: 1;
+    border-bottom: 0;
+    font-size:9pt
+}
+.cal_head_style {background:#BDDFFF;border: 1 solid #000080;color:#00080;font-size:9pt}
+.cal_head_style0 {background:#BDDFFF;border: 0 solid #000080;color:#00080;font-size:9pt}
+.cal_body_style {background:#E1E8FF;border: 0 solid #000080;color:#00080;font-size:9pt}
+#list .mnr {WIDTH:100px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;course:hand;line-height:18px;text-align:center;}
+//////////////////////////////////////
+#rLayer{
+	position:fixed;
+	_position:absolute;
+	#position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	filter:alpha(opacity=15);
+	-moz-opacity:0.15 !important;
+	opacity:0.15 !important;
+	background:blue;
+}
+#rPost{
+	position:fixed;
+	_position:absolute;
+	#position:absolute;
+	width: 452px;
+	background:#fff;
+	border:3px solid #eeeeee;
+	top:150px;
+	left:150px;
+	overflow:hidden;
+}
+#rShowContent{
+	position:fixed;
+	_position:absolute;
+	#position:absolute;
+	width: 600px;
+	background:#fff;
+	border:3px solid #eeeeee;
+	top:150px;
+//	left:5px;
+	overflow:hidden;
+}
+#sCont{margin:15px; text-indent:22px;}
+#sContEnd{ margin:10px auto 2px auto; text-align:center; cursor:pointer;}
+
+.fblm{width:100%; height:23px; background:#e1e0e0;}
+.fblm1{float:left;width: 200px; color:#FFF; font-weight:bold; margin:2px; }
+.fblm1r{float:right;width: 24px;}
+
+.fb2{width:100%;border: 1px solid #fblm; line-height:22px;}
+.fb2 ul{list-style-type: none;padding:0;}
+.fb2 li{width:100%;text-align:left;font-size: 12px;color: #333333}
+.dis{display:block}
+.undis{display:none}
+//////////////////////////////////
+//////////////////////////////////
+
+#navPage ul {
+    background-color: #eeeeee;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid gray;
+    border-top: 1px solid white;
+    border-bottom: 1px solid gray;
+}
+#navPage li {
+    list-style-type: none;
+    padding: 0 10px;
+    border-right: 1px solid gray;
+    display: inline
+}
+#navPage input {
+    font-size: 8pt;
+    border-color: #e1e8ff;
+    border-style: none;
+}
+
+/* 请发表简历留言*/
+#black{
+	width:100%;
+	height:100%;
+	_height:750px;
+	position:fixed;
+	_position:absolute;
+	top:0px;
+	left:0px;
+	z-index:100;
+	opacity:0.3;
+	filter:alpha(opacity=30);
+	background-color:#000000;
+}
+#rPost{
+	position:fixed;
+	_position:absolute;
+	#position:absolute;
+	width: 452px;
+	background:#fff;
+	border:3px solid #eeeeee;
+	top:150px;
+	left:150px;
+	overflow:hidden;
+}
+#rPost_cb{
+	position:fixed;
+	_position:absolute;
+	#position:absolute;
+	width: 452px;
+	background:#fff;
+	border:3px solid #eeeeee;
+	top:150px;
+	left:150px;
+	overflow:hidden;
+}
+#showInfo
+{
+	position:fixed;
+	_position:absolute;
+	#position:absolute;
+	width: 452px;
+	background:#fff;
+	border:3px solid #eeeeee;
+	top:150px;
+	left:150px;
+	overflow:hidden;
+}
+ #divPwd{
+	position:fixed;
+	_position:absolute;
+	#position:absolute;
+	width: 452px;
+	background:#fff;
+	border:3px solid #eeeeee;
+	top:150px;
+	left:150px;
+	overflow:hidden;
+}
+ #divZbld{
+	position:fixed;
+	_position:absolute;
+	#position:absolute;
+	width: 452px;
+	background:#fff;
+	border:3px solid #eeeeee;
+	top:150px;
+	left:150px;
+	overflow:hidden;
+}
+#rShowContent{
+	position:fixed;
+	_position:absolute;
+	#position:absolute;
+	width: 780px;
+	background:#fff;
+	border:3px solid #eeeeee;
+	top:150px;
+	left:5px;
+	overflow:hidden;
+}
+#sCont{margin:15px; text-indent:22px;}
+#sContEnd{ margin:10px auto 2px auto; text-align:center; cursor:pointer;}
+
+.fblm{width:100%; height:23px; background:#e1e0e0;}
+.fblm1{float:left;width: 320px; color:#1c4664; font-weight:bold; font-size:14px }
+.fblm1r{float:right;width: 24px;}
+
+
+a.ovalbutton{
+background: transparent url('../buttonimages/oval-green-left.gif') no-repeat top left;
+display: block;
+float: left;
+font: normal 13px Tahoma; /* Change 13px as desired */
+line-height: 16px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 24px) */
+height: 24px; /* Height of button background height */
+padding-left: 11px; /* Width of left menu image */
+text-decoration: none;
+}
+
+a:link.ovalbutton, a:visited.ovalbutton, a:active.ovalbutton{
+color: #494949; /*button text color*/
+}
+
+a.ovalbutton span{
+background: transparent url('../buttonimages/oval-green-right.gif') no-repeat top right;
+display: block;
+padding: 4px 11px 4px 0; /*Set 11px below to match value of 'padding-left' value above*/
+}
+
+a.ovalbutton:hover{ /* Hover state CSS */
+background-position: bottom left;
+}
+
+a.ovalbutton:hover span{ /* Hover state CSS */
+background-position: bottom right;
+color: black;
+}
+
+.buttonwrapper{ /* Container you can use to surround a CSS button to clear float */
+overflow: hidden; /*See: http://www.quirksmode.org/css/clearing.html */
+width: 100%;
+}
+a.green{
+background: transparent url('../buttonimages/oval-green-left.gif') no-repeat top left
+}
+
+a.green span{
+background: transparent url('../buttonimages/oval-green-right.gif') no-repeat top right;
+}
+
+a.orange{
+background: transparent url('../buttonimages/oval-orange-left.gif') no-repeat top left
+}
+
+a.orange span{
+background: transparent url('../buttonimages/oval-orange-right.gif') no-repeat top right;
+}
+
+a.blue{
+background: transparent url('../buttonimages/oval-blue-left.gif') no-repeat top left
+}
+
+a.blue span{
+background: transparent url('../buttonimages/oval-blue-right.gif') no-repeat top right;
+}
+
+a.red{
+background: transparent url('../buttonimages/oval-red-left.gif') no-repeat top left
+}
+
+a.red span{
+background: transparent url('../buttonimages/oval-red-right.gif') no-repeat top right;
+}
+ul.dz3 {width:442px;; margin:5px; list-style-type:none; padding:0;}
+.dz3 textarea{width: 99%;}
+.dz3 li{width:100%; line-height:22px; margin: 5px 1px;font-size:9pt;}
+
+li#liQuote{ background-color:#EFEFEF;}
+li#liMsg{color:#F00;}
+
+.dis{display:block}
+.undis{display:none}
+
+.spglq{ margin:10px;}
+.spglq_top{ height:32px; border-left:1px solid #cfcfcf; background:#f1f1f1; border-right:1px solid #cfcfcf;  border-bottom:4px solid #267dc5;  border-top:1px solid #cfcfcf; padding-left:10px; }
+.spglq_top span{ color:#254d7f; line-height:32px; font-weight:bold; font-size:14px; padding-left:15px; background:url(../images/daban_tb.jpg) no-repeat left center;}
+.spglq_m{ border-left:1px solid #cfcfcf; border-right:1px solid #cfcfcf; border-bottom:1px solid #cfcfcf; padding-bottom:25px;}
+.xing{ width:100px; float:left; margin-right:10px; margin-top:15px; margin-left:10px;}
+.xing_img{ text-align:center; width:100px; padding:10px 0; border:1px solid #dfdede; margin-bottom:10px;}
+.xing_m{ font-size:15px; font-weight:bold;ine-height:30px; text-align:center;}
+.xing_m a{ color:#003399; l}
+.xing_wz{ padding-left:20px; padding-top:10px;}
+.xing_wz a{ font-size:12px; font-weight:bold; color:#FF0000; line-height:40px; padding-right:30px; font-size:13px;}
+
+.clear{ clear:both;}

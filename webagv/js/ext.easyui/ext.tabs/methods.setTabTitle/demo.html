@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>重写Datagrid的默认View</title>
+	<link rel="stylesheet" type="text/css" href="../../easyui1.3.3/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../../easyui1.3.3/themes/icon.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+	<script type="text/javascript" src="../../easyui1.3.3/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="methods.setTabTitle.js"></script>
+	<script>
+		function setTitle(){
+			var tab = $("#tabs").tabs("getTab",0);
+			if(tab){
+				$("#tabs").tabs("setTabTitle",{tab:tab,title:"newTabTitle"});
+			}
+		}
+	</script>
+</head>
+<body>
+	<h2>扩展Tabs的setTabTitle方法</h2>
+	<a class="easyui-linkbutton" href="javascript:setTitle()">设置标题</a>
+	<br/><br/>
+	<div id="tabs" class="easyui-tabs" style="width:800px;height:300px;">
+		<div title="Tab1">Tab1</div>
+		<div title="Tab2">Tab2</div>
+		<div title="Tab3">Tab3</div>
+	</div>
+</body>
+</html>

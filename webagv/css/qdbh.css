@@ -1,0 +1,385 @@
+BODY {
+	
+	FONT-SIZE: 10pt; 
+	BACKGROUND-ATTACHMENT: fixed; 
+	WORD-BREAK: break-all; 
+	LINE-HEIGHT: normal; 
+	BACKGROUND-REPEAT: repeat; 
+	BACKGROUND-COLOR: #ecf5ff;
+	margin:0px 0px 0px 0px
+}
+
+TABLE {
+	FONT-SIZE: 10pt; LINE-HEIGHT: normal; FONT-FAMILY: "宋体", "Arial", "Times New Roman"
+}
+A:link {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 12px; LEFT: 1px; COLOR: red; FONT-FAMILY: "宋体"; POSITION: relative; TOP: 1px
+}
+.gray:link {
+	COLOR: #f4f4f4; TEXT-DECORATION: none
+}
+.gray:visited {
+	COLOR: #f4f4f4; TEXT-DECORATION: none
+}
+.gray:hover {
+	FONT-SIZE: 12px; LEFT: 1px; COLOR: red; FONT-FAMILY: "宋体"; POSITION: relative; TOP: 1px
+}
+.input {
+	BORDER-TOP: #4BA5D8 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #4BA5D8 1pt solid; BORDER-RIGHT: #4BA5D8 1pt solid;BORDER-BOTTOM: #4BA5D8 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.emptyinput {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.text {
+	BORDER-RIGHT: #dcdfed 1pt solid; BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.emptytext {
+	BORDER-RIGHT: #dcdfed 1pt solid; BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.readonlyemptytext {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.password {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.emptypassword {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.readonlyemptypassword {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.email {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.emptyemail {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.select {
+	BORDER-RIGHT: #ffffff 0px; BORDER-TOP: #ffffff 0px; FONT-SIZE: 12px; BORDER-LEFT: #ffffff 0px; COLOR: #000080; BORDER-BOTTOM: #ffffff 0px; BACKGROUND-COLOR: #ffffff
+}
+.list {
+	BORDER-TOP-WIDTH: 0px;
+	BORDER-LEFT-WIDTH: 0px;
+	FONT-SIZE: 14px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	BORDER-RIGHT-WIDTH: 0px;
+	line-height: 22px;
+}
+.selectbox {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; OVERFLOW: hidden; BORDER-LEFT: #ffffff 1px solid; CLIP: rect(0px 181px 18px 0px); BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 19px
+}
+.selectbox2 {
+	BORDER-RIGHT: #f4f4f4 1px solid; BORDER-TOP: #f4f4f4 1px solid; OVERFLOW: hidden; BORDER-LEFT: #f4f4f4 1px solid; CLIP: rect(0px 179px 16px 0px); BORDER-BOTTOM: #f4f4f4 1px solid; HEIGHT: 17px
+}
+.selectlist {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; OVERFLOW: hidden; BORDER-LEFT: #ffffff 1px solid; CLIP: rect(0px 181px 18px 0px); BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 49px
+}
+.selectlist2 {
+	BORDER-RIGHT: #f4f4f4 1px solid; BORDER-TOP: #f4f4f4 1px solid; OVERFLOW: hidden; BORDER-LEFT: #f4f4f4 1px solid; CLIP: rect(0px 179px 16px 0px); BORDER-BOTTOM: #f4f4f4 1px solid; HEIGHT: 44px
+}
+SELECT {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 12px; LEFT: -4px; BORDER-LEFT: 0px; COLOR: #000080; LINE-HEIGHT: 14px; BORDER-BOTTOM: 0px; POSITION: relative; TOP: -2px
+}
+.textarea {
+	BORDER-RIGHT: #4ba5d8 1pt solid; BORDER-TOP: #4ba5d8 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #4ba5d8 1pt solid; COLOR: #000080; BORDER-BOTTOM: #4ba5d8 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.textamt {
+	BORDER-RIGHT: #4ba5d8 1pt solid; BORDER-TOP: #4ba5d8 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #4ba5d8 1pt solid; COLOR: #000080; BORDER-BOTTOM: #4ba5d8 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.noborderamt {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 15px; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.shouye {
+	BORDER-RIGHT: #1a2656 1px solid; BORDER-TOP: #1a2656 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #1a2656 1px solid; BORDER-BOTTOM: #1a2656 1px solid; BACKGROUND-COLOR: #cceeff; TEXT-ALIGN: left
+}
+.readonlytextamt {
+	BORDER-RIGHT: #4ba5d8 1pt solid; BORDER-TOP: #4ba5d8 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #4ba5d8 1pt solid; COLOR: #3d3d3d; BORDER-BOTTOM: #4ba5d8 1pt solid; FONT-STYLE: normal; BACKGROUND-COLOR: #f6f6f6
+}
+.readonlytextarea {
+	BORDER-RIGHT: #4ba5d8 1pt solid; BORDER-TOP: #4ba5d8 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #4ba5d8 1pt solid; COLOR: #3d3d3d; BORDER-BOTTOM: #4ba5d8 1pt solid; FONT-STYLE: normal; BACKGROUND-COLOR: #f6f6f6
+}
+.readonlytext {
+	BORDER-RIGHT: #4ba5d8 1pt solid; BORDER-TOP: #4ba5d8 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #4ba5d8 1pt solid; COLOR: #626262; BORDER-BOTTOM: #4ba5d8 1pt solid; FONT-STYLE: normal; BACKGROUND-COLOR: #f6f6f6
+}
+.readonlyamtnoborder {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #626262; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+A:hover {
+	COLOR: #ff0000
+}
+.readonlytextnoborder {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #626262; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.readonlytextareanoborder {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #626262; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+A:hover {
+	COLOR: #ff0000
+}
+.textareanoborder {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.emptytextarea {
+	BORDER-RIGHT: #4ba5d8 1pt solid; BORDER-TOP: #4ba5d8 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #4ba5d8 1pt solid; COLOR: #000080; BORDER-BOTTOM: #4ba5d8 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.integer {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.emptyInteger {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.zhengshu {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.emptyzhengshu {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.decimal {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.emptyDecimal {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.money {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.emptyMoney {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.date {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.emptyDate {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.email {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.emptyEmail {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.phone {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.emptyPhone {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.certcode {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.emptycertcode {
+	BORDER-TOP: #dcdfed 1pt solid; FONT-SIZE: 12px; BORDER-LEFT: #dcdfed 1pt solid; COLOR: #330066; BORDER-BOTTOM: #dcdfed 1pt solid; BACKGROUND-COLOR: #ffffff
+}
+.textonlybottom {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: #4ba5d8; COLOR: #000080; HEIGHT: 15px; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.emptytextonlybottom {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: #4ba5d8; COLOR: #000080; HEIGHT: 15px; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.noborderInteger {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000080; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.noborderEmptyInteger {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000080; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.noborderzhengshu {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000080; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.noborderEmptyzhengshu {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000080; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.noborderDecimal {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000080; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.noborderEmptyDecimal {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000080; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.noborderMoney {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000080; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.noborderEmptyMoney {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000080; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.noborderText {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #330066; BACKGROUND-COLOR: #ecf5ff; BORDER-RIGHT-WIDTH: 0px
+}
+.noborderEmptyText {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000080; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.noborderpassword {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000080; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.noborderEmptypassword {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000080; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.noborderDate {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000080; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.noborderemptyDate {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000080; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.noborderEmail {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000080; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.noborderEmptyEmail {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000080; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.noborderPhone {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000080; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.noborderEmptyPhone {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000080; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px
+}
+.button{
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(./images/button_bg.gif); BORDER-LEFT: #666666 1px solid; BORDER-BOTTOM: #666666 1px solid; HEIGHT: 20px; BACKGROUND-COLOR: #ffffff
+}
+        .btn_mouseout
+        {
+            border-right: #2C59AA 1px solid;
+            padding-right: 2px;
+            border-top: #2C59AA 1px solid;
+            padding-left: 2px;
+            font-size: 12px;
+            filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+            border-left: #2C59AA 1px solid;
+            cursor: hand;
+            color: black;
+            padding-top: 2px;
+            border-bottom: #2C59AA 1px solid;
+        }
+        .btn_mouseover
+        {
+            border-right: #2C59AA 1px solid;
+            padding-right: 2px;
+            border-top: #2C59AA 1px solid;
+            padding-left: 2px;
+            font-size: 12px;
+            filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#D7E7FA);
+            border-left: #2C59AA 1px solid;
+            cursor: hand;
+            color: black;
+            padding-top: 2px;
+            border-bottom: #2C59AA 1px solid;
+        }
+        .btn_mousedown
+        {
+            border-right: #FFE400 1px solid;
+            padding-right: 2px;
+            border-top: #FFE400 1px solid;
+            padding-left: 2px;
+            font-size: 12px;
+            filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+            border-left: #FFE400 1px solid;
+            cursor: hand;
+            color: black;
+            padding-top: 2px;
+            border-bottom: #FFE400 1px solid;
+        }
+        .btn_mouseup
+        {
+            border-right: #2C59AA 1px solid;
+            padding-right: 2px;
+            border-top: #2C59AA 1px solid;
+            padding-left: 2px;
+            font-size: 12px;
+            filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+            border-left: #2C59AA 1px solid;
+            cursor: hand;
+            color: black;
+            padding-top: 2px;
+            border-bottom: #2C59AA 1px solid;
+        }
+.grid-head
+{
+	background-image:url(../images/topbanner.gif) ; 
+	text-align:center;
+	vertical-align:middle;
+	height:20
+}
+.grid-bottom
+{
+	background-image:url(../images/bottom.gif);
+	
+	height:20
+}
+
+.hide{ display:none;}
+/*电子卷宗   界面统一风格  特定的一些 控件的样式      */
+    /*汉字的描述 都放到一个lable里面，下面规定了 多少个字对应的 样式  */
+  /*.lblSelect4Size{            4个字对应的 样式  
+	 width:90px;   text-align:justify ; FONT-SIZE: 13px; FONT-FAMILY: "宋体";  
+}*/
+/*dropdownlist样式，下面规定了 多少个字对应的 样式    ,初始化的时候都显示 “请选择”*/
+.ddlSelect4Size{        /*dropdownlist样式规定最多4个字对应的 样式  */
+	 width:90px;   text-align:left; FONT-SIZE: 13px; FONT-FAMILY: "宋体";  POSITION: relative;     /*4个字对应的 样式  */
+}
+.ddlSelect8Size{          /*dropdownlist样式规定最多8个字对应的 样式  */
+	 width:115px;   text-align:left; FONT-SIZE: 13px; FONT-FAMILY: "宋体";  POSITION: relative;     /*8个字对应的 样式  */
+}
+/*Textbox样式，下面规定了 多少个字对应的 样式  */
+.txtSelect3Size{        /*Textbox样式规定最多4个字对应的 样式  */
+	 width:50px;   text-align:left; FONT-SIZE: 13px; FONT-FAMILY: "宋体";  POSITION: relative;                                            /*4个字对应的 样式  */
+}
+.txtSelect4Size{        /*Textbox样式规定最多4个字对应的 样式    对应下拉框中的ddlSelect4Size ，但宽度少2px，外观显示相同大小 */
+	 width:88px;   text-align:left; FONT-SIZE: 13px; FONT-FAMILY: "宋体";  POSITION: relative;   /*4个字对应的 样式  */
+}
+.txtSelect8Size{          /*dropdownlist样式规定最多8个字对应的 样式  */
+	 width:200px;   text-align:left; FONT-SIZE: 13px; FONT-FAMILY: "宋体";  POSITION: relative;    /*8个字对应的 样式  */
+}
+
+/*Button样式，下面规定了 多少个字对应的 样式  */
+.btnSelect4Size{        /*Button样式规定2个和4个字对应的 样式 （如果是2个字中间加四个 &nbsp;） */
+	 width:70px;   text-align: center; FONT-SIZE: 13px; FONT-FAMILY: "宋体";  POSITION: relative; 
+	  border-right: #2C59AA 1px solid;
+            padding-right: 2px;
+            border-top: #2C59AA 1px solid;
+            padding-left: 2px;          
+            filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+            border-left: #2C59AA 1px solid;
+            cursor: hand;
+            color: black;
+            padding-top: 2px;
+            border-bottom: #2C59AA 1px solid;                                           /*4个字对应的 样式  */
+}
+.btnSelect6Size{        /*Button样式规定6个字对应的 样式   */
+	 width:100px;   text-align:left; FONT-SIZE: 13px; FONT-FAMILY: "宋体";  POSITION: relative;     
+	  border-right: #2C59AA 1px solid;
+            padding-right: 2px;
+            border-top: #2C59AA 1px solid;
+            padding-left: 2px;          
+            filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+            border-left: #2C59AA 1px solid;
+            cursor: hand;
+            color: black;
+            padding-top: 2px;
+            border-bottom: #2C59AA 1px solid;                                              /*6个字对应的 样式  */
+}
+.btnSelect8Size{          /*dropdownlist样式规定最多8个字对应的 样式  */
+	 width:140px;   text-align:left; FONT-SIZE: 13px; FONT-FAMILY: "宋体";  POSITION: relative;   
+	  border-right: #2C59AA 1px solid;
+            padding-right: 2px;
+            border-top: #2C59AA 1px solid;
+            padding-left: 2px;          
+            filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5);
+            border-left: #2C59AA 1px solid;
+            cursor: hand;
+            color: black;
+            padding-top: 2px;
+            border-bottom: #2C59AA 1px solid;          
+	
+  /*表格的单元格 td的样式，下面规定了 多少个字控件对应的td 样式  */
+.td4Size{        /*td4Size样式规定最多4个字对应的 样式  */
+	     width: 12%; height: 18px; text-align :center;        /*4个字对应的 样式  */
+}
+.td6Size{        /*td4Size样式规定最多4个字对应的 样式  */
+	     width: 14%; height: 18px; text-align :center;        /*6个字对应的 样式  */
+}
+.td8Size{          /*td8Size样式规定最多8个字对应的 样式  */
+	  width: 20%; height: 18px; text-align :center;                   /*8个字对应的 样式  */
+}

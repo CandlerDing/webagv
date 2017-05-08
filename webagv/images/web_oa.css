@@ -1,0 +1,306 @@
+hr {
+    border: 1pt solid #333; margin: 2pt;
+}
+body, table {
+    font-family: ËÎÌו;
+    font-size: 9pt;
+}
+body
+{
+    background : #ffffff;
+    margin: 0;
+    border-top: 1px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+#list table {
+    border-spacing: 0;
+    border-bottom: 1px solid #beccf1;
+    border-left: 1px solid #beccf1
+}
+
+#list td {
+    padding: 6px 2px 6px 2px;
+    border-top: 1px solid #beccf1;
+    border-right: 1px solid #beccf1
+}
+#queryform table {
+    border-spacing: 0;
+    border-bottom: 1px solid #beccf1;
+    border-left: 1px solid #beccf1
+}
+
+#queryform td {
+    padding: 2px 2px 2px 2px;
+    border-top: 1px solid #beccf1;
+    border-right: 1px solid #beccf1
+}
+#form table {
+    border-spacing: 0;
+    border-bottom: 1px dotted #beccf1;
+    border-left: 1px dotted #beccf1
+}
+
+#form td {
+    padding: 2px 2px 2px 2px;
+    border-top: 1px dotted #beccf1;
+    border-right: 1px dotted #beccf1
+}
+
+#form textarea {
+    overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6,
+h1 *, h2 *, h3 *, h3 *, h5 *, h6 * {
+    font-family: ËÎÌו, bitstream vera sans, sans-serif;
+    color: #2b5e82;
+}
+a {
+    color: #000000;
+    text-decoration: none
+}
+a:link {
+    color: #000000;
+    text-decoration: none
+}
+a:hover {
+    color: #000000;
+    text-decoration: none
+}
+a:visited {
+    color: #000000;
+    text-decoration: none
+}
+
+#nav1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#nav1 ul {
+    background-color: #beccf1;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border-left: 1px dotted #e1e8ff;
+    border-top: 1px solid #e1e8ff;
+    border-bottom: 1px solid #e1e8ff;
+}
+#nav1 li {
+    list-style-type: none;
+    padding: 0 2px;
+    border-right: 1px dotted #e1e8ff;
+    display: inline
+}
+#nav1 input {
+    font-size: 8pt;
+    border-color: #e1e8ff;
+    border-style: none;
+}
+
+#nav1 img {
+    text-align: middle;
+    vertical-align:middle;
+    border-style: none;
+}
+
+.button {
+    cursor:hand;
+}
+
+.page_input {
+    color: #000080;
+    background-color: #e1e8ff;
+    font-size: 12px;
+    border-right: #beccf1 1px solid;
+    border-top: #beccf1 1px solid;
+    border-left: #beccf1 1px solid;
+    border-bottom: #beccf1 1px solid;
+}
+.body_admin
+{
+    background : #ffffff; margin: 0; margin-top: 0;
+    border-top: 1px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    font-size:9pt
+
+}
+.body_admin1
+{
+    background : #bdddff; margin: 0; margin-top: 0;
+    border-top: 1px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    font-size:9pt
+}
+.body0
+{
+    background : #ffffff; margin: 0; margin-top: 0;
+    border-top: 1px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    font-size:9pt
+}
+
+.body1
+{
+    background : #beccf1; margin: 0; margin-top: 0;
+    border-top: 1px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    font-size:9pt
+}
+.work_flow_input
+{
+    background-color: buttonface
+}
+
+.p5{background : #beccf1;}
+.title_bgcolor{background : #beccf1;color:#000080;font-size:9pt}
+.title_color{color : #beccf1;font-size:9pt}
+.head_style0 {border: 0 solid #b5c7ff;color:#000080;}
+.head_style {background:#e1e8ff;border: 1px solid #b5c7ff;color:#000080}
+
+
+.main_style0 {border: 1px solid #b5c7ff;}
+.main_style {background:#beccf1;border: 1px solid #b5c7ff; vertical-align:middle}
+.title_bgcolor1 {
+    background : #ffffff;
+    color:#000080;
+}
+.data_bgcolor {
+    background : #e1e8ff;
+    color:#000080;
+}
+.data_bgcolor_even {
+    background : #ffffff;
+    color:#000080;
+}
+.data_bgcolor_odd {
+    background : #e1e8ff;
+    color:#000080;
+}
+.foot_bgcolor {
+    background : #e1e8ff;
+    color: #000080;
+}
+
+.coolbutton{font-size:9pt}
+.p1{font-size:9pt}
+.nav{font-family: webdings;font-size:7.5pt;}
+.coolbutton{font: menu}
+.coolbar1{background: buttonface;border-top: 1px solid buttonhighlight;	border-left: 1px solid buttonhighlight;	border-bottom: 1px solid buttonshadow; border-right: 1px solid buttonshadow; padding: 0px; font: menu;}
+.tblsortbody { font-size: 9pt }
+
+
+.cal_body
+{
+    background : #ffffff; margin: 0; margin-top: 20;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 0;
+    font-size:9pt
+}
+.cal_new
+{
+    background : #ffffff; margin: 0; margin-top: 1px;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 0;
+    font-size:9pt
+}
+.cal_head_style {background:#beccf1;border: 1px solid #000080;color:#000080;font-size:9pt}
+.cal_head_style0 {background:#beccf1;border: 0 solid #000080;color:#000080;font-size:9pt}
+.cal_body_style {background:#e1e8ff;border: 0 solid #000080;color:#000080;font-size:9pt}
+
+.webfx-tree-container {
+	margin: 0px;
+	padding: 0px;
+	font: icon;
+	white-space: nowrap;
+	font-size: 9pt;
+}
+
+.webfx-tree-item {
+	padding: 0px;
+	margin: 0px;
+	font: icon;
+	color: black;
+	white-space: nowrap;
+	font-size: 9pt;
+}
+
+.webfx-tree-item a, .webfx-tree-item a:active, .webfx-tree-item a:hover {
+	margin-left: 3px;
+	padding: 1px 2px 1px 2px;
+	font-size: 9pt;
+}
+
+.webfx-tree-item a {
+	color: black;
+	text-decoration: none;
+	font-size: 9pt;
+}
+
+.webfx-tree-item a:hover {
+	color: blue;
+	text-decoration: underline;
+	font-size: 9pt;
+}
+
+.webfx-tree-item a:active {
+	background: highlight;
+	color: highlighttext;
+	text-decoration: none;
+	font-size: 9pt;
+}
+
+.webfx-tree-item img {
+	vertical-align: middle;
+	border: 0px;
+	font-size: 9pt;
+}
+
+.webfx-tree-icon {
+	width: 16px;
+	height: 16px;
+	font-size: 9pt;
+}
+.webfx-tree-check {
+	width: 11px;
+	height: 11px;
+}
+.webfx-tree-item a.selected {
+	color: selectedtext;
+	background: selected;
+	font-size: 9pt;
+}
+
+.webfx-tree-item a.selected-inactive {
+	color: windowtext;
+	background: buttonface;
+        font-size: 9pt;
+}
+.right-line {
+    border-right: 1 solid #beccf1;
+}
+.round-line {
+    border: 1 solid #beccf1;
+}
+.nr
+{
+border: solid 0px gray;
+width:230px;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+course:hand;
+}

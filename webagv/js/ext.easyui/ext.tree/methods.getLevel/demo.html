@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>重写Datagrid的默认View</title>
+	<link rel="stylesheet" type="text/css" href="../../easyui1.3.3/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../../easyui1.3.3/themes/icon.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+	<script type="text/javascript" src="../../easyui1.3.3/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="methods.getLevel.js"></script>
+	<script>
+		function getLevel(){
+			var node = $("#tree").tree("getSelected");
+			if(node){
+				var lv = $("#tree").tree("getLevel",node.target);
+				alert(lv);
+			}
+		}
+	</script>
+</head>
+<body>
+	<h2>扩展Tree的getLevel方法</h2>
+	<a class="easyui-linkbutton" href="javascript:getLevel()">获取选中项Level</a>
+	<ul class="easyui-tree" id="tree">
+		<li>
+			<span>My Documents</span>
+			<ul>
+				<li data-options="state:'closed'">
+					<span>Photos</span>
+					<ul>
+						<li>
+							<span>Friend</span>
+						</li>
+						<li>
+							<span>Wife</span>
+						</li>
+						<li>
+							<span>Company</span>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<span>Program Files</span>
+					<ul>
+						<li>Intel</li>
+						<li>Java</li>
+						<li>Microsoft Office</li>
+						<li>Games</li>
+					</ul>
+				</li>
+				<li>index.html</li>
+				<li>about.html</li>
+				<li>welcome.html</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,88 @@
+.reg-step,.reg-step-form{ width:100%; height:39px; margin:0 auto;}
+.reg-step p{ float:left; height:39px; position:relative; overflow:hidden;}
+.reg-step p.yi{ width:385px; }
+.reg-step p.yi img{ width:385px; height:78px; position:absolute; left:0; top:0;}
+.reg-step p.yi img.curr{ width:385px; height:117px; position:absolute; left:0; top:-39px;}
+.reg-step p.yi img.ncurr{ width:385px; height:117px; position:absolute; left:0; top:-0;}
+.reg-step p.yi img.ccurr{ width:385px; height:117px; position:absolute; left:0; top:-78px;}
+.reg-step p.er{ width:335px;}
+.reg-step p.er img{ width:335px; height:117px;}
+.reg-step p.er img.curr{ width:335px; height:117px; position:absolute; left:0; top:-39px;}
+.reg-step p.er img.ncurr{ width:335px; height:117px; position:absolute; left:0; top:-78px;}
+.reg-step p.san{ width:330px;}
+.reg-step p.san img{ width:330px; height:117px;}
+.reg-step p.san img.curr{ width:330px; height:117px; position:absolute; left:0; top:-39px;}
+.reg-step-form{ height:auto;}
+.reg-step-line{ width:964px; height:auto; }
+.reg-step-line p{ float:left;}
+.reg-step-line p.reg-title{ width:180px; height:32px; line-height:32px; padding-top:3px; font-weight:bold; font-size:13px; text-align:right; }
+.reg-step-line p.reg-input,.reg-step-line p.reg-code,.reg-step-line p.reg-link,.reg-step-line p.reg-txt{ width:256px; height:32px; line-height:32px; padding-top:3px; font-weight:bold; font-size:13px; text-align:right; background:url(../images/reg-input.gif) no-repeat left top; position:relative; }
+.reg-step-line p.reg-input input,.reg-step-line p.reg-code input{ width:248px; height:18px; line-height:18px; border:1px solid #FFF; position:absolute; left:3px; top:7px;}
+
+
+.reg-step-line p.reg-code{ width:61px; background:url(../images/reg-code.gif) no-repeat left top;}
+.reg-step-line p.reg-code input{ width:53px;}
+.reg-step-line p.reg-img{ width:145px; height:35px; padding:0 10px; }
+.reg-step-line p.reg-img img{ width:145px; height:30px; }
+.reg-step-line p.reg-link{ width:60px; font-size:12px; font-weight:normal; text-align:center; background:url(none) }
+
+
+.reg-step-line p.reg-txt{ width:600px; background:url(none); text-align:left; font-weight:normal; font-size:12px; }
+.reg-step-line p.reg-txt a,.reg-step-line p.reg-link a{ color:#00097b; }
+
+.reg-step-line p.reg-btn{ width:600px; height:44px; }
+.reg-step-line p.reg-btn input{ width:218px; height:44px;}
+
+
+.edtpinput2{ width:470px; height:35px;  float:left; }
+.edtpinput2 h2{ width:470px; height:30px; line-height:30px; font-size:12px; font-weight:normal;}
+.edtpinput2 h2 a{ color:#00097b;}
+.pwd-strength {
+	width: 400px; height:5px; background:url(../images/pwd-dengji.jpg) no-repeat left top;
+
+}
+.pwd-strength p.pwd-strength-box
+{
+	text-align: center;
+	width: 50px; display:block; height:5px; float:left; 
+}
+.pwd-strength p.pwd-strength-box-low
+{
+	color: #990000; width:50px; height:5px;
+	background-color: #FFECEC;  display:block; float:left; background:url(../images/low.jpg) no-repeat left top;
+}
+.pwd-strength p.pwd-strength-box-med
+{
+	color: #000066;width:50px; height:5px;
+	background-color: #D2E9FF;  display:block; float:left;  background:url(../images/meb.jpg) no-repeat left top;
+}
+.pwd-strength p.pwd-strength-box-hi
+{
+	color: #003300;width:50px; height:5px;
+	background-color: #DDFFDD;  display:block;  float:left; background:url(../images/hi.jpg) no-repeat left top;
+}
+
+
+
+ 
+.user-login{ width:964px; height:auto; margin:0 auto;}
+.login-title{ width:924px; height:36px; line-height:36px; background:url(../images/login-title.gif) no-repeat left top; padding:0 20px; color:#595959;}
+.login-form{ width:382px; height:265px; float:left; background:url(../images/login-form.jpg) repeat-y right top;}
+.loginform-line{ width:382px; height:auto; }
+.loginform-line p.lf-txt{ width:94px; height:32px; line-height:32px; float:left; text-align:right; font-size:13px;}
+.loginform-line p.lf-input,.loginform-line p.lf-btn,.loginform-line p.lf-about{ width:256px; height:32px; padding-top:3px; float:left; background: url(../images/reg-input.gif) no-repeat left top;}
+.loginform-line p.lf-input1{ width:256px; height:32px; padding-top:3px; float:left;}
+.loginform-line p.lf-btn,.loginform-line p.lf-about{ background:url(none);}
+.loginform-line p.lf-btn input{ width:59px; height:22px;}
+.loginform-line p.lf-about{ line-height:16px;}
+.loginform-line p.lf-about a{ color:#000a7d;}
+.loginform-line p.lf-about span a{ color:#fe0000;}
+.login-about{ width:562px; height:265px; float:right;}
+.login-about h2{ width:562px; height:40px; line-height:40px; font-weight:bold; font-size:14px; color:#000; background:url(../images/login-about-title.jpg) repeat-x left bottom;}
+.login-about h2 a{ color:#fe0000;}
+.loginabout-cen{ width:562px; height:54px; }
+.loginabout-img{ width:30px; height:27px; float:left; overflow:hidden; }
+.loginabout-img img{ width:30px; height:27px;}
+.loginabout-nr{ width:522px; height:52px; line-height:24px; padding:1px 0; float:right;  }
+.loginabout-nr h3{ width:522px; height:26px; line-height:26px; font-weight:bold; font-size:14px; }
+

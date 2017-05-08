@@ -1,0 +1,75 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DIV {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+UL {
+	LIST-STYLE-TYPE: none
+}
+A {
+	TEXT-DECORATION: none
+}
+.clr {
+	CLEAR: both; OVERFLOW: hidden; HEIGHT: 0px
+}
+A.closeBtn {
+	BORDER-RIGHT: #85b6e2 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #85b6e2 0px solid; DISPLAY: block; PADDING-LEFT: 0px; RIGHT: 10px; PADDING-BOTTOM: 4px; BORDER-LEFT: #85b6e2 0px solid; WIDTH: 20px; COLOR: #333; PADDING-TOP: 4px; BORDER-BOTTOM: #85b6e2 0px solid; POSITION: absolute; TOP: 10px; TEXT-ALIGN: center
+}
+A.closeBtn:hover {
+	BORDER-RIGHT: #85b6e2 0px solid; BORDER-TOP: #85b6e2 0px solid; BORDER-LEFT: #85b6e2 0px solid; COLOR: #fff; BORDER-BOTTOM: #85b6e2 0px solid
+}
+BODY {
+	
+}
+.example {
+	BORDER-RIGHT: #ccc 0px dashed; PADDING-RIGHT: 0px; BORDER-TOP: #ccc 0px dashed; MARGIN-TOP: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #ccc 0px dashed; PADDING-TOP: 0px; BORDER-BOTTOM: #ccc 0px dashed; ZOOM: 1
+}
+.example .description {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 80px; FONT-SIZE: 20px; FLOAT: left; PADDING-BOTTOM: 0px; COLOR: #85b6e2; PADDING-TOP: 10px
+}
+.example .tigger {
+	BORDER-RIGHT: #999 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #999 0px solid; DISPLAY: block; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; BORDER-LEFT: #999 0px solid; WIDTH: 32px; CURSOR: pointer; COLOR: #333; PADDING-TOP: 0px; BORDER-BOTTOM: #999 0px solid; TEXT-ALIGN: center
+}
+.example SELECT {
+	MARGIN-TOP: 0px
+}
+.blk {
+	FILTER: alpha(opacity=100 finishopacity=90 style=1 startx=0,starty=0,finishx=0,finishy=260) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#007EEE,endcolorstr=#003C77,gradientType=0); WIDTH: 200px; POSITION: relative
+}
+.blk .head {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; HEIGHT: 5px
+}
+.blk .foot {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; HEIGHT: 5px
+}
+.blk .main {
+	
+}
+.blk .main H3 {
+	PADDING-LEFT: 20px; FONT: bold 14px "Microsoft YaHei"; COLOR: #ffff00
+}
+.hr_startmenu {
+	MARGIN-LEFT: 6px; COLOR: #ff9900; MARGIN-RIGHT: 6px; HEIGHT: 3px; BACKGROUND-COLOR: #ff9900
+}
+.blk .main UL {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 25px; PADDING-BOTTOM: 10px; FONT: bold 14px "Microsoft YaHei"; OVERFLOW: hidden; PADDING-TOP: 10px; ZOOM: 1
+}
+.blk .main UL LI {
+	FLOAT: left; MARGIN-BOTTOM: 10px; WIDTH: 150px; LINE-HEIGHT: 30px; TEXT-ALIGN: center
+}
+.blk .main UL LI A {
+	DISPLAY: block; BACKGROUND: #ebeef1; COLOR: #00122b
+}
+.blk .main UL LI A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: #003c77; COLOR: #fff
+}

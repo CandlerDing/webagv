@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>重写Datagrid的默认View</title>
+	<link rel="stylesheet" type="text/css" href="../../easyui1.3.3/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../../easyui1.3.3/themes/icon.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+	<script type="text/javascript" src="../../easyui1.3.3/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="view.render.js"></script>
+	<script>
+	var data = {"total":28,"rows":[
+		{"productid":"FI-SW-01","product":{"name":"Koi"},"unitcost":10.00,"status":"P","listprice":36.50,"attr1":"Large","itemid":"EST-1"},
+		{"productid":"K9-DL-01","product":{"name":"Dalmation"},"unitcost":12.00,"status":"P","listprice":18.50,"attr1":"Spotted Adult Female","itemid":"EST-10"},
+		{"productid":"RP-SN-01","product":{"name":"Rattlesnake"},"unitcost":12.00,"status":"P","listprice":38.50,"attr1":"Venomless","itemid":"EST-11"},
+		{"productid":"RP-SN-01","product":{"name":"Rattlesnake"},"unitcost":12.00,"status":"P","listprice":26.50,"attr1":"Rattleless","itemid":"EST-12"},
+		{"productid":"RP-LI-02","product":{"name":"Iguana"},"unitcost":12.00,"status":"P","listprice":35.50,"attr1":"Green Adult","itemid":"EST-13"},
+		{"productid":"FL-DSH-01","product":{"name":"Manx"},"unitcost":12.00,"status":"P","listprice":158.50,"attr1":"Tailless","itemid":"EST-14"},
+		{"productid":"FL-DSH-01","product":{"name":"Manx"},"unitcost":12.00,"status":"P","listprice":83.50,"attr1":"With tail","itemid":"EST-15"},
+		{"productid":"FL-DLH-02","product":{"name":"Persian"},"unitcost":12.00,"status":"P","listprice":23.50,"attr1":"Adult Female","itemid":"EST-16"},
+		{"productid":"FL-DLH-02","product":{"name":"Persian"},"unitcost":12.00,"status":"P","listprice":89.50,"attr1":"Adult Male","itemid":"EST-17"},
+		{"productid":"AV-CB-01","product":{"name":"Amazon Parrot"},"unitcost":92.00,"status":"P","listprice":63.50,"attr1":"Adult Male","itemid":"EST-18"}
+	]};
+	</script>
+</head>
+<body>
+	<h2>重写Datagrid的默认View</h2>
+	<div class="demo-info">
+		<div class="demo-tip icon-tip"></div>
+		<div>支持二级数据对象。列内容支持easyui组件。</div>
+	</div>
+	<table class="easyui-datagrid" title="重写Datagrid的默认View" style="width:840px;height:250px"
+			data-options="rownumbers:true,singleSelect:true,data:data">
+		<thead>
+			<tr>
+				<th data-options="field:'itemid',width:80" rowspan="2">Item ID</th>
+				<th data-options="field:'product.name',width:100" rowspan="2">Product</th>
+				<th colspan="4">Item Details</th>
+			</tr>
+			<tr>
+				<th data-options="field:'listprice',width:80,align:'right'">List Price</th>
+				<th data-options="field:'unitcost',width:80,align:'right'">Unit Cost</th>
+				<th data-options="field:'attr1',width:240">Attribute</th>
+				<th data-options="field:'status',width:60,align:'center'">Status</th>
+				<th data-options="field:'ctr',width:120,align:'center',formatter:function(){return '<a href=javascript:void(0) class=easyui-linkbutton>按钮组件</a>'}">组件</th>
+			</tr>
+		</thead>
+	</table>
+</body>
+</html>

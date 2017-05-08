@@ -1,0 +1,177 @@
+.font_menu {
+	PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000; TEXT-ALIGN: center
+}
+.admintable {
+	BORDER-RIGHT: 0px; BORDER-TOP: #c5def4 1px solid; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-LEFT: #c5def4 1px solid; COLOR: #333333; LINE-HEIGHT: 22px; BORDER-BOTTOM: 0px; FONT-FAMILY: "????"; BACKGROUND-COLOR: #fcfdfc; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.input_employee {
+	BORDER-RIGHT: #a9bac9 1px solid; PADDING-RIGHT: 0em; BORDER-TOP: #a9bac9 1px solid; PADDING-LEFT: 0em; FONT-SIZE: 12px; PADDING-BOTTOM: 0em; VERTICAL-ALIGN: middle; BORDER-LEFT: #a9bac9 1px solid; WIDTH: 60px; TEXT-INDENT: 0.5em; LINE-HEIGHT: 22px; PADDING-TOP: 0em; BORDER-BOTTOM: #a9bac9 1px solid; HEIGHT: 22px; TEXT-ALIGN: left
+}
+.td_title1 {
+	LINE-HEIGHT: 22px; BACKGROUND-COLOR: #ebf6f8
+}
+BODY {
+	BACKGROUND-POSITION: 100% 100%; SCROLLBAR-FACE-COLOR: #ebf2f5; FONT-WEIGHT: normal; FONT-SIZE: 12px; BACKGROUND-ATTACHMENT: fixed; MARGIN: 0px; SCROLLBAR-HIGHLIGHT-COLOR: #f8fafb; SCROLLBAR-SHADOW-COLOR: #e5eaed; COLOR: #666666; SCROLLBAR-3DLIGHT-COLOR: #dfe7eb; LINE-HEIGHT: 14px; SCROLLBAR-ARROW-COLOR: #476c7e; SCROLLBAR-TRACK-COLOR: #d6e0e8; BACKGROUND-REPEAT: no-repeat; FONT-STYLE: normal; SCROLLBAR-DARKSHADOW-COLOR: #608293; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+#errors {
+	CLEAR: both
+}
+#errors .title {
+	BORDER-RIGHT: #e6e6e6 1px solid; BORDER-TOP: #e6e6e6 1px solid; PADDING-LEFT: 30px; FONT-WEIGHT: bold; FONT-SIZE: 12px; BORDER-LEFT: #e6e6e6 1px solid; WIDTH: 95%; LINE-HEIGHT: 28px; BORDER-BOTTOM: #e6e6e6 1px solid; BACKGROUND-COLOR: #ffffaf; TEXT-ALIGN: left
+}
+#errors #causedBy {
+	PADDING-RIGHT: 30px; PADDING-LEFT: 30px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; WORD-BREAK: break-all; PADDING-TOP: 30px; WORD-WRAP: break-word
+}
+#errors #details {
+	BORDER-RIGHT: #e6e6e6 1px solid; PADDING-RIGHT: 30px; BORDER-TOP: #e6e6e6 1px solid; PADDING-LEFT: 30px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; OVERFLOW: hidden; BORDER-LEFT: #e6e6e6 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #e6e6e6 1px solid; BACKGROUND-COLOR: #fafafa; WORD-WRAP: break-word
+}
+#pagination {
+	CLEAR: both; FONT-WEIGHT: bold; PADDING-BOTTOM: 10px
+}
+#pagination UL LI {
+	BORDER-RIGHT: #e6e6e6 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #e6e6e6 1px solid; PADDING-LEFT: 4px; FLOAT: left; PADDING-BOTTOM: 2px; MARGIN-LEFT: 4px; BORDER-LEFT: #e6e6e6 1px solid; CURSOR: pointer; PADDING-TOP: 2px; BORDER-BOTTOM: #e6e6e6 1px solid; align: left
+}
+#pagination UL LI SPAN.info {
+	CURSOR: default
+}
+#pagination UL LI SPAN {
+	CURSOR: pointer
+}
+#pagination UL LI SPAN INPUT {
+	WIDTH: 15px; CURSOR: text; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 10px
+}
+#pagination LI.disabled {
+	BORDER-RIGHT: #e6e6e6 1px solid; BORDER-TOP: #e6e6e6 1px solid; BORDER-LEFT: #e6e6e6 1px solid; CURSOR: default; COLOR: #e6e6e6; BORDER-BOTTOM: #e6e6e6 1px solid; BACKGROUND-COLOR: #fff
+}
+#pagination LI.currentPage {
+	CURSOR: default; BACKGROUND-COLOR: #d2eaf6
+}
+#pagination LI.over {
+	BACKGROUND-COLOR: #d2eaf6
+}
+#pagination LI.out {
+	BACKGROUND-COLOR: #fff
+}
+#internalError {
+	CLEAR: both; BORDER-RIGHT: #e6e6e6 1px solid; BORDER-TOP: #e6e6e6 1px solid; PADDING-LEFT: 30px; FONT-WEIGHT: bold; FONT-SIZE: 12px; BORDER-LEFT: #e6e6e6 1px solid; WIDTH: 95%; LINE-HEIGHT: 28px; BORDER-BOTTOM: #e6e6e6 1px solid; BACKGROUND-COLOR: #ffffaf; TEXT-ALIGN: left
+}
+#internalErrorHowTo {
+	PADDING-RIGHT: 30px; PADDING-LEFT: 30px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; WORD-BREAK: break-all; PADDING-TOP: 30px; WORD-WRAP: break-word
+}
+#internalErrorDetail {
+	PADDING-RIGHT: 30px; PADDING-LEFT: 30px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; OVERFLOW: hidden; PADDING-TOP: 0px; WORD-WRAP: break-word
+}
+.line {
+	CLEAR: both; BORDER-RIGHT: #e6e6e6 1px solid; BORDER-TOP: #e6e6e6 1px solid; BORDER-LEFT: #e6e6e6 1px solid; WIDTH: 95%; BORDER-BOTTOM: #e6e6e6 1px solid; HEIGHT: 1px
+}
+.admintable {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 1px; BORDER-TOP: #c5def4 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 12px; PADDING-BOTTOM: 1px; VERTICAL-ALIGN: middle; BORDER-LEFT: #c5def4 1px solid; COLOR: #333333; LINE-HEIGHT: 22px; PADDING-TOP: 1px; BORDER-BOTTOM: 0px; FONT-FAMILY: "????"; BACKGROUND-COLOR: #fcfdfc; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.admintable TD {
+	BORDER-RIGHT: #c5def4 1px solid; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: #c5def4 1px solid
+}
+.box1 {
+	BORDER-RIGHT: #a9bac9 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #a9bac9 1px solid; PADDING-LEFT: 3px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; BORDER-LEFT: #a9bac9 1px solid; LINE-HEIGHT: 22px; PADDING-TOP: 0px; BORDER-BOTTOM: #a9bac9 1px solid; HEIGHT: 20px
+}
+P {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+A {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000000; FONT-STYLE: normal; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #2e3340; FONT-STYLE: normal; TEXT-DECORATION: none
+}
+A:active {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; FONT-STYLE: normal; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-WEIGHT: normal; COLOR: #525663; FONT-STYLE: normal; TEXT-DECORATION: underline
+}
+TD {
+	FONT-SIZE: 12px; COLOR: #000000; WORD-BREAK: break-all; FONT-FAMILY: "????"
+}
+.bottomTableBorder {
+	BORDER-RIGHT: #c5def4 1px solid; BORDER-TOP: #c5def4 1px solid; MARGIN: 0px; BORDER-LEFT: #c5def4 1px solid; WIDTH: 100%; BORDER-BOTTOM: #c5def4 1px solid; HEIGHT: 100%
+}
+.dataBoxDiv {
+	BACKGROUND-POSITION: 100% 100%; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(/images/easyjweb/bg_body.jpg); OVERFLOW: auto; BACKGROUND-REPEAT: no-repeat; HEIGHT: 100%
+}
+.mainFunctionTable {
+	BORDER-RIGHT: #00cccc 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #000099 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; BORDER-LEFT: #000066 1px solid; WIDTH: 98%; PADDING-TOP: 1px; BORDER-BOTTOM: #00cccc 1px solid; BORDER-COLLAPSE: collapse
+}
+.tr_title_bg {
+	HEIGHT: 24px; BACKGROUND-COLOR: #3399cc
+}
+.toolTable {
+	BORDER-RIGHT: #0099cc 1px inset; BORDER-TOP: #0066cc 1px inset; BORDER-LEFT: #006699 1px inset; BORDER-BOTTOM: #0099cc 1px inset; HEIGHT: 35px; BACKGROUND-COLOR: #ebf6f8
+}
+.TableTitleTxtCenter {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FILTER: DropShadow(Color=#F2F2F2, OffX=1, OffY=1, Positive=1); COLOR: #545454
+}
+.TableTitleTxtLeft {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; FILTER: DropShadow(Color=#ffffff, OffX=1, OffY=1, Positive=1); COLOR: #333333; TEXT-INDENT: 1em
+}
+.tr_one_bg {
+	HEIGHT: 24px; BACKGROUND-COLOR: #ffffff
+}
+.td_one_bg {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px; HEIGHT: 24px
+}
+.tdLeft {
+	BACKGROUND-POSITION: 50% 0px; BACKGROUND-REPEAT: repeat-y; BACKGROUND-COLOR: #ebf6f8
+}
+.tdRight {
+	BACKGROUND-COLOR: #ffffff
+}
+.MouseOver {
+	HEIGHT: 24px; BACKGROUND-COLOR: #e5ffe5
+}
+.MouseOut {
+	HEIGHT: 24px; BACKGROUND-COLOR: #ffffff
+}
+.MouseDown {
+	BORDER-RIGHT: #0000ff 1px solid; BORDER-TOP: #0000ff 1px solid; BORDER-LEFT: #0000ff 1px solid; BORDER-BOTTOM: #0000ff 1px solid; BACKGROUND-COLOR: #cccccc
+}
+.formLable {
+	BORDER-RIGHT: #c5def4 1px solid; BORDER-TOP: 0px; FONT-SIZE: 12px; BORDER-LEFT: 0px; COLOR: #000000; TEXT-INDENT: 0.1em; LINE-HEIGHT: 22px; BORDER-BOTTOM: #c5def4 1px solid; FONT-FAMILY: ????; BACKGROUND-COLOR: #ebf6f8; TEXT-ALIGN: left
+}
+.formText {
+	BORDER-RIGHT: #c5def4 1px solid; BORDER-TOP: 0px; FONT-SIZE: 12px; BORDER-LEFT: 0px; COLOR: #000000; TEXT-INDENT: 0.1em; LINE-HEIGHT: 22px; BORDER-BOTTOM: #c5def4 1px solid; FONT-FAMILY: ????; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: left
+}
+FORM {
+	MARGIN: 0px
+}
+.picButton {
+	BORDER-RIGHT: #444444 1px solid; BORDER-TOP: #444444 1px solid; BACKGROUND-IMAGE: url(/images/easyjweb/ico/table_form_bg_2.gif); BORDER-LEFT: #444444 1px solid; CURSOR: hand; BORDER-BOTTOM: #444444 1px solid
+}
+.textfield {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; BACKGROUND-IMAGE: url(/images/easyjweb/ico/table_form_bg_3.gif); BORDER-LEFT: #999999 1px solid; WIDTH: 100%; BORDER-BOTTOM: #999999 1px solid
+}
+.file {
+	BORDER-RIGHT: #666666 1px solid; BACKGROUND-POSITION: 0px 0px; BORDER-TOP: #666666 1px solid; BACKGROUND-IMAGE: url(/images/easyjweb/ico/table_form_bg_1.gif); BORDER-LEFT: #666666 1px solid; WIDTH: 100%; BORDER-BOTTOM: #666666 1px solid
+}
+.colorButton {
+	BORDER-RIGHT: #000066 2px inset; PADDING-RIGHT: 0px; BORDER-TOP: #006666 1px inset; PADDING-LEFT: 0px; BACKGROUND: #ffffcc; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: middle; BORDER-LEFT: #006666 1px inset; COLOR: #0000cc; PADDING-TOP: 0px; BORDER-BOTTOM: #000066 2px inset; HEIGHT: 25px; TEXT-ALIGN: center
+}
+.smallInput {
+	BORDER-RIGHT: #0000ff 1px inset; BORDER-TOP: #000000 1px inset; FONT-SIZE: 10pt; VERTICAL-ALIGN: middle; BORDER-LEFT: #000000 1px inset; COLOR: #3366cc; LINE-HEIGHT: normal; BORDER-BOTTOM: #0000cc 1px inset; BACKGROUND-COLOR: #ffffbb; TEXT-ALIGN: left; border-rigth-color: #ff6633
+}
+INPUT.buttonface {
+	BORDER-RIGHT: #ff6633 1px solid; BORDER-TOP: #ff6633 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 12px; BACKGROUND: #ffcc00; BORDER-LEFT: #ff6633 1px solid; COLOR: #ff0000; LINE-HEIGHT: normal; BORDER-BOTTOM: #ff6633 1px solid; FONT-STYLE: normal; HEIGHT: 18px; FONT-VARIANT: normal
+}
+.view1 {
+	OVERFLOW: hidden; CURSOR: default
+}
+.btn3_mouseout {
+	BORDER-RIGHT: #2c59aa 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #2c59aa 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); BORDER-LEFT: #2c59aa 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2c59aa 1px solid
+}
+.btn3_mouseover {
+	BORDER-RIGHT: #2c59aa 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #2c59aa 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#D7E7FA); BORDER-LEFT: #2c59aa 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2c59aa 1px solid
+}
+.btn3_mousedown {
+	BORDER-RIGHT: #ffe400 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #ffe400 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); BORDER-LEFT: #ffe400 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #ffe400 1px solid
+}
+.btn3_mouseup {
+	BORDER-RIGHT: #2c59aa 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #2c59aa 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#C3DAF5); BORDER-LEFT: #2c59aa 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #2c59aa 1px solid
+}

@@ -1,0 +1,38 @@
+html,
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+/* Scale canvas with resize attribute to full size */
+canvas[resize] {
+    width: 100%;
+    height: 100%;
+}
+
+#btn_add {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+}
+
+
+#btn_reduce {
+  position: absolute;
+  left: 30px;
+  top: 70px;
+}
+
+#btn_submitRFIDS {
+  position: absolute;
+  left: 30px;
+  top: 300px;
+}
+
+
+#btn_clearSelectedRFIDS {
+  position: absolute;
+  left: 30px;
+  top: 350px;
+}

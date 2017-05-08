@@ -1,0 +1,29 @@
+﻿<style media=print>
+.Noprint{display:none;}
+.PageNext{page-break-after: always;}
+.TdCs1 {
+        border:solid windowtext 1.0pt;
+}
+.TdCs2 {
+        border:solid windowtext 1.0pt; border-left:none;
+}
+.TdCs3 {
+        border-top:none;
+        border-left:solid windowtext 1.0pt;
+        border-bottom:solid windowtext 1.0pt;
+          border-right:solid windowtext 1.0pt;
+}
+.TdCs4 {
+        border-top:none;
+        border-left:none;
+        border-bottom:solid windowtext 1.0pt;
+          border-right:solid windowtext 1.0pt;
+}
+.underline {
+        border-top-style: none;
+        border-right-style: none;
+        border-bottom-style: solid;
+        border-left-style: none;
+        border-bottom-color: #000000;
+}
+</style>
